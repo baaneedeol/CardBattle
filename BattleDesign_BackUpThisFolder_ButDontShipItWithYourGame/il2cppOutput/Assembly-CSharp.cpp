@@ -1,0 +1,4092 @@
+﻿#include "pch-cpp.hpp"
+
+
+
+
+
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct VirtualActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R>
+struct VirtualFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+
+struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
+struct Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180;
+struct Func_3_tC721DF8CDD07ED66A4833A19A2ED2302608C906C;
+struct Func_3_t6F6D9932638EA1A5A45303C6626C818C25D164E5;
+struct List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19;
+struct List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607;
+struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
+struct TMP_TextProcessingStack_1U5BU5D_t08293E0BB072311BB96170F351D1083BCA97B9B2;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259;
+struct DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615;
+struct FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA;
+struct HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622;
+struct HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658;
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
+struct MaterialReferenceU5BU5D_t7491D335AB3E3E13CE9C0F5E931F396F6A02E1F2;
+struct RichTextTagAttributeU5BU5D_t5816316EFD8F59DBC30B9F88E15828C564E47B6D;
+struct SecondarySpriteTextureU5BU5D_tC322D73EA4B9A8B747013A3584DEFEAFC0D87192;
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+struct TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99;
+struct TMP_ColorGradientU5BU5D_t2F65E8C42F268DFF33BB1392D94BCF5B5087308A;
+struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
+struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
+struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
+struct WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9;
+struct SectionU5BU5D_t9D3017555FFF42E71BE91904A2486EAF429F24C4;
+struct TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113;
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
+struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
+struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
+struct CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860;
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
+struct ITextPreprocessor_tDBB49C8B68D7B80E8D233B9D9666C43981EFAAB9;
+struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
+struct LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A;
+struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
+struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
+struct MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119;
+struct Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F;
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+struct Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB;
+struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
+struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A;
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
+struct String_t;
+struct TMP_Character_t7D37A55EF1A9FF6D0BFE6D50E86A00F80E7FAF35;
+struct TMP_ColorGradient_t17B51752B4E9499A1FF7D875DCEC1D15A0F4AEBB;
+struct TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160;
+struct TMP_SpriteAnimator_t2E0F016A61CA343E3222FF51E7CF0E53F9F256E4;
+struct TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39;
+struct TMP_Style_tA9E5B1B35EBFE24EF980CEA03251B638282E120C;
+struct TMP_StyleSheet_t70C71699F5CB2D855C361DBB78A44C901236C859;
+struct TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9;
+struct TMP_TextElement_t262A55214F712D4274485ABE5676E5254B84D0A5;
+struct TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D;
+struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
+struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
+struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
+struct U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB;
+struct U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25;
+struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401;
+struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
+struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
+
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral0C38221361BE855039ABFBC7448DCF90CFC16111;
+IL2CPP_EXTERN_C String_t* _stringLiteral130F811470E22F58DD5B9AFD2EDD919928EA3DE4;
+IL2CPP_EXTERN_C String_t* _stringLiteral1387CA5E3672B0B088B1C7438E3CB9614FEF2011;
+IL2CPP_EXTERN_C String_t* _stringLiteral19E30120BF148B4BD74A0C6CE7F85A461E68A628;
+IL2CPP_EXTERN_C String_t* _stringLiteral1DF92C4B9ED6853FBB200642FE7723285D257374;
+IL2CPP_EXTERN_C String_t* _stringLiteral314D52457C3C0CA19602AAE0C7ED325EE0B41772;
+IL2CPP_EXTERN_C String_t* _stringLiteral34F9C4E487C7115322A707393D8DC17483DFBC4F;
+IL2CPP_EXTERN_C String_t* _stringLiteral3918F96660B072F1D7AA40B453DAD3047A92B904;
+IL2CPP_EXTERN_C String_t* _stringLiteral3B67560386869E07BB29519D6800C1235D51A498;
+IL2CPP_EXTERN_C String_t* _stringLiteral3BB87012F8797FC89D68AFE95B3873B470CBC2B2;
+IL2CPP_EXTERN_C String_t* _stringLiteral45A30726720E9F2478F96249C73FFBBC2C8CEFFC;
+IL2CPP_EXTERN_C String_t* _stringLiteral489E779C097E758FFDACA571F7141B1E8799A179;
+IL2CPP_EXTERN_C String_t* _stringLiteral5641CCE11402BB44F1742D45487C086FC155EAD7;
+IL2CPP_EXTERN_C String_t* _stringLiteral61E1154E851B3D7E7884D2CA7861C01E3E55A020;
+IL2CPP_EXTERN_C String_t* _stringLiteral6BF1DF665742190BE9BF0B212CCC89EE2E5337A9;
+IL2CPP_EXTERN_C String_t* _stringLiteral73499AD646DE28369FB68F093FAB181683D5276F;
+IL2CPP_EXTERN_C String_t* _stringLiteral7AEDF8B4EF025E6AED4521BE910E73BA6B5605CF;
+IL2CPP_EXTERN_C String_t* _stringLiteral7D39F66E2C8263F0F84B183F780C1AD952433074;
+IL2CPP_EXTERN_C String_t* _stringLiteral846421526F97EBA87440CB9BF16CA372B37BD622;
+IL2CPP_EXTERN_C String_t* _stringLiteral8507BA45AA16D10AFB9460FB67FAA5BFA0C148FF;
+IL2CPP_EXTERN_C String_t* _stringLiteral9C32F26C9434E75C945DAA8D96D6F1AE776E0C85;
+IL2CPP_EXTERN_C String_t* _stringLiteral9DB45C70EC7D092C15F6DDF367CA12B8FE7C97AD;
+IL2CPP_EXTERN_C String_t* _stringLiteralB383C20AFE69DA54D4C590D73D858F72F8DA4CE2;
+IL2CPP_EXTERN_C String_t* _stringLiteralB8D819D6FEDF52683CB4C4E6A53638D28FCE21C0;
+IL2CPP_EXTERN_C String_t* _stringLiteralB979F20F573E0171A5B4E22839AE0C1EC8C010CB;
+IL2CPP_EXTERN_C String_t* _stringLiteralBBE47C4CFE32A35113631D981C97DCB345BF2FC0;
+IL2CPP_EXTERN_C String_t* _stringLiteralC5E24A60BA10CEE26ED64943F77A732968231B22;
+IL2CPP_EXTERN_C String_t* _stringLiteralD0E52FE4164BDD9E3DA2FB04B29DD52DB28428A7;
+IL2CPP_EXTERN_C String_t* _stringLiteralD30F897CA422B03917D96B871D90E9F1D999E976;
+IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+IL2CPP_EXTERN_C String_t* _stringLiteralEA115C52E423CD305964A1B2ABC136371FCB169E;
+IL2CPP_EXTERN_C String_t* _stringLiteralF035C096CA0E2860993C85CA40F104CDCBCA4690;
+IL2CPP_EXTERN_C String_t* _stringLiteralF0C1DAC36825DCB53519F8D17F94ADC1374CE1E3;
+IL2CPP_EXTERN_C String_t* _stringLiteralF6BB6FB26519BDC214B6271CBF6BF4A49D0C75BA;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CRunAllTestsU3Ed__3_System_Collections_IEnumerator_Reset_m4FAAEB12D9FA3B4B0E2B56851C560F58B1A75602_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CclearMessageAfterDelayU3Ed__28_System_Collections_IEnumerator_Reset_mD1E8B8FF70F522A724636C00C8575402B4FB8754_RuntimeMethod_var;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+struct U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B 
+{
+};
+struct String_t  : public RuntimeObject
+{
+	int32_t ____stringLength;
+	Il2CppChar ____firstChar;
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D  : public RuntimeObject
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+};
+struct U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* ___U3CU3E4__this;
+};
+struct U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	float ___duration;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* ___U3CU3E4__this;
+};
+struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401  : public RuntimeObject
+{
+	String_t* ___heading;
+	String_t* ___text;
+	String_t* ___linkText;
+	String_t* ___url;
+};
+struct TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C 
+{
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___itemStack;
+	int32_t ___index;
+	int32_t ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 
+{
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___itemStack;
+	int32_t ___index;
+	float ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C 
+{
+	TMP_ColorGradientU5BU5D_t2F65E8C42F268DFF33BB1392D94BCF5B5087308A* ___itemStack;
+	int32_t ___index;
+	TMP_ColorGradient_t17B51752B4E9499A1FF7D875DCEC1D15A0F4AEBB* ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	bool ___m_value;
+};
+struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
+{
+	float ___r;
+	float ___g;
+	float ___b;
+	float ___a;
+};
+struct Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B 
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___rgba;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___rgba_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			uint8_t ___r;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			uint8_t ___r_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___g_OffsetPadding[1];
+			uint8_t ___g;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___g_OffsetPadding_forAlignmentOnly[1];
+			uint8_t ___g_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___b_OffsetPadding[2];
+			uint8_t ___b;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___b_OffsetPadding_forAlignmentOnly[2];
+			uint8_t ___b_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___a_OffsetPadding[3];
+			uint8_t ___a;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___a_OffsetPadding_forAlignmentOnly[3];
+			uint8_t ___a_forAlignmentOnly;
+		};
+	};
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	int32_t ___m_value;
+};
+struct IntPtr_t 
+{
+	void* ___m_value;
+};
+struct MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B 
+{
+	int32_t ___index;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___spriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	bool ___isDefaultMaterial;
+	bool ___isFallbackMaterial;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___fallbackMaterial;
+	float ___padding;
+	int32_t ___referenceCount;
+};
+struct MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B_marshaled_pinvoke
+{
+	int32_t ___index;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___spriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___isDefaultMaterial;
+	int32_t ___isFallbackMaterial;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___fallbackMaterial;
+	float ___padding;
+	int32_t ___referenceCount;
+};
+struct MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B_marshaled_com
+{
+	int32_t ___index;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___spriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___isDefaultMaterial;
+	int32_t ___isFallbackMaterial;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___fallbackMaterial;
+	float ___padding;
+	int32_t ___referenceCount;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+	float ___w;
+};
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	float ___m_value;
+};
+struct TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC 
+{
+	uint8_t ___bold;
+	uint8_t ___italic;
+	uint8_t ___underline;
+	uint8_t ___strikethrough;
+	uint8_t ___highlight;
+	uint8_t ___superscript;
+	uint8_t ___subscript;
+	uint8_t ___uppercase;
+	uint8_t ___lowercase;
+	uint8_t ___smallcaps;
+};
+struct TMP_Offset_t2262BE4E87D9662487777FF8FFE1B17B0E4438C6 
+{
+	float ___m_Left;
+	float ___m_Right;
+	float ___m_Top;
+	float ___m_Bottom;
+};
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 
+{
+	float ___x;
+	float ___y;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+};
+struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+	float ___w;
+};
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	float ___m_Seconds;
+};
+struct SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777 
+{
+	TMP_Character_t7D37A55EF1A9FF6D0BFE6D50E86A00F80E7FAF35* ___character;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___materialIndex;
+};
+struct SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777_marshaled_pinvoke
+{
+	TMP_Character_t7D37A55EF1A9FF6D0BFE6D50E86A00F80E7FAF35* ___character;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___materialIndex;
+};
+struct SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777_marshaled_com
+{
+	TMP_Character_t7D37A55EF1A9FF6D0BFE6D50E86A00F80E7FAF35* ___character;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___materialIndex;
+};
+struct TextBackingContainer_t33D1CE628E7B26C45EDAC1D87BEF2DD22A5C6361 
+{
+	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___m_Array;
+	int32_t ___m_Index;
+};
+struct TextBackingContainer_t33D1CE628E7B26C45EDAC1D87BEF2DD22A5C6361_marshaled_pinvoke
+{
+	Il2CppSafeArray* ___m_Array;
+	int32_t ___m_Index;
+};
+struct TextBackingContainer_t33D1CE628E7B26C45EDAC1D87BEF2DD22A5C6361_marshaled_com
+{
+	Il2CppSafeArray* ___m_Array;
+	int32_t ___m_Index;
+};
+struct TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 
+{
+	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___itemStack;
+	int32_t ___index;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 
+{
+	MaterialReferenceU5BU5D_t7491D335AB3E3E13CE9C0F5E931F396F6A02E1F2* ___itemStack;
+	int32_t ___index;
+	MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct ColorMode_tA7A815AAB9F175EFBA0AE0814E55728432A880BF 
+{
+	int32_t ___value__;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
+struct Exception_t  : public RuntimeObject
+{
+	String_t* ____className;
+	String_t* ____message;
+	RuntimeObject* ____data;
+	Exception_t* ____innerException;
+	String_t* ____helpURL;
+	RuntimeObject* ____stackTrace;
+	String_t* ____stackTraceString;
+	String_t* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	RuntimeObject* ____dynamicMethods;
+	int32_t ____HResult;
+	String_t* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className;
+	char* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_pinvoke* ____innerException;
+	char* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	char* ____stackTraceString;
+	char* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	char* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className;
+	Il2CppChar* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_com* ____innerException;
+	Il2CppChar* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	Il2CppChar* ____stackTraceString;
+	Il2CppChar* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	Il2CppChar* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___min;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___max;
+};
+struct FontStyles_t9E611EE6BBE6E192A73EAFF7872596517C527FF5 
+{
+	int32_t ___value__;
+};
+struct FontWeight_tA2585C0A73B70D31CE71E7843149098A5E16BC80 
+{
+	int32_t ___value__;
+};
+struct HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B 
+{
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___color;
+	TMP_Offset_t2262BE4E87D9662487777FF8FFE1B17B0E4438C6 ___padding;
+};
+struct HorizontalAlignmentOptions_tCC21260E9FBEC656BA7783643ED5F44AFF7955A1 
+{
+	int32_t ___value__;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr;
+};
+struct ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD 
+{
+	intptr_t ___m_Ptr;
+};
+struct TMP_TextElementType_t51EE6662436732F22C6B599F5757B7F35F706342 
+{
+	int32_t ___value__;
+};
+struct TextAlignmentOptions_tF3FA9020F7E2AF1A48660044540254009A22EF01 
+{
+	int32_t ___value__;
+};
+struct TextOverflowModes_t7DCCD00C16E3223CE50CDDCC53F785C0405BE203 
+{
+	int32_t ___value__;
+};
+struct TextRenderFlags_tE023FF398ECFE57A1DBC6FD2A1AF4AE9620F6E1C 
+{
+	int32_t ___value__;
+};
+struct TextWrappingModes_t982BC65D6DA703E73C04B99286285ECD3DDF207E 
+{
+	int32_t ___value__;
+};
+struct TextureMappingOptions_t0E1A47C529DEB45A875486256E7026E97C940DAE 
+{
+	int32_t ___value__;
+};
+struct VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topLeft;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topRight;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomLeft;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomRight;
+};
+struct VertexSortingOrder_t95B7AEDBDCAACC3459B6476E5CCC594A6422FFA8 
+{
+	int32_t ___value__;
+};
+struct VerticalAlignmentOptions_tCEF70AF60282B71AEEE14D51253CE6A61E72D855 
+{
+	int32_t ___value__;
+};
+struct FillMethod_t36837ED12068DF1582CC20489D571B0BCAA7AD19 
+{
+	int32_t ___value__;
+};
+struct Type_t81D6F138C2FC745112D5247CD91BD483EDFFC041 
+{
+	int32_t ___value__;
+};
+struct Axis_tA9D05896D61BD5FB210C75508AC3D3CACC36745F 
+{
+	int32_t ___value__;
+};
+struct TextInputSources_t41387D6C9CB16E60390F47A15AEB8185BE966D26 
+{
+	int32_t ___value__;
+};
+struct TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 
+{
+	FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA* ___itemStack;
+	int32_t ___index;
+	int32_t ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D 
+{
+	HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622* ___itemStack;
+	int32_t ___index;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 
+{
+	HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658* ___itemStack;
+	int32_t ___index;
+	int32_t ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_pinvoke : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+};
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 
+{
+	int32_t ___controlCharacterCount;
+	int32_t ___characterCount;
+	int32_t ___visibleCharacterCount;
+	int32_t ___spaceCount;
+	int32_t ___visibleSpaceCount;
+	int32_t ___wordCount;
+	int32_t ___firstCharacterIndex;
+	int32_t ___firstVisibleCharacterIndex;
+	int32_t ___lastCharacterIndex;
+	int32_t ___lastVisibleCharacterIndex;
+	float ___length;
+	float ___lineHeight;
+	float ___ascender;
+	float ___baseline;
+	float ___descender;
+	float ___maxAdvance;
+	float ___width;
+	float ___marginLeft;
+	float ___marginRight;
+	int32_t ___alignment;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___lineExtents;
+};
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+struct Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___icon;
+	String_t* ___title;
+	SectionU5BU5D_t9D3017555FFF42E71BE91904A2486EAF429F24C4* ___sections;
+	bool ___loadedLayout;
+};
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A 
+{
+	int32_t ___previous_WordBreak;
+	int32_t ___total_CharacterCount;
+	int32_t ___visible_CharacterCount;
+	int32_t ___visibleSpaceCount;
+	int32_t ___visible_SpriteCount;
+	int32_t ___visible_LinkCount;
+	int32_t ___firstCharacterIndex;
+	int32_t ___firstVisibleCharacterIndex;
+	int32_t ___lastCharacterIndex;
+	int32_t ___lastVisibleCharIndex;
+	int32_t ___lineNumber;
+	float ___maxCapHeight;
+	float ___maxAscender;
+	float ___maxDescender;
+	float ___startOfLineAscender;
+	float ___maxLineAscender;
+	float ___maxLineDescender;
+	float ___pageAscender;
+	int32_t ___horizontalAlignment;
+	float ___marginLeft;
+	float ___marginRight;
+	float ___xAdvance;
+	float ___preferredWidth;
+	float ___preferredHeight;
+	float ___renderedWidth;
+	float ___renderedHeight;
+	float ___previousLineScale;
+	int32_t ___wordCount;
+	int32_t ___fontStyle;
+	int32_t ___italicAngle;
+	float ___fontScaleMultiplier;
+	float ___currentFontSize;
+	float ___baselineOffset;
+	float ___lineOffset;
+	bool ___isDrivenLineSpacing;
+	int32_t ___lastBaseGlyphIndex;
+	float ___cSpace;
+	float ___mSpace;
+	TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* ___textInfo;
+	TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 ___lineInfo;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___vertexColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___underlineColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___strikethroughColor;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___highlightState;
+	TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC ___basicStyleStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___italicAngleStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___colorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___underlineColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___strikethroughColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___highlightColorStack;
+	TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D ___highlightStateStack;
+	TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C ___colorGradientStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___sizeStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___indentStack;
+	TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 ___fontWeightStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___styleStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___baselineStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___actionStack;
+	TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 ___materialReferenceStack;
+	TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 ___lineJustificationStack;
+	int32_t ___spriteAnimationID;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___currentFontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___currentSpriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___currentMaterial;
+	int32_t ___currentMaterialIndex;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___meshExtents;
+	bool ___tagNoParsing;
+	bool ___isNonBreakingSpace;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___fxRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fxScale;
+};
+struct WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A_marshaled_pinvoke
+{
+	int32_t ___previous_WordBreak;
+	int32_t ___total_CharacterCount;
+	int32_t ___visible_CharacterCount;
+	int32_t ___visibleSpaceCount;
+	int32_t ___visible_SpriteCount;
+	int32_t ___visible_LinkCount;
+	int32_t ___firstCharacterIndex;
+	int32_t ___firstVisibleCharacterIndex;
+	int32_t ___lastCharacterIndex;
+	int32_t ___lastVisibleCharIndex;
+	int32_t ___lineNumber;
+	float ___maxCapHeight;
+	float ___maxAscender;
+	float ___maxDescender;
+	float ___startOfLineAscender;
+	float ___maxLineAscender;
+	float ___maxLineDescender;
+	float ___pageAscender;
+	int32_t ___horizontalAlignment;
+	float ___marginLeft;
+	float ___marginRight;
+	float ___xAdvance;
+	float ___preferredWidth;
+	float ___preferredHeight;
+	float ___renderedWidth;
+	float ___renderedHeight;
+	float ___previousLineScale;
+	int32_t ___wordCount;
+	int32_t ___fontStyle;
+	int32_t ___italicAngle;
+	float ___fontScaleMultiplier;
+	float ___currentFontSize;
+	float ___baselineOffset;
+	float ___lineOffset;
+	int32_t ___isDrivenLineSpacing;
+	int32_t ___lastBaseGlyphIndex;
+	float ___cSpace;
+	float ___mSpace;
+	TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* ___textInfo;
+	TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 ___lineInfo;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___vertexColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___underlineColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___strikethroughColor;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___highlightState;
+	TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC ___basicStyleStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___italicAngleStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___colorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___underlineColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___strikethroughColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___highlightColorStack;
+	TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D ___highlightStateStack;
+	TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C ___colorGradientStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___sizeStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___indentStack;
+	TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 ___fontWeightStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___styleStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___baselineStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___actionStack;
+	TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 ___materialReferenceStack;
+	TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 ___lineJustificationStack;
+	int32_t ___spriteAnimationID;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___currentFontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___currentSpriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___currentMaterial;
+	int32_t ___currentMaterialIndex;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___meshExtents;
+	int32_t ___tagNoParsing;
+	int32_t ___isNonBreakingSpace;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___fxRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fxScale;
+};
+struct WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A_marshaled_com
+{
+	int32_t ___previous_WordBreak;
+	int32_t ___total_CharacterCount;
+	int32_t ___visible_CharacterCount;
+	int32_t ___visibleSpaceCount;
+	int32_t ___visible_SpriteCount;
+	int32_t ___visible_LinkCount;
+	int32_t ___firstCharacterIndex;
+	int32_t ___firstVisibleCharacterIndex;
+	int32_t ___lastCharacterIndex;
+	int32_t ___lastVisibleCharIndex;
+	int32_t ___lineNumber;
+	float ___maxCapHeight;
+	float ___maxAscender;
+	float ___maxDescender;
+	float ___startOfLineAscender;
+	float ___maxLineAscender;
+	float ___maxLineDescender;
+	float ___pageAscender;
+	int32_t ___horizontalAlignment;
+	float ___marginLeft;
+	float ___marginRight;
+	float ___xAdvance;
+	float ___preferredWidth;
+	float ___preferredHeight;
+	float ___renderedWidth;
+	float ___renderedHeight;
+	float ___previousLineScale;
+	int32_t ___wordCount;
+	int32_t ___fontStyle;
+	int32_t ___italicAngle;
+	float ___fontScaleMultiplier;
+	float ___currentFontSize;
+	float ___baselineOffset;
+	float ___lineOffset;
+	int32_t ___isDrivenLineSpacing;
+	int32_t ___lastBaseGlyphIndex;
+	float ___cSpace;
+	float ___mSpace;
+	TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* ___textInfo;
+	TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 ___lineInfo;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___vertexColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___underlineColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___strikethroughColor;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___highlightState;
+	TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC ___basicStyleStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___italicAngleStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___colorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___underlineColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___strikethroughColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___highlightColorStack;
+	TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D ___highlightStateStack;
+	TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C ___colorGradientStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___sizeStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___indentStack;
+	TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 ___fontWeightStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___styleStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___baselineStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___actionStack;
+	TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 ___materialReferenceStack;
+	TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 ___lineJustificationStack;
+	int32_t ___spriteAnimationID;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___currentFontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___currentSpriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___currentMaterial;
+	int32_t ___currentMaterialIndex;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___meshExtents;
+	int32_t ___tagNoParsing;
+	int32_t ___isNonBreakingSpace;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___fxRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fxScale;
+};
+struct TMP_TextProcessingStack_1_t2DDA00FFC64AF6E3AFD475AB2086D16C34787E0F 
+{
+	WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9* ___itemStack;
+	int32_t ___index;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5  : public Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1
+{
+};
+struct MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* ___battleUI;
+	float ___testDuration;
+};
+struct Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___playerHealthFill;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___playerHealthText;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___playerShieldText;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___opponentHealthFill;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___opponentHealthText;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___opponentShieldText;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___turnText;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___cardEffectPanel;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___cardEffectText;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameMessagePanel;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___gameMessageText;
+	float ___defaultMessageDuration;
+	float ___messageHorizontalPadding;
+	float ___messageVerticalPadding;
+	float ___messageMinWidth;
+	float ___messageMaxWidth;
+	float ___messageMinHeight;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameOverPanel;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___gameOverText;
+	int32_t ___maxHealth;
+	bool ___cardIsPresent;
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___messageCoroutine;
+};
+struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
+{
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_Material;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_Color;
+	bool ___m_SkipLayoutUpdate;
+	bool ___m_SkipMaterialUpdate;
+	bool ___m_RaycastTarget;
+	bool ___m_RaycastTargetCache;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___m_RaycastPadding;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_RectTransform;
+	CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860* ___m_CanvasRenderer;
+	Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* ___m_Canvas;
+	bool ___m_VertsDirty;
+	bool ___m_MaterialDirty;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyLayoutCallback;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyVertsCallback;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyMaterialCallback;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___m_CachedMesh;
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___m_CachedUvs;
+	TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4* ___m_ColorTweenRunner;
+	bool ___U3CuseLegacyMeshGenerationU3Ek__BackingField;
+};
+struct MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E  : public Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931
+{
+	bool ___m_ShouldRecalculateStencil;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_MaskMaterial;
+	RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670* ___m_ParentMask;
+	bool ___m_Maskable;
+	bool ___m_IsMaskingGraphic;
+	bool ___m_IncludeForMasking;
+	CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8* ___m_OnCullStateChanged;
+	bool ___m_ShouldRecalculate;
+	int32_t ___m_StencilValue;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___m_Corners;
+};
+struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
+{
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_Sprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_OverrideSprite;
+	int32_t ___m_Type;
+	bool ___m_PreserveAspect;
+	bool ___m_FillCenter;
+	int32_t ___m_FillMethod;
+	float ___m_FillAmount;
+	bool ___m_FillClockwise;
+	int32_t ___m_FillOrigin;
+	float ___m_AlphaHitTestMinimumThreshold;
+	bool ___m_Tracked;
+	bool ___m_UseSpriteMesh;
+	float ___m_PixelsPerUnitMultiplier;
+	float ___m_CachedReferencePixelsPerUnit;
+	SecondarySpriteTextureU5BU5D_tC322D73EA4B9A8B747013A3584DEFEAFC0D87192* ___m_SecondaryTextures;
+};
+struct TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
+{
+	String_t* ___m_text;
+	bool ___m_IsTextBackingStringDirty;
+	RuntimeObject* ___m_TextPreprocessor;
+	bool ___m_isRightToLeft;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___m_fontAsset;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___m_currentFontAsset;
+	bool ___m_isSDFShader;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_sharedMaterial;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_currentMaterial;
+	int32_t ___m_currentMaterialIndex;
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ___m_fontSharedMaterials;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_fontMaterial;
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ___m_fontMaterials;
+	bool ___m_isMaterialDirty;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_fontColor32;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_fontColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_underlineColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_strikethroughColor;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___m_HighlightState;
+	bool ___m_ConvertToLinearSpace;
+	bool ___m_enableVertexGradient;
+	int32_t ___m_colorMode;
+	VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F ___m_fontColorGradient;
+	TMP_ColorGradient_t17B51752B4E9499A1FF7D875DCEC1D15A0F4AEBB* ___m_fontColorGradientPreset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___m_spriteAsset;
+	bool ___m_tintAllSprites;
+	bool ___m_tintSprite;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_spriteColor;
+	TMP_StyleSheet_t70C71699F5CB2D855C361DBB78A44C901236C859* ___m_StyleSheet;
+	TMP_Style_tA9E5B1B35EBFE24EF980CEA03251B638282E120C* ___m_TextStyle;
+	int32_t ___m_TextStyleHashCode;
+	bool ___m_overrideHtmlColors;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_faceColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_outlineColor;
+	float ___m_outlineWidth;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_currentEnvMapRotation;
+	bool ___m_hasEnvMapProperty;
+	float ___m_fontSize;
+	float ___m_currentFontSize;
+	float ___m_fontSizeBase;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___m_sizeStack;
+	int32_t ___m_fontWeight;
+	int32_t ___m_FontWeightInternal;
+	TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 ___m_FontWeightStack;
+	bool ___m_enableAutoSizing;
+	float ___m_maxFontSize;
+	float ___m_minFontSize;
+	int32_t ___m_AutoSizeIterationCount;
+	int32_t ___m_AutoSizeMaxIterationCount;
+	bool ___m_IsAutoSizePointSizeSet;
+	float ___m_fontSizeMin;
+	float ___m_fontSizeMax;
+	int32_t ___m_fontStyle;
+	int32_t ___m_FontStyleInternal;
+	TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC ___m_fontStyleStack;
+	bool ___m_isUsingBold;
+	int32_t ___m_HorizontalAlignment;
+	int32_t ___m_VerticalAlignment;
+	int32_t ___m_textAlignment;
+	int32_t ___m_lineJustification;
+	TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 ___m_lineJustificationStack;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___m_textContainerLocalCorners;
+	float ___m_characterSpacing;
+	float ___m_cSpacing;
+	float ___m_monoSpacing;
+	bool ___m_duoSpace;
+	float ___m_characterHorizontalScale;
+	float ___m_wordSpacing;
+	float ___m_lineSpacing;
+	float ___m_lineSpacingDelta;
+	float ___m_lineHeight;
+	bool ___m_IsDrivenLineSpacing;
+	float ___m_lineSpacingMax;
+	float ___m_paragraphSpacing;
+	float ___m_charWidthMaxAdj;
+	float ___m_charWidthAdjDelta;
+	int32_t ___m_TextWrappingMode;
+	bool ___m_isCharacterWrappingEnabled;
+	bool ___m_isNonBreakingSpace;
+	bool ___m_isIgnoringAlignment;
+	float ___m_wordWrappingRatios;
+	int32_t ___m_overflowMode;
+	int32_t ___m_firstOverflowCharacterIndex;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___m_linkedTextComponent;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___parentLinkedComponent;
+	bool ___m_isTextTruncated;
+	bool ___m_enableKerning;
+	int32_t ___m_LastBaseGlyphIndex;
+	List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607* ___m_ActiveFontFeatures;
+	bool ___m_enableExtraPadding;
+	bool ___checkPaddingRequired;
+	bool ___m_isRichText;
+	bool ___m_EmojiFallbackSupport;
+	bool ___m_parseCtrlCharacters;
+	bool ___m_isOverlay;
+	bool ___m_isOrthographic;
+	bool ___m_isCullingEnabled;
+	bool ___m_isMaskingEnabled;
+	bool ___isMaskUpdateRequired;
+	bool ___m_ignoreCulling;
+	int32_t ___m_horizontalMapping;
+	int32_t ___m_verticalMapping;
+	float ___m_uvLineOffset;
+	int32_t ___m_renderMode;
+	int32_t ___m_geometrySortingOrder;
+	bool ___m_IsTextObjectScaleStatic;
+	bool ___m_VertexBufferAutoSizeReduction;
+	int32_t ___m_firstVisibleCharacter;
+	int32_t ___m_maxVisibleCharacters;
+	int32_t ___m_maxVisibleWords;
+	int32_t ___m_maxVisibleLines;
+	bool ___m_useMaxVisibleDescender;
+	int32_t ___m_pageToDisplay;
+	bool ___m_isNewPage;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___m_margin;
+	float ___m_marginLeft;
+	float ___m_marginRight;
+	float ___m_marginWidth;
+	float ___m_marginHeight;
+	float ___m_width;
+	TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* ___m_textInfo;
+	bool ___m_havePropertiesChanged;
+	bool ___m_isUsingLegacyAnimationComponent;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_transform;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_rectTransform;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_PreviousRectTransformSize;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_PreviousPivotPosition;
+	bool ___U3CautoSizeTextContainerU3Ek__BackingField;
+	bool ___m_autoSizeTextContainer;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___m_mesh;
+	bool ___m_isVolumetricText;
+	Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1* ___OnPreRenderText;
+	TMP_SpriteAnimator_t2E0F016A61CA343E3222FF51E7CF0E53F9F256E4* ___m_spriteAnimator;
+	float ___m_flexibleHeight;
+	float ___m_flexibleWidth;
+	float ___m_minWidth;
+	float ___m_minHeight;
+	float ___m_maxWidth;
+	float ___m_maxHeight;
+	LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* ___m_LayoutElement;
+	float ___m_preferredWidth;
+	float ___m_RenderedWidth;
+	bool ___m_isPreferredWidthDirty;
+	float ___m_preferredHeight;
+	float ___m_RenderedHeight;
+	bool ___m_isPreferredHeightDirty;
+	bool ___m_isCalculatingPreferredValues;
+	int32_t ___m_layoutPriority;
+	bool ___m_isLayoutDirty;
+	bool ___m_isAwake;
+	bool ___m_isWaitingOnResourceLoad;
+	int32_t ___m_inputSource;
+	float ___m_fontScaleMultiplier;
+	float ___tag_LineIndent;
+	float ___tag_Indent;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___m_indentStack;
+	bool ___tag_NoParsing;
+	bool ___m_isTextLayoutPhase;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_FXRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_FXScale;
+	TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113* ___m_TextProcessingArray;
+	int32_t ___m_InternalTextProcessingArraySize;
+	TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* ___m_internalCharacterInfo;
+	int32_t ___m_totalCharacterCount;
+	int32_t ___m_characterCount;
+	int32_t ___m_firstCharacterOfLine;
+	int32_t ___m_firstVisibleCharacterOfLine;
+	int32_t ___m_lastCharacterOfLine;
+	int32_t ___m_lastVisibleCharacterOfLine;
+	int32_t ___m_lineNumber;
+	int32_t ___m_lineVisibleCharacterCount;
+	int32_t ___m_lineVisibleSpaceCount;
+	int32_t ___m_pageNumber;
+	float ___m_PageAscender;
+	float ___m_maxTextAscender;
+	float ___m_maxCapHeight;
+	float ___m_ElementAscender;
+	float ___m_ElementDescender;
+	float ___m_maxLineAscender;
+	float ___m_maxLineDescender;
+	float ___m_startOfLineAscender;
+	float ___m_startOfLineDescender;
+	float ___m_lineOffset;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___m_meshExtents;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_htmlColor;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___m_colorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___m_underlineColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___m_strikethroughColorStack;
+	TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D ___m_HighlightStateStack;
+	TMP_ColorGradient_t17B51752B4E9499A1FF7D875DCEC1D15A0F4AEBB* ___m_colorGradientPreset;
+	TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C ___m_colorGradientStack;
+	bool ___m_colorGradientPresetIsTinted;
+	float ___m_tabSpacing;
+	float ___m_spacing;
+	TMP_TextProcessingStack_1U5BU5D_t08293E0BB072311BB96170F351D1083BCA97B9B2* ___m_TextStyleStacks;
+	int32_t ___m_TextStyleStackDepth;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___m_ItalicAngleStack;
+	int32_t ___m_ItalicAngle;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___m_actionStack;
+	float ___m_padding;
+	float ___m_baselineOffset;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___m_baselineOffsetStack;
+	float ___m_xAdvance;
+	int32_t ___m_textElementType;
+	TMP_TextElement_t262A55214F712D4274485ABE5676E5254B84D0A5* ___m_cached_TextElement;
+	SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777 ___m_Ellipsis;
+	SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777 ___m_Underline;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___m_defaultSpriteAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___m_currentSpriteAsset;
+	int32_t ___m_spriteCount;
+	int32_t ___m_spriteIndex;
+	int32_t ___m_spriteAnimationID;
+	bool ___m_ignoreActiveState;
+	TextBackingContainer_t33D1CE628E7B26C45EDAC1D87BEF2DD22A5C6361 ___m_TextBackingArray;
+	DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615* ___k_Power;
+};
+struct String_t_StaticFields
+{
+	String_t* ___Empty;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	String_t* ___TrueString;
+	String_t* ___FalseString;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
+};
+struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_StaticFields
+{
+	ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24* ___reapplyDrivenProperties;
+};
+struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
+{
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultUI;
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___s_WhiteTexture;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___s_Mesh;
+	VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE* ___s_VertexHelper;
+};
+struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_StaticFields
+{
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_ETC1DefaultUI;
+	SecondarySpriteTextureU5BU5D_tC322D73EA4B9A8B747013A3584DEFEAFC0D87192* ___s_TempNewSecondaryTextures;
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_VertScratch;
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_UVScratch;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_Xy;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_Uv;
+	List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19* ___m_TrackedTexturelessImages;
+	bool ___s_Initialized;
+};
+struct TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_StaticFields
+{
+	MaterialReferenceU5BU5D_t7491D335AB3E3E13CE9C0F5E931F396F6A02E1F2* ___m_materialReferences;
+	Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* ___m_materialReferenceIndexLookup;
+	TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 ___m_materialReferenceStack;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___s_colorWhite;
+	Func_3_tC721DF8CDD07ED66A4833A19A2ED2302608C906C* ___OnFontAssetRequest;
+	Func_3_t6F6D9932638EA1A5A45303C6626C818C25D164E5* ___OnSpriteAssetRequest;
+	MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6* ___OnMissingCharacter;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___m_htmlTag;
+	RichTextTagAttributeU5BU5D_t5816316EFD8F59DBC30B9F88E15828C564E47B6D* ___m_xmlAttribute;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___m_attributeParameterValues;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedWordWrapState;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedLineState;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedEllipsisState;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedLastValidState;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedSoftLineBreakState;
+	TMP_TextProcessingStack_1_t2DDA00FFC64AF6E3AFD475AB2086D16C34787E0F ___m_EllipsisInsertionCandidateStack;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_ParseTextMarker;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_InsertNewLineMarker;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___k_LargePositiveVector2;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___k_LargeNegativeVector2;
+	float ___k_LargePositiveFloat;
+	float ___k_LargeNegativeFloat;
+	int32_t ___k_LargePositiveInt;
+	int32_t ___k_LargeNegativeInt;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_playerHealth, int32_t ___1_playerShield, int32_t ___2_opponentHealth, int32_t ___3_opponentShield, bool ___4_playerTurn, bool ___5_gameOver, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateHealth_m244307DE5198A854D074B812D6706171A0C18D61 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_isPlayer, int32_t ___1_health, int32_t ___2_shield, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_playerTurn, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___0_value, int32_t ___1_min, int32_t ___2_max, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline (int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Image_set_fillAmount_m8A9B55F47F966A3214EAC4ACBFE198776A98FAA7 (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___0_routine, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_ResizeGameMessagePanel_m2E2783F07473A29D156F032E214D673477E1F389 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Mixed_Reality_UI_clearMessageAfterDelay_m8AB209CE73B8A8636D919C46BEBD02434822A319 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, float ___0_duration, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+inline RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+inline RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_set_textWrappingMode_mBD3A313CC85C9BB85F924D589A33A500E21DCA3D (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_SetSizeWithCurrentAnchors_m53A04549B7687A1DEA2C7484E56D89809390CE44 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, int32_t ___0_axis, float ___1_size, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__28__ctor_mC28B7BAC942B88419332E87BB523DD5BACA6569C (U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, float ___1_duration, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_hideCardEffect_m5291ADD0F74631974643B79E54FCDDC6E08C0770 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_ToLowerInvariant_mBE32C93DE27C5353FEA3FA654FC1DDBE3D0EB0F2 (String_t* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardEffect_m6D12A45251C88F3AB3E7D5A4776F6769F343FD11 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_ability, int32_t ___1_amount, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardDetectedMessage_m004A110F4987117626170B0B356CAF5BE1345CB3 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardRemovedMessage_mE54FA7E050ECD9FCB3B4963A39890BB846F78E2C (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MixedRealityUITest_RunAllTests_mBB6D3033F02800D94C51C16366132A5C210590B6 (MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3__ctor_m6818970EDFC5EF7041CE87D05CF5721101F08A0D (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_startGame_m975FD125DBAE7CE9493DBAE2E145F4C41EDB629C (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_onCardRecognized_mC6AD9FD2284A14E1573372A754E8404B16E7E247 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_ability, int32_t ___1_amount, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showAttackMessage_m676ACE11F7E64500BBF66A369C7594BF1E0AB95E (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_damage, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showHealMessage_m9436D7DCEF7FEC33584CAD9FDF2B5F4526A10D81 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_amount, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showShieldMessage_m7E6A0F97B617CEF0BE90376A6417620282614FAF (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_amount, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showDrainMessage_mA0F8B4E232B0A8B75E36580AEAEBA00FEEFE8B24 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_amount, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showPlayerTurnMessage_m4C77CBBACBF030632A26327317C651962C9E43D1 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showOpponentTurnMessage_m953451D85950A08CB9C3773C96FAFFB4767A788A (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showBlockedAttackMessage_mB3A648A934D0FD64A44553D497D55FF5D0833381 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showGameOver_mA00667A99066CEF1A64D519C24A638EDC6D603AF (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_playerWon, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 132443
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_Start_m007451080766D548346CE65A8EF6371E39F441A8 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:50>
+		__this->___cardIsPresent = (bool)0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:52>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___cardEffectPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:53>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___cardEffectPanel;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+	}
+
+IL_0021:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:55>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___gameOverPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:56>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___gameOverPanel;
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
+	}
+
+IL_003b:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:58>
+		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:60>
+		int32_t L_6 = __this->___maxHealth;
+		int32_t L_7 = __this->___maxHealth;
+		Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249(__this, L_6, 0, L_7, 0, (bool)1, (bool)0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:62>
+		Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:63>
+		return;
+	}
+}
+// Method Definition Index: 132444
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_playerHealth, int32_t ___1_playerShield, int32_t ___2_opponentHealth, int32_t ___3_opponentShield, bool ___4_playerTurn, bool ___5_gameOver, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:73>
+		int32_t L_0 = ___0_playerHealth;
+		int32_t L_1 = ___1_playerShield;
+		Mixed_Reality_UI_updateHealth_m244307DE5198A854D074B812D6706171A0C18D61(__this, (bool)1, L_0, L_1, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:74>
+		int32_t L_2 = ___2_opponentHealth;
+		int32_t L_3 = ___3_opponentShield;
+		Mixed_Reality_UI_updateHealth_m244307DE5198A854D074B812D6706171A0C18D61(__this, (bool)0, L_2, L_3, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:76>
+		bool L_4 = ___5_gameOver;
+		if (!L_4)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:78>
+		Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D(__this, (bool)0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:80>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___gameOverPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:81>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___gameOverPanel;
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
+		goto IL_005c;
+	}
+
+IL_003a:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:85>
+		bool L_8 = ___4_playerTurn;
+		Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D(__this, L_8, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:87>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___gameOverPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_10;
+		L_10 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_9, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_10)
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:88>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___gameOverPanel;
+		NullCheck(L_11);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
+	}
+
+IL_005c:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:91>
+		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:92>
+		return;
+	}
+}
+// Method Definition Index: 132445
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateHealth_m244307DE5198A854D074B812D6706171A0C18D61 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_isPlayer, int32_t ___1_health, int32_t ___2_shield, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6BF1DF665742190BE9BF0B212CCC89EE2E5337A9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8507BA45AA16D10AFB9460FB67FAA5BFA0C148FF);
+		s_Il2CppMethodInitialized = true;
+	}
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* V_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* V_1 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* V_2 = NULL;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B3_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B6_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B9_0 = NULL;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B12_0 = NULL;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B11_0 = NULL;
+	float G_B13_0 = 0.0f;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B13_1 = NULL;
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:96>
+		int32_t L_0 = ___1_health;
+		int32_t L_1 = __this->___maxHealth;
+		int32_t L_2;
+		L_2 = Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline(L_0, 0, L_1, NULL);
+		___1_health = L_2;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:97>
+		int32_t L_3 = ___2_shield;
+		int32_t L_4;
+		L_4 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(0, L_3, NULL);
+		___2_shield = L_4;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:99>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:100>
+		bool L_5 = ___0_isPlayer;
+		if (L_5)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_6 = __this->___opponentHealthFill;
+		G_B3_0 = L_6;
+		goto IL_0029;
+	}
+
+IL_0023:
+	{
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_7 = __this->___playerHealthFill;
+		G_B3_0 = L_7;
+	}
+
+IL_0029:
+	{
+		V_0 = G_B3_0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:102>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:103>
+		bool L_8 = ___0_isPlayer;
+		if (L_8)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = __this->___opponentHealthText;
+		G_B6_0 = L_9;
+		goto IL_003b;
+	}
+
+IL_0035:
+	{
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_10 = __this->___playerHealthText;
+		G_B6_0 = L_10;
+	}
+
+IL_003b:
+	{
+		V_1 = G_B6_0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:105>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:106>
+		bool L_11 = ___0_isPlayer;
+		if (L_11)
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_12 = __this->___opponentShieldText;
+		G_B9_0 = L_12;
+		goto IL_004d;
+	}
+
+IL_0047:
+	{
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_13 = __this->___playerShieldText;
+		G_B9_0 = L_13;
+	}
+
+IL_004d:
+	{
+		V_2 = G_B9_0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:108>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_14 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_15;
+		L_15 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_14, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_15)
+		{
+			goto IL_0077;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:110>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:111>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_16 = V_0;
+		int32_t L_17 = __this->___maxHealth;
+		if ((((int32_t)L_17) > ((int32_t)0)))
+		{
+			G_B12_0 = L_16;
+			goto IL_0068;
+		}
+		G_B11_0 = L_16;
+	}
+	{
+		G_B13_0 = (0.0f);
+		G_B13_1 = G_B11_0;
+		goto IL_0072;
+	}
+
+IL_0068:
+	{
+		int32_t L_18 = ___1_health;
+		int32_t L_19 = __this->___maxHealth;
+		G_B13_0 = ((float)(((float)L_18)/((float)L_19)));
+		G_B13_1 = G_B12_0;
+	}
+
+IL_0072:
+	{
+		NullCheck(G_B13_1);
+		Image_set_fillAmount_m8A9B55F47F966A3214EAC4ACBFE198776A98FAA7(G_B13_1, G_B13_0, NULL);
+	}
+
+IL_0077:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:114>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_20 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_21;
+		L_21 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_20, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_21)
+		{
+			goto IL_00a1;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:115>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_22 = V_1;
+		int32_t L_23 = ___1_health;
+		int32_t L_24 = L_23;
+		RuntimeObject* L_25 = Box(il2cpp_defaults.int32_class, &L_24);
+		int32_t L_26 = __this->___maxHealth;
+		int32_t L_27 = L_26;
+		RuntimeObject* L_28 = Box(il2cpp_defaults.int32_class, &L_27);
+		String_t* L_29;
+		L_29 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral8507BA45AA16D10AFB9460FB67FAA5BFA0C148FF, L_25, L_28, NULL);
+		NullCheck(L_22);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_22, L_29);
+	}
+
+IL_00a1:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:117>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_30 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_31;
+		L_31 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_30, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_31)
+		{
+			goto IL_00c0;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:118>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_32 = V_2;
+		int32_t L_33 = ___2_shield;
+		int32_t L_34 = L_33;
+		RuntimeObject* L_35 = Box(il2cpp_defaults.int32_class, &L_34);
+		String_t* L_36;
+		L_36 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral6BF1DF665742190BE9BF0B212CCC89EE2E5337A9, L_35, NULL);
+		NullCheck(L_32);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_32, L_36);
+	}
+
+IL_00c0:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:119>
+		return;
+	}
+}
+// Method Definition Index: 132446
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:123>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:124>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___gameMessagePanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___gameMessagePanel;
+		NullCheck(L_2);
+		bool L_3;
+		L_3 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_2, NULL);
+		if (L_3)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:126>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___gameMessagePanel;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
+	}
+
+IL_0027:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:129>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:130>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___gameMessageText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0058;
+		}
+	}
+	{
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = __this->___gameMessageText;
+		NullCheck(L_7);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_7, NULL);
+		NullCheck(L_8);
+		bool L_9;
+		L_9 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_8, NULL);
+		if (L_9)
+		{
+			goto IL_0058;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:132>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_10 = __this->___gameMessageText;
+		NullCheck(L_10);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11;
+		L_11 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_10, NULL);
+		NullCheck(L_11);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)1, NULL);
+	}
+
+IL_0058:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:134>
+		return;
+	}
+}
+// Method Definition Index: 132447
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, float ___1_duration, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:141>
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_0 = __this->___messageCoroutine;
+		if (!L_0)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:143>
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1 = __this->___messageCoroutine;
+		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_1, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:144>
+		__this->___messageCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___messageCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
+	}
+
+IL_001b:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:147>
+		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:149>
+		String_t* L_2 = ___0_message;
+		Mixed_Reality_UI_ResizeGameMessagePanel_m2E2783F07473A29D156F032E214D673477E1F389(__this, L_2, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:151>
+		float L_3 = ___1_duration;
+		if ((!(((float)L_3) < ((float)(0.0f)))))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:152>
+		float L_4 = __this->___defaultMessageDuration;
+		___1_duration = L_4;
+	}
+
+IL_0038:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:154>
+		float L_5 = ___1_duration;
+		if ((!(((float)L_5) > ((float)(0.0f)))))
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:156>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:157>
+		float L_6 = ___1_duration;
+		RuntimeObject* L_7;
+		L_7 = Mixed_Reality_UI_clearMessageAfterDelay_m8AB209CE73B8A8636D919C46BEBD02434822A319(__this, L_6, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_8;
+		L_8 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_7, NULL);
+		__this->___messageCoroutine = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___messageCoroutine), (void*)L_8);
+	}
+
+IL_0053:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:159>
+		return;
+	}
+}
+// Method Definition Index: 132448
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_ResizeGameMessagePanel_m2E2783F07473A29D156F032E214D673477E1F389 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* V_0 = NULL;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* V_1 = NULL;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	float V_4 = 0.0f;
+	float V_5 = 0.0f;
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:164>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___gameMessagePanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___gameMessageText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_001d;
+		}
+	}
+
+IL_001c:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:165>
+		return;
+	}
+
+IL_001d:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:167>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:168>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___gameMessagePanel;
+		NullCheck(L_4);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_5;
+		L_5 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_4, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
+		V_0 = L_5;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:170>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:171>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___gameMessageText;
+		NullCheck(L_6);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_7;
+		L_7 = Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4(L_6, Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
+		V_1 = L_7;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:173>
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_8 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_9)
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_10 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_11;
+		L_11 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_11)
+		{
+			goto IL_0048;
+		}
+	}
+
+IL_0047:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:174>
+		return;
+	}
+
+IL_0048:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:176>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_12 = __this->___gameMessageText;
+		String_t* L_13 = ___0_message;
+		NullCheck(L_12);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_12, L_13);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:179>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:180>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_14 = __this->___gameMessageText;
+		NullCheck(L_14);
+		TMP_Text_set_textWrappingMode_mBD3A313CC85C9BB85F924D589A33A500E21DCA3D(L_14, 0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:182>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_15 = __this->___gameMessageText;
+		NullCheck(L_15);
+		VirtualActionInvoker2< bool, bool >::Invoke(106, L_15, (bool)0, (bool)0);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:184>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_16 = __this->___gameMessageText;
+		NullCheck(L_16);
+		float L_17;
+		L_17 = VirtualFuncInvoker0< float >::Invoke(84, L_16);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:187>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:188>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:189>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:190>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:191>
+		float L_18 = __this->___messageHorizontalPadding;
+		float L_19 = __this->___messageMinWidth;
+		float L_20 = __this->___messageMaxWidth;
+		float L_21;
+		L_21 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)il2cpp_codegen_add(L_17, L_18)), L_19, L_20, NULL);
+		V_2 = L_21;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:193>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:194>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:195>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:196>
+		float L_22 = V_2;
+		float L_23 = __this->___messageHorizontalPadding;
+		float L_24;
+		L_24 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((1.0f), ((float)il2cpp_codegen_subtract(L_22, L_23)), NULL);
+		V_3 = L_24;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:198>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:199>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:200>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:201>
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_25 = V_1;
+		float L_26 = V_3;
+		NullCheck(L_25);
+		RectTransform_SetSizeWithCurrentAnchors_m53A04549B7687A1DEA2C7484E56D89809390CE44(L_25, 0, L_26, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:204>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:205>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_27 = __this->___gameMessageText;
+		NullCheck(L_27);
+		TMP_Text_set_textWrappingMode_mBD3A313CC85C9BB85F924D589A33A500E21DCA3D(L_27, 1, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:207>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_28 = __this->___gameMessageText;
+		NullCheck(L_28);
+		VirtualActionInvoker2< bool, bool >::Invoke(106, L_28, (bool)0, (bool)0);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:209>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_29 = __this->___gameMessageText;
+		NullCheck(L_29);
+		float L_30;
+		L_30 = VirtualFuncInvoker0< float >::Invoke(85, L_29);
+		V_4 = L_30;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:211>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:212>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:213>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:214>
+		float L_31 = __this->___messageMinHeight;
+		float L_32 = V_4;
+		float L_33 = __this->___messageVerticalPadding;
+		float L_34;
+		L_34 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_31, ((float)il2cpp_codegen_add(L_32, L_33)), NULL);
+		V_5 = L_34;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:216>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:217>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:218>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:219>
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_35 = V_0;
+		float L_36 = V_2;
+		NullCheck(L_35);
+		RectTransform_SetSizeWithCurrentAnchors_m53A04549B7687A1DEA2C7484E56D89809390CE44(L_35, 0, L_36, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:221>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:222>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:223>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:224>
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_37 = V_0;
+		float L_38 = V_5;
+		NullCheck(L_37);
+		RectTransform_SetSizeWithCurrentAnchors_m53A04549B7687A1DEA2C7484E56D89809390CE44(L_37, 1, L_38, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:225>
+		return;
+	}
+}
+// Method Definition Index: 132449
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Mixed_Reality_UI_clearMessageAfterDelay_m8AB209CE73B8A8636D919C46BEBD02434822A319 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, float ___0_duration, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	//<source_info:<no-source>:1>
+	{
+		U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* L_0 = (U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25*)il2cpp_codegen_object_new(U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25_il2cpp_TypeInfo_var);
+		U3CclearMessageAfterDelayU3Ed__28__ctor_mC28B7BAC942B88419332E87BB523DD5BACA6569C(L_0, 0, NULL);
+		U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* L_2 = L_1;
+		float L_3 = ___0_duration;
+		NullCheck(L_2);
+		L_2->___duration = L_3;
+		return L_2;
+	}
+}
+// Method Definition Index: 132450
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_clearMessage_m1066BFC7FC5984302B26E3B3B966B353335F448B (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:240>
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_0 = __this->___messageCoroutine;
+		if (!L_0)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:242>
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1 = __this->___messageCoroutine;
+		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_1, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:243>
+		__this->___messageCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___messageCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
+	}
+
+IL_001b:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:246>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___gameMessageText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:247>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___gameMessageText;
+		NullCheck(L_4);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+	}
+
+IL_0039:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:249>
+		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:250>
+		return;
+	}
+}
+// Method Definition Index: 132451
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral314D52457C3C0CA19602AAE0C7ED325EE0B41772);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:255>
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral314D52457C3C0CA19602AAE0C7ED325EE0B41772, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:256>
+		return;
+	}
+}
+// Method Definition Index: 132452
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showWaitingForCardMessage_m6AB0FAA1587FBEEDB319DB6C508FBDA9BC5FC670 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9DB45C70EC7D092C15F6DDF367CA12B8FE7C97AD);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:260>
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral9DB45C70EC7D092C15F6DDF367CA12B8FE7C97AD, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:261>
+		return;
+	}
+}
+// Method Definition Index: 132453
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardDetectedMessage_m004A110F4987117626170B0B356CAF5BE1345CB3 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral846421526F97EBA87440CB9BF16CA372B37BD622);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:265>
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral846421526F97EBA87440CB9BF16CA372B37BD622, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:266>
+		return;
+	}
+}
+// Method Definition Index: 132454
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardRemovedMessage_mE54FA7E050ECD9FCB3B4963A39890BB846F78E2C (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral61E1154E851B3D7E7884D2CA7861C01E3E55A020);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:270>
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral61E1154E851B3D7E7884D2CA7861C01E3E55A020, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:271>
+		return;
+	}
+}
+// Method Definition Index: 132455
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showInvalidCardMessage_m720AB090D70AC37763C83DAD5BD413DD62CC7FA6 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF035C096CA0E2860993C85CA40F104CDCBCA4690);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:275>
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteralF035C096CA0E2860993C85CA40F104CDCBCA4690, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:276>
+		return;
+	}
+}
+// Method Definition Index: 132456
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showAttackMessage_m676ACE11F7E64500BBF66A369C7594BF1E0AB95E (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_damage, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB979F20F573E0171A5B4E22839AE0C1EC8C010CB);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:281>
+		int32_t L_0 = ___0_damage;
+		int32_t L_1 = L_0;
+		RuntimeObject* L_2 = Box(il2cpp_defaults.int32_class, &L_1);
+		String_t* L_3;
+		L_3 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralB979F20F573E0171A5B4E22839AE0C1EC8C010CB, L_2, NULL);
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_3, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:282>
+		return;
+	}
+}
+// Method Definition Index: 132457
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showHealMessage_m9436D7DCEF7FEC33584CAD9FDF2B5F4526A10D81 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_amount, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3B67560386869E07BB29519D6800C1235D51A498);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:286>
+		int32_t L_0 = ___0_amount;
+		int32_t L_1 = L_0;
+		RuntimeObject* L_2 = Box(il2cpp_defaults.int32_class, &L_1);
+		String_t* L_3;
+		L_3 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral3B67560386869E07BB29519D6800C1235D51A498, L_2, NULL);
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_3, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:287>
+		return;
+	}
+}
+// Method Definition Index: 132458
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showShieldMessage_m7E6A0F97B617CEF0BE90376A6417620282614FAF (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_amount, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral489E779C097E758FFDACA571F7141B1E8799A179);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:291>
+		int32_t L_0 = ___0_amount;
+		int32_t L_1 = L_0;
+		RuntimeObject* L_2 = Box(il2cpp_defaults.int32_class, &L_1);
+		String_t* L_3;
+		L_3 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral489E779C097E758FFDACA571F7141B1E8799A179, L_2, NULL);
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_3, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:292>
+		return;
+	}
+}
+// Method Definition Index: 132459
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showDrainMessage_mA0F8B4E232B0A8B75E36580AEAEBA00FEEFE8B24 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_amount, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF6BB6FB26519BDC214B6271CBF6BF4A49D0C75BA);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:296>
+		int32_t L_0 = ___0_amount;
+		int32_t L_1 = L_0;
+		RuntimeObject* L_2 = Box(il2cpp_defaults.int32_class, &L_1);
+		String_t* L_3;
+		L_3 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralF6BB6FB26519BDC214B6271CBF6BF4A49D0C75BA, L_2, NULL);
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_3, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:297>
+		return;
+	}
+}
+// Method Definition Index: 132460
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showBlockedAttackMessage_mB3A648A934D0FD64A44553D497D55FF5D0833381 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7AEDF8B4EF025E6AED4521BE910E73BA6B5605CF);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:301>
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral7AEDF8B4EF025E6AED4521BE910E73BA6B5605CF, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:302>
+		return;
+	}
+}
+// Method Definition Index: 132461
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showAbilityMessage_mCD97C43FEC40E06121FCB99BDA4FB884AD27F9E4 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:306>
+		String_t* L_0 = ___0_message;
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_0, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:307>
+		return;
+	}
+}
+// Method Definition Index: 132462
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showPlayerTurnMessage_m4C77CBBACBF030632A26327317C651962C9E43D1 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB383C20AFE69DA54D4C590D73D858F72F8DA4CE2);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:312>
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteralB383C20AFE69DA54D4C590D73D858F72F8DA4CE2, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:313>
+		return;
+	}
+}
+// Method Definition Index: 132463
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showOpponentTurnMessage_m953451D85950A08CB9C3773C96FAFFB4767A788A (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA115C52E423CD305964A1B2ABC136371FCB169E);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:317>
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteralEA115C52E423CD305964A1B2ABC136371FCB169E, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:318>
+		return;
+	}
+}
+// Method Definition Index: 132464
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardEffect_m6D12A45251C88F3AB3E7D5A4776F6769F343FD11 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_ability, int32_t ___1_amount, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral130F811470E22F58DD5B9AFD2EDD919928EA3DE4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1387CA5E3672B0B088B1C7438E3CB9614FEF2011);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral34F9C4E487C7115322A707393D8DC17483DFBC4F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3918F96660B072F1D7AA40B453DAD3047A92B904);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73499AD646DE28369FB68F093FAB181683D5276F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7D39F66E2C8263F0F84B183F780C1AD952433074);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C32F26C9434E75C945DAA8D96D6F1AE776E0C85);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8D819D6FEDF52683CB4C4E6A53638D28FCE21C0);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:323>
+		bool L_0 = __this->___cardIsPresent;
+		if (L_0)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:325>
+		Mixed_Reality_UI_hideCardEffect_m5291ADD0F74631974643B79E54FCDDC6E08C0770(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:326>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:329>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___cardEffectPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:330>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___cardEffectPanel;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
+	}
+
+IL_0029:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:332>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___cardEffectText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_5;
+		L_5 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_5)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:333>
+		return;
+	}
+
+IL_0038:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:335>
+		String_t* L_6 = ___0_ability;
+		NullCheck(L_6);
+		String_t* L_7;
+		L_7 = String_ToLowerInvariant_mBE32C93DE27C5353FEA3FA654FC1DDBE3D0EB0F2(L_6, NULL);
+		V_0 = L_7;
+		String_t* L_8 = V_0;
+		bool L_9;
+		L_9 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_8, _stringLiteral1387CA5E3672B0B088B1C7438E3CB9614FEF2011, NULL);
+		if (L_9)
+		{
+			goto IL_007e;
+		}
+	}
+	{
+		String_t* L_10 = V_0;
+		bool L_11;
+		L_11 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_10, _stringLiteral9C32F26C9434E75C945DAA8D96D6F1AE776E0C85, NULL);
+		if (L_11)
+		{
+			goto IL_00b9;
+		}
+	}
+	{
+		String_t* L_12 = V_0;
+		bool L_13;
+		L_13 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_12, _stringLiteralB8D819D6FEDF52683CB4C4E6A53638D28FCE21C0, NULL);
+		if (L_13)
+		{
+			goto IL_00f4;
+		}
+	}
+	{
+		String_t* L_14 = V_0;
+		bool L_15;
+		L_15 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_14, _stringLiteral73499AD646DE28369FB68F093FAB181683D5276F, NULL);
+		if (L_15)
+		{
+			goto IL_013b;
+		}
+	}
+	{
+		goto IL_0176;
+	}
+
+IL_007e:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:338>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_16 = __this->___cardEffectText;
+		int32_t L_17 = ___1_amount;
+		int32_t L_18 = L_17;
+		RuntimeObject* L_19 = Box(il2cpp_defaults.int32_class, &L_18);
+		String_t* L_20;
+		L_20 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral7D39F66E2C8263F0F84B183F780C1AD952433074, L_19, NULL);
+		NullCheck(L_16);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_16, L_20);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:339>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:340>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_21 = __this->___cardEffectText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_22;
+		memset((&L_22), 0, sizeof(L_22));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_22), (1.0f), (0.25f), (0.25f), NULL);
+		NullCheck(L_21);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_21, L_22);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:341>
+		return;
+	}
+
+IL_00b9:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:344>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_23 = __this->___cardEffectText;
+		int32_t L_24 = ___1_amount;
+		int32_t L_25 = L_24;
+		RuntimeObject* L_26 = Box(il2cpp_defaults.int32_class, &L_25);
+		String_t* L_27;
+		L_27 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral3918F96660B072F1D7AA40B453DAD3047A92B904, L_26, NULL);
+		NullCheck(L_23);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_23, L_27);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:345>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:346>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_28 = __this->___cardEffectText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_29;
+		memset((&L_29), 0, sizeof(L_29));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_29), (0.25f), (1.0f), (0.449999988f), NULL);
+		NullCheck(L_28);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_28, L_29);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:347>
+		return;
+	}
+
+IL_00f4:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:350>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:351>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_30 = __this->___cardEffectText;
+		int32_t L_31 = ___1_amount;
+		int32_t L_32 = L_31;
+		RuntimeObject* L_33 = Box(il2cpp_defaults.int32_class, &L_32);
+		int32_t L_34 = ___1_amount;
+		int32_t L_35 = L_34;
+		RuntimeObject* L_36 = Box(il2cpp_defaults.int32_class, &L_35);
+		int32_t L_37 = ___1_amount;
+		int32_t L_38 = L_37;
+		RuntimeObject* L_39 = Box(il2cpp_defaults.int32_class, &L_38);
+		String_t* L_40;
+		L_40 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteral130F811470E22F58DD5B9AFD2EDD919928EA3DE4, L_33, L_36, L_39, NULL);
+		NullCheck(L_30);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_30, L_40);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:352>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:353>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_41 = __this->___cardEffectText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_42;
+		memset((&L_42), 0, sizeof(L_42));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_42), (0.25f), (0.850000024f), (1.0f), NULL);
+		NullCheck(L_41);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_41, L_42);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:354>
+		return;
+	}
+
+IL_013b:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:357>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_43 = __this->___cardEffectText;
+		int32_t L_44 = ___1_amount;
+		int32_t L_45 = L_44;
+		RuntimeObject* L_46 = Box(il2cpp_defaults.int32_class, &L_45);
+		String_t* L_47;
+		L_47 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral34F9C4E487C7115322A707393D8DC17483DFBC4F, L_46, NULL);
+		NullCheck(L_43);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_43, L_47);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:358>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:359>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_48 = __this->___cardEffectText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_49;
+		memset((&L_49), 0, sizeof(L_49));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_49), (0.75f), (0.449999988f), (1.0f), NULL);
+		NullCheck(L_48);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_48, L_49);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:360>
+		return;
+	}
+
+IL_0176:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:363>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_50 = __this->___cardEffectText;
+		String_t* L_51 = ___0_ability;
+		NullCheck(L_50);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_50, L_51);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:364>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_52 = __this->___cardEffectText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_53;
+		L_53 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
+		NullCheck(L_52);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_52, L_53);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:367>
+		return;
+	}
+}
+// Method Definition Index: 132465
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_onCardRecognized_mC6AD9FD2284A14E1573372A754E8404B16E7E247 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_ability, int32_t ___1_amount, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:371>
+		__this->___cardIsPresent = (bool)1;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:373>
+		String_t* L_0 = ___0_ability;
+		int32_t L_1 = ___1_amount;
+		Mixed_Reality_UI_showCardEffect_m6D12A45251C88F3AB3E7D5A4776F6769F343FD11(__this, L_0, L_1, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:374>
+		Mixed_Reality_UI_showCardDetectedMessage_m004A110F4987117626170B0B356CAF5BE1345CB3(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:375>
+		return;
+	}
+}
+// Method Definition Index: 132466
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_setCardPresent_m6FC1C5C06587614BC88376100D108BB6890EAF22 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_present, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:379>
+		bool L_0 = __this->___cardIsPresent;
+		V_0 = L_0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:380>
+		bool L_1 = ___0_present;
+		__this->___cardIsPresent = L_1;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:382>
+		bool L_2 = ___0_present;
+		if (L_2)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:384>
+		Mixed_Reality_UI_hideCardEffect_m5291ADD0F74631974643B79E54FCDDC6E08C0770(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:386>
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:387>
+		Mixed_Reality_UI_showCardRemovedMessage_mE54FA7E050ECD9FCB3B4963A39890BB846F78E2C(__this, NULL);
+		return;
+	}
+
+IL_0021:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:389>
+		bool L_4 = V_0;
+		if (L_4)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:391>
+		Mixed_Reality_UI_showCardDetectedMessage_m004A110F4987117626170B0B356CAF5BE1345CB3(__this, NULL);
+	}
+
+IL_002a:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:393>
+		return;
+	}
+}
+// Method Definition Index: 132467
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_playerTurn, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD30F897CA422B03917D96B871D90E9F1D999E976);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF0C1DAC36825DCB53519F8D17F94ADC1374CE1E3);
+		s_Il2CppMethodInitialized = true;
+	}
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B4_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B3_0 = NULL;
+	String_t* G_B5_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B5_1 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B7_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B6_0 = NULL;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G_B8_0;
+	memset((&G_B8_0), 0, sizeof(G_B8_0));
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B8_1 = NULL;
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:397>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___turnText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:398>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:400>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:401>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:402>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___turnText;
+		bool L_3 = ___0_playerTurn;
+		if (L_3)
+		{
+			G_B4_0 = L_2;
+			goto IL_001f;
+		}
+		G_B3_0 = L_2;
+	}
+	{
+		G_B5_0 = _stringLiteralD30F897CA422B03917D96B871D90E9F1D999E976;
+		G_B5_1 = G_B3_0;
+		goto IL_0024;
+	}
+
+IL_001f:
+	{
+		G_B5_0 = _stringLiteralF0C1DAC36825DCB53519F8D17F94ADC1374CE1E3;
+		G_B5_1 = G_B4_0;
+	}
+
+IL_0024:
+	{
+		NullCheck(G_B5_1);
+		VirtualActionInvoker1< String_t* >::Invoke(66, G_B5_1, G_B5_0);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:404>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:405>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:406>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___turnText;
+		bool L_5 = ___0_playerTurn;
+		if (L_5)
+		{
+			G_B7_0 = L_4;
+			goto IL_0048;
+		}
+		G_B6_0 = L_4;
+	}
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_6;
+		memset((&L_6), 0, sizeof(L_6));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_6), (1.0f), (0.649999976f), (0.300000012f), NULL);
+		G_B8_0 = L_6;
+		G_B8_1 = G_B6_0;
+		goto IL_005c;
+	}
+
+IL_0048:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_7;
+		memset((&L_7), 0, sizeof(L_7));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_7), (0.25f), (1.0f), (0.850000024f), NULL);
+		G_B8_0 = L_7;
+		G_B8_1 = G_B7_0;
+	}
+
+IL_005c:
+	{
+		NullCheck(G_B8_1);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, G_B8_1, G_B8_0);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:407>
+		return;
+	}
+}
+// Method Definition Index: 132468
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showGameOver_mA00667A99066CEF1A64D519C24A638EDC6D603AF (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_playerWon, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral19E30120BF148B4BD74A0C6CE7F85A461E68A628);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3BB87012F8797FC89D68AFE95B3873B470CBC2B2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5641CCE11402BB44F1742D45487C086FC155EAD7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBBE47C4CFE32A35113631D981C97DCB345BF2FC0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC5E24A60BA10CEE26ED64943F77A732968231B22);
+		s_Il2CppMethodInitialized = true;
+	}
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B5_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B4_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B6_1 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B8_0 = NULL;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B7_0 = NULL;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G_B9_0;
+	memset((&G_B9_0), 0, sizeof(G_B9_0));
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B9_1 = NULL;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B14_0 = NULL;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B13_0 = NULL;
+	String_t* G_B15_0 = NULL;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B15_1 = NULL;
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:411>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___gameOverPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:412>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___gameOverPanel;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
+	}
+
+IL_001a:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:414>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->___gameOverText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_007a;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:416>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:417>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___gameOverText;
+		bool L_6 = ___0_playerWon;
+		if (L_6)
+		{
+			G_B5_0 = L_5;
+			goto IL_0038;
+		}
+		G_B4_0 = L_5;
+	}
+	{
+		G_B6_0 = _stringLiteralBBE47C4CFE32A35113631D981C97DCB345BF2FC0;
+		G_B6_1 = G_B4_0;
+		goto IL_003d;
+	}
+
+IL_0038:
+	{
+		G_B6_0 = _stringLiteralC5E24A60BA10CEE26ED64943F77A732968231B22;
+		G_B6_1 = G_B5_0;
+	}
+
+IL_003d:
+	{
+		NullCheck(G_B6_1);
+		VirtualActionInvoker1< String_t* >::Invoke(66, G_B6_1, G_B6_0);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:419>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:420>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:421>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = __this->___gameOverText;
+		bool L_8 = ___0_playerWon;
+		if (L_8)
+		{
+			G_B8_0 = L_7;
+			goto IL_0061;
+		}
+		G_B7_0 = L_7;
+	}
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_9), (1.0f), (0.25f), (0.25f), NULL);
+		G_B9_0 = L_9;
+		G_B9_1 = G_B7_0;
+		goto IL_0075;
+	}
+
+IL_0061:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10;
+		memset((&L_10), 0, sizeof(L_10));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_10), (0.25f), (1.0f), (0.649999976f), NULL);
+		G_B9_0 = L_10;
+		G_B9_1 = G_B8_0;
+	}
+
+IL_0075:
+	{
+		NullCheck(G_B9_1);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, G_B9_1, G_B9_0);
+	}
+
+IL_007a:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:424>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_11 = __this->___turnText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_12;
+		L_12 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_11, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_12)
+		{
+			goto IL_0098;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:425>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_13 = __this->___turnText;
+		NullCheck(L_13);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_13, _stringLiteral19E30120BF148B4BD74A0C6CE7F85A461E68A628);
+	}
+
+IL_0098:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:427>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:428>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:429>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:430>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:431>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:432>
+		bool L_14 = ___0_playerWon;
+		if (L_14)
+		{
+			G_B14_0 = __this;
+			goto IL_00a3;
+		}
+		G_B13_0 = __this;
+	}
+	{
+		G_B15_0 = _stringLiteral3BB87012F8797FC89D68AFE95B3873B470CBC2B2;
+		G_B15_1 = G_B13_0;
+		goto IL_00a8;
+	}
+
+IL_00a3:
+	{
+		G_B15_0 = _stringLiteral5641CCE11402BB44F1742D45487C086FC155EAD7;
+		G_B15_1 = G_B14_0;
+	}
+
+IL_00a8:
+	{
+		NullCheck(G_B15_1);
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(G_B15_1, G_B15_0, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:434>
+		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:435>
+		return;
+	}
+}
+// Method Definition Index: 132469
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_hideCardEffect_m5291ADD0F74631974643B79E54FCDDC6E08C0770 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:439>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___cardEffectPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:440>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___cardEffectPanel;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		return;
+	}
+
+IL_001b:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:441>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->___cardEffectText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:442>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___cardEffectText;
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_5, NULL);
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+	}
+
+IL_003a:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:443>
+		return;
+	}
+}
+// Method Definition Index: 132470
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_startGame_m975FD125DBAE7CE9493DBAE2E145F4C41EDB629C (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:447>
+		__this->___cardIsPresent = (bool)0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:449>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___gameOverPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:450>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___gameOverPanel;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+	}
+
+IL_0021:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:452>
+		Mixed_Reality_UI_hideCardEffect_m5291ADD0F74631974643B79E54FCDDC6E08C0770(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:454>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->___cardEffectText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:455>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___cardEffectText;
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_5, NULL);
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)1, NULL);
+	}
+
+IL_0046:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:457>
+		int32_t L_7 = __this->___maxHealth;
+		int32_t L_8 = __this->___maxHealth;
+		Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249(__this, L_7, 0, L_8, 0, (bool)1, (bool)0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:459>
+		Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:460>
+		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:461>
+		return;
+	}
+}
+// Method Definition Index: 132471
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_LateUpdate_m172B7F2437FB34D8A672161307BE5A0016EA4DBA (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:465>
+		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:466>
+		return;
+	}
+}
+// Method Definition Index: 132472
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI__ctor_m1EE2544272E74B3BF702AE6A73341895F60B05F5 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:29>
+		__this->___defaultMessageDuration = (3.0f);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:32>
+		__this->___messageHorizontalPadding = (40.0f);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:33>
+		__this->___messageVerticalPadding = (24.0f);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:34>
+		__this->___messageMinWidth = (200.0f);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:35>
+		__this->___messageMaxWidth = (850.0f);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:36>
+		__this->___messageMinHeight = (80.0f);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:43>
+		__this->___maxHealth = ((int32_t)20);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 132473
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__28__ctor_mC28B7BAC942B88419332E87BB523DD5BACA6569C (U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 132474
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__28_System_IDisposable_Dispose_mF2D67D569A4C04A4EC36B5D9CF49BF5BC2F76931 (U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		return;
+	}
+}
+// Method Definition Index: 132475
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CclearMessageAfterDelayU3Ed__28_MoveNext_m4790E2EF40BCA42AC36E2B014D7D25E556DF06BA (U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:229>
+		float L_4 = __this->___duration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, L_4, NULL);
+		__this->___U3CU3E2__current = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_5);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0038:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:231>
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_6 = V_1;
+		NullCheck(L_6);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = L_6->___gameMessageText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_8)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:232>
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_9 = V_1;
+		NullCheck(L_9);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_10 = L_9->___gameMessageText;
+		NullCheck(L_10);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_10, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+	}
+
+IL_005d:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:234>
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_11 = V_1;
+		NullCheck(L_11);
+		L_11->___messageCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_11->___messageCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:235>
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_12 = V_1;
+		NullCheck(L_12);
+		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(L_12, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:236>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 132476
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CclearMessageAfterDelayU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mACBF4899970CDDE7BC666C326C739DDA01658F61 (U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 132477
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__28_System_Collections_IEnumerator_Reset_mD1E8B8FF70F522A724636C00C8575402B4FB8754 (U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CclearMessageAfterDelayU3Ed__28_System_Collections_IEnumerator_Reset_mD1E8B8FF70F522A724636C00C8575402B4FB8754_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 132478
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CclearMessageAfterDelayU3Ed__28_System_Collections_IEnumerator_get_Current_m5862D9CA5FD0E8F55E50297B9D4D3200FE13C6DD (U3CclearMessageAfterDelayU3Ed__28_t3877D827E7196D7ED17302DE6EFBB7AFEDB6AB25* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 132479
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityUITest_Start_mE4C217207AC1F674FDFFA813C91649229A87ECAA (MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1DF92C4B9ED6853FBB200642FE7723285D257374);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:12>
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_0 = __this->___battleUI;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:14>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:15>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:16>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral1DF92C4B9ED6853FBB200642FE7723285D257374, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:17>
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:18>
+		return;
+	}
+
+IL_0020:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:21>
+		RuntimeObject* L_2;
+		L_2 = MixedRealityUITest_RunAllTests_mBB6D3033F02800D94C51C16366132A5C210590B6(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3;
+		L_3 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_2, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:22>
+		return;
+	}
+}
+// Method Definition Index: 132480
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MixedRealityUITest_RunAllTests_mBB6D3033F02800D94C51C16366132A5C210590B6 (MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	//<source_info:<no-source>:1>
+	{
+		U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* L_0 = (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB*)il2cpp_codegen_object_new(U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB_il2cpp_TypeInfo_var);
+		U3CRunAllTestsU3Ed__3__ctor_m6818970EDFC5EF7041CE87D05CF5721101F08A0D(L_0, 0, NULL);
+		U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 132481
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityUITest__ctor_m8E3B7646CB8EAF14D6891F8CF4DF0C87FE708CB5 (MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:8>
+		__this->___testDuration = (3.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 132482
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3__ctor_m6818970EDFC5EF7041CE87D05CF5721101F08A0D (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 132483
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3_System_IDisposable_Dispose_m1B92FD45FF911A397AE4CE76F00C287E4789E792 (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		return;
+	}
+}
+// Method Definition Index: 132484
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRunAllTestsU3Ed__3_MoveNext_m67AC2F4BD83AE2F217C3564CEB0D1AEFDA0024EB (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0C38221361BE855039ABFBC7448DCF90CFC16111);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1387CA5E3672B0B088B1C7438E3CB9614FEF2011);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral45A30726720E9F2478F96249C73FFBBC2C8CEFFC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD0E52FE4164BDD9E3DA2FB04B29DD52DB28428A7);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		switch (L_2)
+		{
+			case 0:
+			{
+				goto IL_004e;
+			}
+			case 1:
+			{
+				goto IL_008f;
+			}
+			case 2:
+			{
+				goto IL_00c1;
+			}
+			case 3:
+			{
+				goto IL_00ee;
+			}
+			case 4:
+			{
+				goto IL_011b;
+			}
+			case 5:
+			{
+				goto IL_0148;
+			}
+			case 6:
+			{
+				goto IL_0175;
+			}
+			case 7:
+			{
+				goto IL_01a1;
+			}
+			case 8:
+			{
+				goto IL_01cd;
+			}
+			case 9:
+			{
+				goto IL_0217;
+			}
+			case 10:
+			{
+				goto IL_0244;
+			}
+			case 11:
+			{
+				goto IL_0271;
+			}
+			case 12:
+			{
+				goto IL_029f;
+			}
+			case 13:
+			{
+				goto IL_02cd;
+			}
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_004e:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:26>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral0C38221361BE855039ABFBC7448DCF90CFC16111, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:29>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_3 = V_1;
+		NullCheck(L_3);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_4 = L_3->___battleUI;
+		NullCheck(L_4);
+		Mixed_Reality_UI_startGame_m975FD125DBAE7CE9493DBAE2E145F4C41EDB629C(L_4, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:30>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_5 = V_1;
+		NullCheck(L_5);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_6 = L_5->___battleUI;
+		NullCheck(L_6);
+		Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779(L_6, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:31>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_7 = V_1;
+		NullCheck(L_7);
+		float L_8 = L_7->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_9 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_9, L_8, NULL);
+		__this->___U3CU3E2__current = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_9);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_008f:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:34>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_10 = V_1;
+		NullCheck(L_10);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_11 = L_10->___battleUI;
+		NullCheck(L_11);
+		Mixed_Reality_UI_onCardRecognized_mC6AD9FD2284A14E1573372A754E8404B16E7E247(L_11, _stringLiteral1387CA5E3672B0B088B1C7438E3CB9614FEF2011, 5, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:35>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_12 = V_1;
+		NullCheck(L_12);
+		float L_13 = L_12->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_14 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_14, L_13, NULL);
+		__this->___U3CU3E2__current = L_14;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_14);
+		__this->___U3CU3E1__state = 2;
+		return (bool)1;
+	}
+
+IL_00c1:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:38>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_15 = V_1;
+		NullCheck(L_15);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_16 = L_15->___battleUI;
+		NullCheck(L_16);
+		Mixed_Reality_UI_showAttackMessage_m676ACE11F7E64500BBF66A369C7594BF1E0AB95E(L_16, 5, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:39>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_17 = V_1;
+		NullCheck(L_17);
+		float L_18 = L_17->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_19 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_19, L_18, NULL);
+		__this->___U3CU3E2__current = L_19;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_19);
+		__this->___U3CU3E1__state = 3;
+		return (bool)1;
+	}
+
+IL_00ee:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:42>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_20 = V_1;
+		NullCheck(L_20);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_21 = L_20->___battleUI;
+		NullCheck(L_21);
+		Mixed_Reality_UI_showHealMessage_m9436D7DCEF7FEC33584CAD9FDF2B5F4526A10D81(L_21, 5, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:43>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_22 = V_1;
+		NullCheck(L_22);
+		float L_23 = L_22->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_24 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_24, L_23, NULL);
+		__this->___U3CU3E2__current = L_24;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_24);
+		__this->___U3CU3E1__state = 4;
+		return (bool)1;
+	}
+
+IL_011b:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:46>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_25 = V_1;
+		NullCheck(L_25);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_26 = L_25->___battleUI;
+		NullCheck(L_26);
+		Mixed_Reality_UI_showShieldMessage_m7E6A0F97B617CEF0BE90376A6417620282614FAF(L_26, 5, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:47>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_27 = V_1;
+		NullCheck(L_27);
+		float L_28 = L_27->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_29 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_29, L_28, NULL);
+		__this->___U3CU3E2__current = L_29;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_29);
+		__this->___U3CU3E1__state = 5;
+		return (bool)1;
+	}
+
+IL_0148:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:50>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_30 = V_1;
+		NullCheck(L_30);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_31 = L_30->___battleUI;
+		NullCheck(L_31);
+		Mixed_Reality_UI_showDrainMessage_mA0F8B4E232B0A8B75E36580AEAEBA00FEEFE8B24(L_31, 3, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:51>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_32 = V_1;
+		NullCheck(L_32);
+		float L_33 = L_32->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_34 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_34, L_33, NULL);
+		__this->___U3CU3E2__current = L_34;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_34);
+		__this->___U3CU3E1__state = 6;
+		return (bool)1;
+	}
+
+IL_0175:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:54>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_35 = V_1;
+		NullCheck(L_35);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_36 = L_35->___battleUI;
+		NullCheck(L_36);
+		Mixed_Reality_UI_showPlayerTurnMessage_m4C77CBBACBF030632A26327317C651962C9E43D1(L_36, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:55>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_37 = V_1;
+		NullCheck(L_37);
+		float L_38 = L_37->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_39 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_39, L_38, NULL);
+		__this->___U3CU3E2__current = L_39;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_39);
+		__this->___U3CU3E1__state = 7;
+		return (bool)1;
+	}
+
+IL_01a1:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:58>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_40 = V_1;
+		NullCheck(L_40);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_41 = L_40->___battleUI;
+		NullCheck(L_41);
+		Mixed_Reality_UI_showOpponentTurnMessage_m953451D85950A08CB9C3773C96FAFFB4767A788A(L_41, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:59>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_42 = V_1;
+		NullCheck(L_42);
+		float L_43 = L_42->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_44 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_44, L_43, NULL);
+		__this->___U3CU3E2__current = L_44;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_44);
+		__this->___U3CU3E1__state = 8;
+		return (bool)1;
+	}
+
+IL_01cd:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:62>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_45 = V_1;
+		NullCheck(L_45);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_46 = L_45->___battleUI;
+		NullCheck(L_46);
+		Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249(L_46, ((int32_t)12), 3, 8, 2, (bool)1, (bool)0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:63>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:64>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:65>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:66>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_47 = V_1;
+		NullCheck(L_47);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_48 = L_47->___battleUI;
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_49 = V_1;
+		NullCheck(L_49);
+		float L_50 = L_49->___testDuration;
+		NullCheck(L_48);
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(L_48, _stringLiteralD0E52FE4164BDD9E3DA2FB04B29DD52DB28428A7, L_50, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:67>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_51 = V_1;
+		NullCheck(L_51);
+		float L_52 = L_51->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_53 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_53, L_52, NULL);
+		__this->___U3CU3E2__current = L_53;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_53);
+		__this->___U3CU3E1__state = ((int32_t)9);
+		return (bool)1;
+	}
+
+IL_0217:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:70>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_54 = V_1;
+		NullCheck(L_54);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_55 = L_54->___battleUI;
+		NullCheck(L_55);
+		Mixed_Reality_UI_showBlockedAttackMessage_mB3A648A934D0FD64A44553D497D55FF5D0833381(L_55, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:71>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_56 = V_1;
+		NullCheck(L_56);
+		float L_57 = L_56->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_58 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_58, L_57, NULL);
+		__this->___U3CU3E2__current = L_58;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_58);
+		__this->___U3CU3E1__state = ((int32_t)10);
+		return (bool)1;
+	}
+
+IL_0244:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:74>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_59 = V_1;
+		NullCheck(L_59);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_60 = L_59->___battleUI;
+		NullCheck(L_60);
+		Mixed_Reality_UI_showCardRemovedMessage_mE54FA7E050ECD9FCB3B4963A39890BB846F78E2C(L_60, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:75>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_61 = V_1;
+		NullCheck(L_61);
+		float L_62 = L_61->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_63 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_63, L_62, NULL);
+		__this->___U3CU3E2__current = L_63;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_63);
+		__this->___U3CU3E1__state = ((int32_t)11);
+		return (bool)1;
+	}
+
+IL_0271:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:78>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_64 = V_1;
+		NullCheck(L_64);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_65 = L_64->___battleUI;
+		NullCheck(L_65);
+		Mixed_Reality_UI_showGameOver_mA00667A99066CEF1A64D519C24A638EDC6D603AF(L_65, (bool)1, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:79>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_66 = V_1;
+		NullCheck(L_66);
+		float L_67 = L_66->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_68 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_68, L_67, NULL);
+		__this->___U3CU3E2__current = L_68;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_68);
+		__this->___U3CU3E1__state = ((int32_t)12);
+		return (bool)1;
+	}
+
+IL_029f:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:82>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_69 = V_1;
+		NullCheck(L_69);
+		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_70 = L_69->___battleUI;
+		NullCheck(L_70);
+		Mixed_Reality_UI_showGameOver_mA00667A99066CEF1A64D519C24A638EDC6D603AF(L_70, (bool)0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:83>
+		MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* L_71 = V_1;
+		NullCheck(L_71);
+		float L_72 = L_71->___testDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_73 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_73, L_72, NULL);
+		__this->___U3CU3E2__current = L_73;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_73);
+		__this->___U3CU3E1__state = ((int32_t)13);
+		return (bool)1;
+	}
+
+IL_02cd:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:85>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral45A30726720E9F2478F96249C73FFBBC2C8CEFFC, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUITest.cs:86>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 132485
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunAllTestsU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0A8B1C63889D16001119318B045778E4EDA0C6F3 (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 132486
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3_System_Collections_IEnumerator_Reset_m4FAAEB12D9FA3B4B0E2B56851C560F58B1A75602 (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRunAllTestsU3Ed__3_System_Collections_IEnumerator_Reset_m4FAAEB12D9FA3B4B0E2B56851C560F58B1A75602_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 132487
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunAllTestsU3Ed__3_System_Collections_IEnumerator_get_Current_m18BEE68394E324C880478C052530CE0B1AF2E62E (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 132488
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 132489
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Method Definition Index: 66429
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___0_value, int32_t ___1_min, int32_t ___2_max, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:305>
+		int32_t L_0 = ___0_value;
+		int32_t L_1 = ___1_min;
+		V_0 = (bool)((((int32_t)L_0) < ((int32_t)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:306>
+		int32_t L_3 = ___1_min;
+		___0_value = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:307>
+		int32_t L_4 = ___0_value;
+		int32_t L_5 = ___2_max;
+		V_1 = (bool)((((int32_t)L_4) > ((int32_t)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:308>
+		int32_t L_7 = ___2_max;
+		___0_value = L_7;
+	}
+
+IL_0019:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:309>
+		int32_t L_8 = ___0_value;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:310>
+		int32_t L_9 = V_2;
+		return L_9;
+	}
+}
+// Method Definition Index: 66415
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline (int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:171>
+		int32_t L_0 = ___0_a;
+		int32_t L_1 = ___1_b;
+		if ((((int32_t)L_0) > ((int32_t)L_1)))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		int32_t L_2 = ___1_b;
+		G_B3_0 = L_2;
+		goto IL_0009;
+	}
+
+IL_0008:
+	{
+		int32_t L_3 = ___0_a;
+		G_B3_0 = L_3;
+	}
+
+IL_0009:
+	{
+		V_0 = G_B3_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:171>
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 66428
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:289>
+		float L_0 = ___0_value;
+		float L_1 = ___1_min;
+		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:290>
+		float L_3 = ___1_min;
+		___0_value = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:291>
+		float L_4 = ___0_value;
+		float L_5 = ___2_max;
+		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:292>
+		float L_7 = ___2_max;
+		___0_value = L_7;
+	}
+
+IL_0019:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:293>
+		float L_8 = ___0_value;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:294>
+		float L_9 = V_2;
+		return L_9;
+	}
+}
+// Method Definition Index: 66413
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float G_B3_0 = 0.0f;
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:148>
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		if ((((float)L_0) > ((float)L_1)))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		float L_2 = ___1_b;
+		G_B3_0 = L_2;
+		goto IL_0009;
+	}
+
+IL_0008:
+	{
+		float L_3 = ___0_a;
+		G_B3_0 = L_3;
+	}
+
+IL_0009:
+	{
+		V_0 = G_B3_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:148>
+		float L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 66117
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:47>
+		float L_0 = ___0_r;
+		__this->___r = L_0;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:47>
+		float L_1 = ___1_g;
+		__this->___g = L_1;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:47>
+		float L_2 = ___2_b;
+		__this->___b = L_2;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:47>
+		__this->___a = (1.0f);
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:48>
+		return;
+	}
+}
+// Method Definition Index: 66151
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:1014>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (1.0f), (1.0f), (1.0f), (1.0f), NULL);
+		return L_0;
+	}
+}
+// Method Definition Index: 66116
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:38>
+		float L_0 = ___0_r;
+		__this->___r = L_0;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:38>
+		float L_1 = ___1_g;
+		__this->___g = L_1;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:38>
+		float L_2 = ___2_b;
+		__this->___b = L_2;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:38>
+		float L_3 = ___3_a;
+		__this->___a = L_3;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:39>
+		return;
+	}
+}
