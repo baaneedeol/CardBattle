@@ -14,7 +14,7 @@ public class CardRecognizer : MonoBehaviour
     private Suit lastDetectedSuit;
     private int lastDetectedRank;
 
-    private void Awake()
+    private void Awake() 
     {
         if (gameManager == null)
             gameManager = FindFirstObjectByType<GameManager>();

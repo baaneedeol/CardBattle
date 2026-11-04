@@ -8,6 +8,7 @@ public class Player
     public int health = 20;
     public int maxHealth = 20;
     public int shield = 0;
+
     public List<Card> hand = new List<Card>();
 
     public void playCard(Card card)
@@ -18,24 +19,29 @@ public class Player
         }
     }
 
-    // Returns the amount of HP damage after shield absorption.
+    // Returns actual HP damage after shield absorption.
     public int takeDamage(int amount)
     {
         amount = Mathf.Max(0, amount);
 
-        int absorbed = Mathf.Min(shield, amount);
+        // Shield absorbs damage before health.
+        int absorbed = Mathf.Min(Mathf.Max(0, shield), amount);
 
         shield -= absorbed;
         amount -= absorbed;
 
-        int actualDamage = Mathf.Min(health, amount);
+        // Only remaining damage affects health.
+        int actualDamage = Mathf.Min(
+            Mathf.Max(0, health),
+            amount
+        );
 
-        health = Mathf.Max(0, health - amount);
+        health = Mathf.Max(0, health - actualDamage);
 
         return actualDamage;
     }
 
-    // Returns the actual amount of HP restored.
+    // Returns actual HP restored, limited by maximum health.
     public int heal(int amount)
     {
         amount = Mathf.Max(0, amount);
@@ -51,11 +57,14 @@ public class Player
         return health - oldHealth;
     }
 
+    // Adds a nonnegative amount of shield.
+    // GameManager enforces the maximum shield of 8.
     public void addShield(int amount)
     {
-        shield += Mathf.Max(0, amount);
+        shield = Mathf.Max(0, shield + Mathf.Max(0, amount));
     }
 
+    // Removes all remaining shield.
     public void clearShield()
     {
         shield = 0;

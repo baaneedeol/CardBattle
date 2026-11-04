@@ -1,3 +1,4 @@
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,12 +21,11 @@ public class Mixed_Reality_UI : MonoBehaviour
     [SerializeField] private TMP_Text opponentShieldText;
     [SerializeField] private RectTransform opponentHealthFillRect;
 
-    [Header("Turn UI")]
+    [Header("Turn Indicator Panel")]
     [SerializeField] private TMP_Text turnText;
 
-    [Header("Card Effect UI")]
-    [SerializeField] private GameObject cardEffectPanel;
-    [SerializeField] private TMP_Text cardEffectText;
+    [Header("Card Effect Visuals")]
+    [SerializeField] private CardEffectPlayer cardEffectPlayer;
 
     [Header("Game Message UI")]
     [SerializeField] private GameObject gameMessagePanel;
@@ -33,9 +33,9 @@ public class Mixed_Reality_UI : MonoBehaviour
     [SerializeField] private float defaultMessageDuration = 3f;
 
     [Header("Game Message Auto Resize")]
-    [SerializeField] private float messageHorizontalPadding = 40f;
-    [SerializeField] private float messageVerticalPadding = 24f;
-    [SerializeField] private float messageMinWidth = 200f;
+    [SerializeField] private float messageHorizontalPadding = 50f;
+    [SerializeField] private float messageVerticalPadding = 30f;
+    [SerializeField] private float messageMinWidth = 300f;
     [SerializeField] private float messageMaxWidth = 850f;
     [SerializeField] private float messageMinHeight = 80f;
 
@@ -49,21 +49,24 @@ public class Mixed_Reality_UI : MonoBehaviour
     private bool cardIsPresent = false;
     private Coroutine messageCoroutine;
 
+    public bool IsMessageDisplaying =>
+        messageCoroutine != null;
+
+    public float DefaultMessageDuration =>
+        defaultMessageDuration;
+
     private void Awake()
     {
         if (gameManager == null)
-        {
-            gameManager =
-                FindFirstObjectByType<GameManager>();
-        }
+            gameManager = FindFirstObjectByType<GameManager>();
+
+        if (cardEffectPlayer == null)
+            cardEffectPlayer = FindFirstObjectByType<CardEffectPlayer>();
     }
 
     private void Start()
     {
         cardIsPresent = false;
-
-        if (cardEffectPanel != null)
-            cardEffectPanel.SetActive(false);
 
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
@@ -79,8 +82,10 @@ public class Mixed_Reality_UI : MonoBehaviour
         showWelcomeMessage();
     }
 
-    // Resets UI for a newly initialized match.
-    // Called by GameManager.StartGame().
+    // ----------------------------------
+    // NEW GAME RESET
+    // ----------------------------------
+
     public void PrepareForNewGame()
     {
         cardIsPresent = false;
@@ -97,10 +102,14 @@ public class Mixed_Reality_UI : MonoBehaviour
         if (gameOverText != null)
             gameOverText.text = "";
 
-        hideCardEffect();
+        if (turnText != null)
+            showTurnIndicator(true);
 
-        if (cardEffectText != null)
-            cardEffectText.gameObject.SetActive(true);
+        if (cardEffectPlayer != null)
+        {
+            cardEffectPlayer.ClearEffect();
+            cardEffectPlayer.ClearAllShields();
+        }
 
         updateUI(
             maxHealth, 0,
@@ -108,9 +117,16 @@ public class Mixed_Reality_UI : MonoBehaviour
             true, false
         );
 
+        clearMessage();
         showWelcomeMessage();
         keepMessagePanelVisible();
+
+        Debug.Log("New game UI reset.");
     }
+
+    // ----------------------------------
+    // HEALTH AND TURN UI
+    // ----------------------------------
 
     public void updateUI(
         int playerHealth,
@@ -162,15 +178,14 @@ public class Mixed_Reality_UI : MonoBehaviour
             ? playerHealthFill
             : opponentHealthFill;
 
-        float ratio = maxHealth > 0
-            ? (float)health / maxHealth
-            : 0f;
-
         RectTransform fillRect = isPlayer
             ? playerHealthFillRect
             : opponentHealthFillRect;
 
-        // Preserve the existing anchor-based health bar setup.
+        float ratio = maxHealth > 0
+            ? (float)health / maxHealth
+            : 0f;
+
         if (fillRect != null)
         {
             fillRect.anchorMin = new Vector2(0f, 0f);
@@ -180,7 +195,6 @@ public class Mixed_Reality_UI : MonoBehaviour
         }
         else if (healthFill != null)
         {
-            // Alternative for an Image configured as Filled.
             healthFill.fillAmount = ratio;
         }
 
@@ -190,6 +204,10 @@ public class Mixed_Reality_UI : MonoBehaviour
         if (shieldText != null)
             shieldText.text = $"Shield: {shield}";
     }
+
+    // ----------------------------------
+    // GAME MESSAGE PANEL
+    // ----------------------------------
 
     private void keepMessagePanelVisible()
     {
@@ -217,6 +235,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         }
 
         keepMessagePanelVisible();
+
         ResizeGameMessagePanel(message);
 
         if (duration < 0f)
@@ -224,20 +243,17 @@ public class Mixed_Reality_UI : MonoBehaviour
 
         if (duration > 0f)
         {
-            messageCoroutine =
-                StartCoroutine(
-                    clearMessageAfterDelay(duration)
-                );
+            messageCoroutine = StartCoroutine(
+                clearMessageAfterDelay(duration)
+            );
         }
     }
 
+
     private void ResizeGameMessagePanel(string message)
     {
-        if (gameMessagePanel == null ||
-            gameMessageText == null)
-        {
+        if (gameMessagePanel == null || gameMessageText == null)
             return;
-        }
 
         RectTransform panelRect =
             gameMessagePanel.GetComponent<RectTransform>();
@@ -248,45 +264,29 @@ public class Mixed_Reality_UI : MonoBehaviour
         if (panelRect == null || textRect == null)
             return;
 
+        message = FormatGameMessage(message);
         gameMessageText.text = message;
+        gameMessageText.enableAutoSizing = false;
+        gameMessageText.fontSize = 30f;
+        gameMessageText.alignment = TextAlignmentOptions.Center;
+        gameMessageText.textWrappingMode = TextWrappingModes.Normal;
+        gameMessageText.overflowMode = TextOverflowModes.Overflow;
 
-        // Measure the unwrapped message first.
-        gameMessageText.textWrappingMode =
-            TextWrappingModes.NoWrap;
+        Canvas.ForceUpdateCanvases();
 
-        gameMessageText.ForceMeshUpdate();
+        // Measure the message without wrapping.
+        Vector2 naturalSize = gameMessageText.GetPreferredValues(
+            message,
+            Mathf.Infinity,
+            Mathf.Infinity
+        );
 
-        float naturalWidth =
-            gameMessageText.preferredWidth;
-
+        // Short messages fit naturally.
+        // Long messages stop at the maximum panel width.
         float panelWidth = Mathf.Clamp(
-            naturalWidth + messageHorizontalPadding,
+            naturalSize.x + messageHorizontalPadding,
             messageMinWidth,
             messageMaxWidth
-        );
-
-        float textWidth = Mathf.Max(
-            1f,
-            panelWidth - messageHorizontalPadding
-        );
-
-        textRect.SetSizeWithCurrentAnchors(
-            RectTransform.Axis.Horizontal,
-            textWidth
-        );
-
-        // Enable wrapping for longer messages.
-        gameMessageText.textWrappingMode =
-            TextWrappingModes.Normal;
-
-        gameMessageText.ForceMeshUpdate();
-
-        float textHeight =
-            gameMessageText.preferredHeight;
-
-        float panelHeight = Mathf.Max(
-            messageMinHeight,
-            textHeight + messageVerticalPadding
         );
 
         panelRect.SetSizeWithCurrentAnchors(
@@ -294,9 +294,48 @@ public class Mixed_Reality_UI : MonoBehaviour
             panelWidth
         );
 
+        // Use the full available panel width.
+        // Long messages will wrap when they reach the panel limit.
+        float availableWidth =
+            panelWidth - messageHorizontalPadding;
+
+        textRect.anchorMin = new Vector2(0.5f, 0.5f);
+        textRect.anchorMax = new Vector2(0.5f, 0.5f);
+        textRect.pivot = new Vector2(0.5f, 0.5f);
+
+        textRect.SetSizeWithCurrentAnchors(
+            RectTransform.Axis.Horizontal,
+            availableWidth
+        );
+
+        Vector2 wrappedSize = gameMessageText.GetPreferredValues(
+            message,
+            availableWidth,
+            Mathf.Infinity
+        );
+
+        float panelHeight = Mathf.Max(
+            messageMinHeight,
+            wrappedSize.y + messageVerticalPadding
+        );
+
         panelRect.SetSizeWithCurrentAnchors(
             RectTransform.Axis.Vertical,
             panelHeight
+        );
+
+        textRect.SetSizeWithCurrentAnchors(
+            RectTransform.Axis.Vertical,
+            wrappedSize.y
+        );
+
+        Canvas.ForceUpdateCanvases();
+        gameMessageText.ForceMeshUpdate();
+
+        Debug.Log(
+            $"Message: {message} | " +
+            $"Panel: {panelWidth} x {panelHeight} | " +
+            $"Natural text width: {naturalSize.x}"
         );
     }
 
@@ -322,7 +361,9 @@ public class Mixed_Reality_UI : MonoBehaviour
             gameMessageText.text = "";
     }
 
-    // Welcome and recognition messages.
+    // ----------------------------------
+    // WELCOME AND CARD RECOGNITION
+    // ----------------------------------
 
     public void showWelcomeMessage()
     {
@@ -346,10 +387,15 @@ public class Mixed_Reality_UI : MonoBehaviour
 
     public void showInvalidCardMessage()
     {
-        showMessage("Card not in your hand. Try another card!", -1f);
+        showMessage(
+            "Card not in your hand. Try another card!",
+            -1f
+        );
     }
 
-    // Battle messages.
+    // ----------------------------------
+    // BATTLE MESSAGES
+    // ----------------------------------
 
     public void showAttackMessage(int damage)
     {
@@ -385,7 +431,6 @@ public class Mixed_Reality_UI : MonoBehaviour
         );
     }
 
-    // Two-argument version for accurate drain feedback.
     public void showDrainMessage(int damage, int healed)
     {
         showMessage(
@@ -394,7 +439,6 @@ public class Mixed_Reality_UI : MonoBehaviour
         );
     }
 
-    // Preserves compatibility with earlier callers.
     public void showDrainMessage(int amount)
     {
         showDrainMessage(amount, amount);
@@ -405,23 +449,26 @@ public class Mixed_Reality_UI : MonoBehaviour
         showMessage("Attack blocked by shield!", -1f);
     }
 
+    // New overload allows GameManager to control message duration.
+    public void showAbilityMessage(
+        string message,
+        float duration)
+    {
+        showMessage(message, duration);
+    }
+
+    // Compatibility with existing one-argument callers.
     public void showAbilityMessage(string message)
     {
         showMessage(message, -1f);
     }
 
-    public void showPlayerTurnMessage()
-    {
-        showMessage("Your turn! Place a card to play.", 0f);
-    }
+    // ----------------------------------
+    // CARD EFFECT TEXT COMPATIBILITY
+    // ----------------------------------
 
-    public void showOpponentTurnMessage()
-    {
-        showMessage("Opponent's turn!", 0f);
-    }
-
-    // MR card-effect panel.
-
+    // Kept for existing scripts and tests.
+    // GameManager no longer calls this after showing an ability message.
     public void showCardEffect(string ability, int amount)
     {
         showCardEffect(ability, amount, amount);
@@ -432,64 +479,43 @@ public class Mixed_Reality_UI : MonoBehaviour
         int amount,
         int secondaryAmount)
     {
-        if (!cardIsPresent)
-        {
-            hideCardEffect();
-            return;
-        }
-
-        if (cardEffectPanel != null)
-            cardEffectPanel.SetActive(true);
-
-        if (cardEffectText == null)
+        if (string.IsNullOrEmpty(ability))
             return;
 
         switch (ability.ToLowerInvariant())
         {
             case "attack":
-                cardEffectText.text =
-                    $"-{amount} DAMAGE!";
-
-                cardEffectText.color =
-                    new Color(1f, 0.25f, 0.25f);
+                showMessage($"-{amount} DAMAGE!", -1f);
                 break;
 
             case "heal":
-                cardEffectText.text =
-                    $"+{amount} HP!";
-
-                cardEffectText.color =
-                    new Color(0.25f, 1f, 0.45f);
+                showMessage($"+{amount} HP!", -1f);
                 break;
 
             case "drain":
-                cardEffectText.text =
-                    $"DRAIN: -{amount} HP / " +
-                    $"+{secondaryAmount} HP";
-
-                cardEffectText.color =
-                    new Color(0.25f, 0.85f, 1f);
+                showMessage(
+                    $"DRAIN: -{amount} HP / +{secondaryAmount} HP",
+                    -1f
+                );
                 break;
 
             case "shield":
-                cardEffectText.text =
-                    $"+{amount} SHIELD!";
-
-                cardEffectText.color =
-                    new Color(0.75f, 0.45f, 1f);
+                showMessage($"+{amount} SHIELD!", -1f);
                 break;
 
             default:
-                cardEffectText.text = ability;
-                cardEffectText.color = Color.white;
+                showMessage(ability, -1f);
                 break;
         }
     }
 
+    // ----------------------------------
+    // CARD RECOGNITION STATE
+    // ----------------------------------
+
     public void onCardRecognized(string ability, int amount)
     {
         cardIsPresent = true;
-        showCardEffect(ability, amount);
         showCardDetectedMessage();
     }
 
@@ -500,7 +526,8 @@ public class Mixed_Reality_UI : MonoBehaviour
 
         if (!present)
         {
-            hideCardEffect();
+            if (cardEffectPlayer != null)
+                cardEffectPlayer.ClearEffect();
 
             if (wasPresent)
                 showCardRemovedMessage();
@@ -511,19 +538,43 @@ public class Mixed_Reality_UI : MonoBehaviour
         }
     }
 
+    public void hideCardEffect()
+    {
+        if (cardEffectPlayer != null)
+            cardEffectPlayer.ClearEffect();
+    }
+
+    // ----------------------------------
+    // TURN INDICATOR
+    // ----------------------------------
+
     public void showTurnIndicator(bool playerTurn)
     {
         if (turnText == null)
             return;
 
         turnText.text = playerTurn
-            ? "PLAYER'S TURN"
-            : "OPPONENT'S TURN";
+            ? "Player's Turn"
+            : "Opponent's Turn";
 
         turnText.color = playerTurn
             ? new Color(0.25f, 1f, 0.85f)
             : new Color(1f, 0.65f, 0.3f);
     }
+
+    public void showPlayerTurnMessage()
+    {
+        showTurnIndicator(true);
+    }
+
+    public void showOpponentTurnMessage()
+    {
+        showTurnIndicator(false);
+    }
+
+    // ----------------------------------
+    // GAME OVER
+    // ----------------------------------
 
     public void showGameOver(bool playerWon)
     {
@@ -554,27 +605,14 @@ public class Mixed_Reality_UI : MonoBehaviour
         keepMessagePanelVisible();
     }
 
-    public void hideCardEffect()
-    {
-        if (cardEffectPanel != null)
-        {
-            cardEffectPanel.SetActive(false);
-        }
-        else if (cardEffectText != null)
-        {
-            cardEffectText.gameObject.SetActive(false);
-        }
-    }
+    // ----------------------------------
+    // START BUTTON COMPATIBILITY
+    // ----------------------------------
 
-    // Keep this method so existing Start Button OnClick
-    // assignments do not have to change.
     public void startGame()
     {
         if (gameManager == null)
-        {
-            gameManager =
-                FindFirstObjectByType<GameManager>();
-        }
+            gameManager = FindFirstObjectByType<GameManager>();
 
         if (gameManager != null)
         {
@@ -591,5 +629,19 @@ public class Mixed_Reality_UI : MonoBehaviour
     private void LateUpdate()
     {
         keepMessagePanelVisible();
+    }
+
+    private string FormatGameMessage(string message)
+    {
+        if (message.StartsWith("Player drained ") ||
+            message.StartsWith("Opponent drained "))
+        {
+            message = message.Replace(
+                " and restored ",
+                "\nand restored "
+            );
+        }
+
+        return message;
     }
 }

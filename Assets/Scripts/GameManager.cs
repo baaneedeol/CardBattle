@@ -1,5 +1,5 @@
-
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,7 +16,19 @@ public class GameManager : MonoBehaviour
     public int startingHealth = 20;
     public int startingHandSize = 8;
 
+    [Header("Shield Settings")]
+    [SerializeField] private int maxShield = 8;
+
+    [Header("Card Visual Effects")]
+    public CardEffectPlayer cardEffectPlayer;
+
+    [Header("Turn Presentation")]
+    [SerializeField] private float actionMessageDuration = 3f;
+    [SerializeField] private float effectWaitTimeout = 60f;
+
     private bool isProcessingTurn = false;
+
+    public bool IsProcessingTurn => isProcessingTurn;
 
     private void Awake()
     {
@@ -28,7 +40,14 @@ public class GameManager : MonoBehaviour
 
         if (mixedRealityUI == null)
             mixedRealityUI = FindFirstObjectByType<Mixed_Reality_UI>();
+
+        if (cardEffectPlayer == null)
+            cardEffectPlayer = FindFirstObjectByType<CardEffectPlayer>();
     }
+
+    // ----------------------------------
+    // START GAME
+    // ----------------------------------
 
     public void StartGame()
     {
@@ -46,11 +65,18 @@ public class GameManager : MonoBehaviour
 
         if (startingHandSize < 1 || startingHandSize > 8)
         {
-            Debug.LogError(
-                "Starting hand size must be between 1 and 8."
-            );
+            Debug.LogError("Starting hand size must be between 1 and 8.");
             return;
         }
+
+        if (maxShield < 0)
+        {
+            Debug.LogError("Maximum shield cannot be negative.");
+            return;
+        }
+
+        StopAllCoroutines();
+        isProcessingTurn = false;
 
         gameState.currentTurn = 0;
         gameState.gameOver = false;
@@ -62,6 +88,12 @@ public class GameManager : MonoBehaviour
         gameState.aiDiscardPile.Clear();
         gameState.recentPlayerActions.Clear();
 
+        if (cardEffectPlayer != null)
+        {
+            cardEffectPlayer.ClearEffect();
+            cardEffectPlayer.ClearAllShields();
+        }
+
         Player humanPlayer = CreatePlayer();
         Player aiPlayer = CreatePlayer();
 
@@ -71,7 +103,7 @@ public class GameManager : MonoBehaviour
         List<Card> deck = CreateDeck();
         ShuffleDeck(deck);
 
-        // Deal unique cards alternately to both players.
+        // Deal unique cards alternately.
         for (int i = 0; i < startingHandSize; i++)
         {
             humanPlayer.hand.Add(deck[0]);
@@ -81,10 +113,9 @@ public class GameManager : MonoBehaviour
             deck.RemoveAt(0);
         }
 
-        // Any undealt cards remain available to draw.
+        // Any undealt cards remain in the draw pile.
         gameState.drawPile.AddRange(deck);
 
-        isProcessingTurn = false;
         gameState.UpdateState();
 
         if (startPanel != null)
@@ -103,7 +134,8 @@ public class GameManager : MonoBehaviour
         Debug.Log($"AI HP: {aiPlayer.health}");
         Debug.Log($"Player cards: {humanPlayer.hand.Count}");
         Debug.Log($"AI cards: {aiPlayer.hand.Count}");
-        Debug.Log($"Cards in draw pile: {gameState.drawPile.Count}");
+        Debug.Log($"Cards remaining in draw pile: {gameState.drawPile.Count}");
+        Debug.Log($"Maximum shield: {maxShield}");
     }
 
     private Player CreatePlayer()
@@ -149,6 +181,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // ----------------------------------
+    // CARD RECOGNITION
+    // ----------------------------------
+
     public bool HandleRecognizedCard(Suit suit, int rank)
     {
         if (gameState == null ||
@@ -193,8 +229,13 @@ public class GameManager : MonoBehaviour
             mixedRealityUI.setCardPresent(true);
 
         ProcessPlayerCard(matchedCard);
+
         return true;
     }
+
+    // ----------------------------------
+    // PLAYER TURN ENTRY POINT
+    // ----------------------------------
 
     public void ProcessPlayerCard(Card card)
     {
@@ -209,7 +250,6 @@ public class GameManager : MonoBehaviour
         }
 
         Player player = gameState.players[0];
-        Player opponent = gameState.players[1];
 
         if (card == null ||
             !card.IsValid() ||
@@ -220,31 +260,208 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        StartCoroutine(ProcessFullTurnSequence(card));
+    }
+
+    // ----------------------------------
+    // COMPLETE PLAYER + AI TURN SEQUENCE
+    // ----------------------------------
+
+    private IEnumerator ProcessFullTurnSequence(Card playerCard)
+    {
+        isProcessingTurn = true;
+
+        Player player = gameState.players[0];
+        Player ai = gameState.players[1];
+
+        try
+        {
+            // PLAYER ACTION
+
+            Debug.Log("========== PLAYER TURN ==========");
+
+            if (mixedRealityUI != null)
+                mixedRealityUI.showPlayerTurnMessage();
+
+            if (!player.hand.Remove(playerCard))
+                yield break;
+
+            gameState.RecordPlayerAction(playerCard.ability);
+
+            Debug.Log($"Player played {playerCard}");
+
+            ApplyAbility(playerCard, player, ai);
+
+            DiscardCard(playerCard, player);
+
+            CheckWinner();
+
+            yield return WaitForActionPresentation();
+
+            if (gameState.gameOver)
+                yield break;
+
+            // SWITCH TO AI TURN
+
+            EndTurn();
+
+            if (gameState.gameOver)
+                yield break;
+
+            // AI ACTION
+
+            Debug.Log("========== OPPONENT TURN ==========");
+
+            if (mixedRealityUI != null)
+                mixedRealityUI.showOpponentTurnMessage();
+
+            yield return new WaitForSeconds(0.25f);
+
+            Card aiCard = null;
+
+            if (aiController != null && ai.hand.Count > 0)
+                aiCard = aiController.SelectCard(gameState);
+
+            if (aiCard == null ||
+                ai.hand == null ||
+                !ai.hand.Contains(aiCard))
+            {
+                Debug.Log("AI has no legal card and passes.");
+            }
+            else
+            {
+                ai.hand.Remove(aiCard);
+
+                Debug.Log($"AI played {aiCard}");
+
+                ApplyAbility(aiCard, ai, player);
+
+                DiscardCard(aiCard, ai);
+
+                CheckWinner();
+
+                yield return WaitForActionPresentation();
+            }
+
+            if (gameState.gameOver)
+                yield break;
+
+            // RETURN TO PLAYER TURN
+
+            EndTurn();
+
+            Debug.Log("========== PLAYER TURN READY ==========");
+
+            CheckEndOfDeck();
+        }
+        finally
+        {
+            isProcessingTurn = false;
+        }
+    }
+
+    // ----------------------------------
+    // WAIT FOR MESSAGE AND EFFECT
+    // ----------------------------------
+
+    private IEnumerator WaitForActionPresentation()
+    {
+        float elapsed = 0f;
+
+        while (elapsed < actionMessageDuration)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        while (
+            cardEffectPlayer != null &&
+            (
+                cardEffectPlayer.IsPlayingQueuedEffect ||
+                cardEffectPlayer.QueuedEffectCount > 0 ||
+                cardEffectPlayer.ActiveTemporaryEffectCount > 0
+            ) &&
+            elapsed < effectWaitTimeout
+        )
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        if (cardEffectPlayer != null &&
+            (
+                cardEffectPlayer.IsPlayingQueuedEffect ||
+                cardEffectPlayer.QueuedEffectCount > 0 ||
+                cardEffectPlayer.ActiveTemporaryEffectCount > 0
+            ))
+        {
+            Debug.LogWarning(
+                "GameManager: Timed out waiting for particle effects."
+            );
+        }
+
+        yield return null;
+    }
+
+    // ----------------------------------
+    // AI TURN COMPATIBILITY
+    // ----------------------------------
+
+    public void ProcessAITurn()
+    {
+        if (gameState == null ||
+            gameState.gameOver ||
+            isProcessingTurn ||
+            gameState.players == null ||
+            gameState.players.Count < 2 ||
+            gameState.currentTurn != 1)
+        {
+            return;
+        }
+
+        StartCoroutine(ProcessStandaloneAITurn());
+    }
+
+    private IEnumerator ProcessStandaloneAITurn()
+    {
         isProcessingTurn = true;
 
         try
         {
-            player.hand.Remove(card);
-            gameState.RecordPlayerAction(card.ability);
+            Player ai = gameState.players[1];
+            Player player = gameState.players[0];
 
-            Debug.Log($"Player played {card}");
+            if (mixedRealityUI != null)
+                mixedRealityUI.showOpponentTurnMessage();
 
-            ApplyAbility(card, player, opponent);
-            CheckWinner();
+            Card aiCard = null;
 
-            if (!gameState.gameOver)
+            if (aiController != null && ai.hand.Count > 0)
+                aiCard = aiController.SelectCard(gameState);
+
+            if (aiCard != null && ai.hand.Contains(aiCard))
             {
-                // Draw before discarding this card, preventing
-                // the same card from being immediately redrawn.
-                DrawReplacement(player);
-                DiscardCard(card, player);
+                ai.hand.Remove(aiCard);
 
-                EndTurn();
-                ProcessAITurn();
+                Debug.Log($"AI played {aiCard}");
+
+                ApplyAbility(aiCard, ai, player);
+
+                DiscardCard(aiCard, ai);
+
+                CheckWinner();
+
+                yield return WaitForActionPresentation();
             }
             else
             {
-                DiscardCard(card, player);
+                Debug.Log("AI has no legal card and passes.");
+            }
+
+            if (!gameState.gameOver)
+            {
+                EndTurn();
+                CheckEndOfDeck();
             }
         }
         finally
@@ -253,70 +470,38 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ProcessAITurn()
-    {
-        if (gameState == null ||
-            gameState.gameOver ||
-            gameState.players == null ||
-            gameState.players.Count < 2 ||
-            gameState.currentTurn != 1)
-        {
-            return;
-        }
-
-        if (aiController == null)
-        {
-            Debug.LogError("AIController is not assigned.");
-            return;
-        }
-
-        Player aiPlayer = gameState.players[1];
-        Player humanPlayer = gameState.players[0];
-
-        if (aiPlayer.hand == null || aiPlayer.hand.Count == 0)
-            DrawReplacement(aiPlayer);
-
-        Card selectedCard = aiController.SelectCard(gameState);
-
-        if (selectedCard == null ||
-            aiPlayer.hand == null ||
-            !aiPlayer.hand.Contains(selectedCard))
-        {
-            Debug.Log("AI has no legal card and passes.");
-            EndTurn();
-            return;
-        }
-
-        aiPlayer.hand.Remove(selectedCard);
-
-        Debug.Log($"AI played {selectedCard}");
-
-        ApplyAbility(selectedCard, aiPlayer, humanPlayer);
-        CheckWinner();
-
-        if (!gameState.gameOver)
-        {
-            DrawReplacement(aiPlayer);
-            DiscardCard(selectedCard, aiPlayer);
-            EndTurn();
-        }
-        else
-        {
-            DiscardCard(selectedCard, aiPlayer);
-        }
-    }
+    // ----------------------------------
+    // APPLY CARD ABILITY
+    // ----------------------------------
 
     public void ApplyAbility(Card card, Player user, Player target)
     {
-        if (card == null || user == null || target == null)
+        if (card == null ||
+            user == null ||
+            target == null ||
+            gameState == null ||
+            gameState.gameOver ||
+            user.health <= 0 ||
+            target.health <= 0)
+        {
             return;
+        }
 
         bool isHuman =
-            gameState != null &&
+            gameState.players != null &&
             gameState.players.Count >= 2 &&
             user == gameState.players[0];
 
+        string actor = isHuman ? "Player" : "Opponent";
+        string targetName = isHuman ? "opponent" : "player";
+
         int strength = card.rank;
+
+        Debug.Log(
+            $"[ABILITY START] {actor} played {card.suit} {card.rank} " +
+            $"({card.ability}) | " +
+            $"User Shield: {user.shield} | Target Shield: {target.shield}"
+        );
 
         switch (card.ability)
         {
@@ -328,27 +513,17 @@ public class GameManager : MonoBehaviour
                     out int absorbed
                 );
 
-                if (isHuman)
-                {
-                    if (mixedRealityUI != null)
-                    {
-                        mixedRealityUI.showAttackMessage(damage);
-                        mixedRealityUI.showCardEffect("Attack", damage);
+                if (cardEffectPlayer != null)
+                    cardEffectPlayer.PlayAttack(isHuman);
 
-                        if (absorbed > 0)
-                        {
-                            mixedRealityUI.showAbilityMessage(
-                                $"Opponent's shield absorbed {absorbed} damage."
-                            );
-                        }
-                    }
-                }
-                else if (mixedRealityUI != null)
-                {
-                    mixedRealityUI.showAbilityMessage(
-                        $"Opponent attacked! {damage} HP damage dealt."
-                    );
-                }
+                string message = damage > 0
+                    ? $"{actor} dealt {damage} damage to {targetName}!"
+                    : $"{actor}'s attack was blocked!";
+
+                if (absorbed > 0)
+                    message += $" {absorbed} damage absorbed by shield.";
+
+                ShowAbilityMessage(message);
 
                 break;
             }
@@ -357,105 +532,143 @@ public class GameManager : MonoBehaviour
             {
                 int healed = user.heal(strength);
 
-                if (isHuman)
-                {
-                    if (mixedRealityUI != null)
-                    {
-                        mixedRealityUI.showHealMessage(healed);
-                        mixedRealityUI.showCardEffect("Heal", healed);
-                    }
-                }
-                else if (mixedRealityUI != null)
-                {
-                    mixedRealityUI.showAbilityMessage(
-                        $"Opponent healed {healed} HP."
-                    );
-                }
+                if (cardEffectPlayer != null)
+                    cardEffectPlayer.PlayHeal(isHuman);
+
+                ShowAbilityMessage(
+                    $"{actor} restored +{healed} HP!"
+                );
 
                 break;
             }
 
             case AbilityType.Drain:
             {
+                // Damage opponent by the card's full rank.
+                // Opponent shield absorbs damage before health.
                 int damage = DealDamage(
                     target,
                     strength,
                     out int absorbed
                 );
 
-                // This game rule heals by card rank, even when
-                // a shield absorbs some or all incoming damage.
+                // Heal user by the card's full rank,
+                // even if opponent shield absorbs all damage.
+                // Player.heal() prevents health exceeding maxHealth.
                 int healed = user.heal(strength);
 
-                if (isHuman)
-                {
-                    if (mixedRealityUI != null)
-                    {
-                        mixedRealityUI.showDrainMessage(damage, healed);
-                        mixedRealityUI.showCardEffect(
-                            "Drain", damage, healed
-                        );
+                if (cardEffectPlayer != null)
+                    cardEffectPlayer.PlayDrain(isHuman);
 
-                        if (absorbed > 0)
-                        {
-                            mixedRealityUI.showAbilityMessage(
-                                $"Opponent's shield absorbed {absorbed} damage."
-                            );
-                        }
-                    }
-                }
-                else if (mixedRealityUI != null)
+                string message =
+                    $"{actor} used Drain {strength}: " +
+                    $"{damage} HP damage dealt, " +
+                    $"{healed} HP restored.";
+
+                if (absorbed > 0)
                 {
-                    mixedRealityUI.showAbilityMessage(
-                        $"Opponent used Drain: {damage} HP damage, " +
-                        $"{healed} HP restored."
-                    );
+                    message += $" {absorbed} damage absorbed by shield.";
                 }
+
+                ShowAbilityMessage(message);
 
                 break;
             }
 
             case AbilityType.Shield:
             {
-                user.addShield(strength);
+                int previousShield = user.shield;
 
-                if (isHuman)
-                {
-                    if (mixedRealityUI != null)
-                    {
-                        mixedRealityUI.showShieldMessage(strength);
-                        mixedRealityUI.showCardEffect(
-                            "Shield", strength
-                        );
-                    }
-                }
-                else if (mixedRealityUI != null)
-                {
-                    mixedRealityUI.showAbilityMessage(
-                        $"Opponent gained {strength} shield."
-                    );
-                }
+                // Add shield without exceeding the maximum.
+                int shieldToAdd = Mathf.Min(
+                    strength,
+                    Mathf.Max(0, maxShield - user.shield)
+                );
+
+                user.addShield(shieldToAdd);
+
+                int actualShieldGained =
+                    user.shield - previousShield;
+
+                ShowAbilityMessage(
+                    $"{actor} gained +{actualShieldGained} shield!"
+                );
 
                 break;
             }
         }
 
+        Debug.Log(
+            $"[ABILITY END] {actor} used {card.ability} | " +
+            $"Player: {gameState.players[0].health} HP / " +
+            $"{gameState.players[0].shield} Shield | " +
+            $"AI: {gameState.players[1].health} HP / " +
+            $"{gameState.players[1].shield} Shield"
+        );
+
         gameState.UpdateState();
         UpdateVisuals();
+        SyncShieldEffects();
     }
+
+    private void ShowAbilityMessage(string message)
+    {
+        if (mixedRealityUI != null)
+        {
+            mixedRealityUI.showAbilityMessage(
+                message,
+                actionMessageDuration
+            );
+        }
+
+        Debug.Log($"Ability message: {message}");
+    }
+
+    // ----------------------------------
+    // DAMAGE
+    // ----------------------------------
 
     private int DealDamage(
         Player target,
         int damage,
         out int absorbed)
     {
-        damage = Mathf.Max(0, damage);
-        absorbed = Mathf.Min(target.shield, damage);
+        absorbed = 0;
 
-        // Player.takeDamage consumes shield before health.
-        return target.takeDamage(damage);
+        if (target == null)
+            return 0;
+
+        damage = Mathf.Max(0, damage);
+
+        int previousShield = target.shield;
+        int previousHealth = target.health;
+
+        // Player.takeDamage() applies damage to shield first,
+        // then applies any remaining damage to health.
+        target.takeDamage(damage);
+
+        // Calculate actual shield and health changes.
+        absorbed = previousShield - target.shield;
+
+        int actualHealthDamage =
+            previousHealth - target.health;
+
+        Debug.Log(
+            $"[DAMAGE CALCULATION] Incoming: {damage} | " +
+            $"Shield absorbed: {absorbed} | " +
+            $"HP damage: {actualHealthDamage} | " +
+            $"Remaining Shield: {target.shield} | " +
+            $"Remaining HP: {target.health}"
+        );
+
+        return actualHealthDamage;
     }
 
+    // ----------------------------------
+    // REPLACEMENT CARD METHOD
+    // ----------------------------------
+
+    // Kept for compatibility, but NOT called during gameplay.
     private void DrawReplacement(Player player)
     {
         if (player == null || gameState == null)
@@ -466,26 +679,6 @@ public class GameManager : MonoBehaviour
         if (playerIndex < 0 || playerIndex > 1)
             return;
 
-        // When the shared undealt deck is empty, recycle only
-        // this player's own discarded cards.
-        if (gameState.drawPile.Count == 0)
-        {
-            List<Card> ownDiscard = playerIndex == 0
-                ? gameState.playerDiscardPile
-                : gameState.aiDiscardPile;
-
-            if (ownDiscard.Count > 0)
-            {
-                foreach (Card discardedCard in ownDiscard)
-                    gameState.discardPile.Remove(discardedCard);
-
-                gameState.drawPile.AddRange(ownDiscard);
-                ownDiscard.Clear();
-
-                ShuffleDeck(gameState.drawPile);
-            }
-        }
-
         if (gameState.drawPile.Count == 0)
         {
             Debug.Log("No replacement cards available.");
@@ -493,27 +686,33 @@ public class GameManager : MonoBehaviour
         }
 
         Card drawnCard = gameState.drawPile[0];
+
         gameState.drawPile.RemoveAt(0);
         player.hand.Add(drawnCard);
 
         Debug.Log($"Replacement card drawn: {drawnCard}");
     }
 
+    // ----------------------------------
+    // DISCARD
+    // ----------------------------------
+
     private void DiscardCard(Card card, Player owner)
     {
         if (card == null || owner == null || gameState == null)
             return;
 
-        // Keep the overall discard list for tracking.
         gameState.discardPile.Add(card);
 
-        // Track ownership so discarded cards return to the
-        // player who originally played them.
         if (gameState.players.IndexOf(owner) == 0)
             gameState.playerDiscardPile.Add(card);
         else if (gameState.players.IndexOf(owner) == 1)
             gameState.aiDiscardPile.Add(card);
     }
+
+    // ----------------------------------
+    // WINNER CHECK
+    // ----------------------------------
 
     public void CheckWinner()
     {
@@ -534,6 +733,10 @@ public class GameManager : MonoBehaviour
             EndGame("You win!", true);
     }
 
+    // ----------------------------------
+    // END TURN
+    // ----------------------------------
+
     public void EndTurn()
     {
         if (gameState == null || gameState.gameOver)
@@ -541,14 +744,11 @@ public class GameManager : MonoBehaviour
 
         gameState.currentTurn = 1 - gameState.currentTurn;
 
-        // Shield expires when its owner begins their next turn.
-        Player currentPlayer =
-            gameState.players[gameState.currentTurn];
-
-        currentPlayer.clearShield();
-
+        // Remaining shield carries over between turns.
         gameState.UpdateState();
+
         UpdateVisuals();
+        SyncShieldEffects();
 
         if (mixedRealityUI != null)
         {
@@ -559,9 +759,40 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // ----------------------------------
+    // CLEAR SHIELDS
+    // ----------------------------------
+
+    private void ClearAllShieldState()
+    {
+        if (gameState != null && gameState.players != null)
+        {
+            foreach (Player player in gameState.players)
+            {
+                if (player != null)
+                    player.clearShield();
+            }
+        }
+
+        if (cardEffectPlayer != null)
+        {
+            cardEffectPlayer.SetShield(true, false);
+            cardEffectPlayer.SetShield(false, false);
+        }
+    }
+
+    // ----------------------------------
+    // GAME OVER
+    // ----------------------------------
+
     private void EndGame(string message, bool playerWon)
     {
+        if (gameState == null || gameState.gameOver)
+            return;
+
         gameState.gameOver = true;
+
+        ClearAllShieldState();
 
         Debug.Log(message);
 
@@ -570,6 +801,10 @@ public class GameManager : MonoBehaviour
 
         UpdateVisuals();
     }
+
+    // ----------------------------------
+    // UI UPDATE
+    // ----------------------------------
 
     private void UpdateVisuals()
     {
@@ -592,5 +827,106 @@ public class GameManager : MonoBehaviour
             gameState.currentTurn == 0,
             gameState.gameOver
         );
+    }
+
+    // ----------------------------------
+    // SHIELD VISUAL SYNCHRONIZATION
+    // ----------------------------------
+
+    private void SyncShieldEffects()
+    {
+        if (cardEffectPlayer == null ||
+            gameState == null ||
+            gameState.players == null ||
+            gameState.players.Count < 2)
+        {
+            return;
+        }
+
+        Player humanPlayer = gameState.players[0];
+        Player aiPlayer = gameState.players[1];
+
+        bool playerHasActiveShield =
+            !gameState.gameOver &&
+            humanPlayer.health > 0 &&
+            humanPlayer.shield > 0;
+
+        bool aiHasActiveShield =
+            !gameState.gameOver &&
+            aiPlayer.health > 0 &&
+            aiPlayer.shield > 0;
+
+        cardEffectPlayer.SetShield(
+            true,
+            playerHasActiveShield
+        );
+
+        cardEffectPlayer.SetShield(
+            false,
+            aiHasActiveShield
+        );
+    }
+
+    // ----------------------------------
+    // END OF DECK CHECK
+    // ----------------------------------
+
+    private void CheckEndOfDeck()
+    {
+        if (gameState == null ||
+            gameState.gameOver ||
+            gameState.players == null ||
+            gameState.players.Count < 2)
+        {
+            return;
+        }
+
+        Player player = gameState.players[0];
+        Player ai = gameState.players[1];
+
+        bool playerFinished =
+            player.hand == null || player.hand.Count == 0;
+
+        bool aiFinished =
+            ai.hand == null || ai.hand.Count == 0;
+
+        if (!playerFinished || !aiFinished)
+            return;
+
+        Debug.Log("========== ALL CARDS USED ==========");
+
+        Debug.Log($"Final player health: {player.health}");
+        Debug.Log($"Final AI health: {ai.health}");
+
+        if (player.health > ai.health)
+        {
+            EndGame("PLAYER WINS! Higher remaining health.", true);
+        }
+        else if (ai.health > player.health)
+        {
+            EndGame("OPPONENT WINS! Higher remaining health.", false);
+        }
+        else
+        {
+            gameState.gameOver = true;
+
+            ClearAllShieldState();
+
+            Debug.Log("DRAW! Both players have equal health.");
+
+            if (mixedRealityUI != null)
+            {
+                mixedRealityUI.showAbilityMessage(
+                    "DRAW! Both players have equal health.",
+                    actionMessageDuration
+                );
+            }
+
+            UpdateVisuals();
+        }
+
+        gameState.UpdateState();
+
+        Debug.Log("========== MATCH FINISHED ==========");
     }
 }
