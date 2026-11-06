@@ -611,19 +611,7 @@ public class Mixed_Reality_UI : MonoBehaviour
 
     public void startGame()
     {
-        if (gameManager == null)
-            gameManager = FindFirstObjectByType<GameManager>();
 
-        if (gameManager != null)
-        {
-            gameManager.StartGame();
-        }
-        else
-        {
-            Debug.LogError(
-                "Mixed_Reality_UI: GameManager is not assigned."
-            );
-        }
     }
 
     private void LateUpdate()

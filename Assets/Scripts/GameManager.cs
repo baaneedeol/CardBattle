@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour
 
     public bool IsProcessingTurn => isProcessingTurn;
 
+    // bool = card was played by the human player
+    public event Action<Card, bool> CardPlayed;
+    public event Action GameEnded;
+
     private void Awake()
     {
         if (gameState == null)
@@ -136,6 +140,23 @@ public class GameManager : MonoBehaviour
         Debug.Log($"AI cards: {aiPlayer.hand.Count}");
         Debug.Log($"Cards remaining in draw pile: {gameState.drawPile.Count}");
         Debug.Log($"Maximum shield: {maxShield}");
+    }
+
+    // Stops the current match without starting a new one.
+    // Used when the board is reset or removed.
+    public void EndMatch()
+    {
+        StopAllCoroutines();
+        isProcessingTurn = false;
+
+        if (cardEffectPlayer != null)
+        {
+            cardEffectPlayer.ClearEffect();
+            cardEffectPlayer.ClearAllShields();
+        }
+
+        if (battleUIRoot != null)
+            battleUIRoot.SetActive(false);
     }
 
     private Player CreatePlayer()
@@ -647,7 +668,6 @@ public class GameManager : MonoBehaviour
         // then applies any remaining damage to health.
         target.takeDamage(damage);
 
-        // Calculate actual shield and health changes.
         absorbed = previousShield - target.shield;
 
         int actualHealthDamage =
@@ -704,10 +724,15 @@ public class GameManager : MonoBehaviour
 
         gameState.discardPile.Add(card);
 
-        if (gameState.players.IndexOf(owner) == 0)
+        int ownerIndex = gameState.players.IndexOf(owner);
+
+        if (ownerIndex == 0)
             gameState.playerDiscardPile.Add(card);
-        else if (gameState.players.IndexOf(owner) == 1)
+        else if (ownerIndex == 1)
             gameState.aiDiscardPile.Add(card);
+
+        // Lets the board move the physical-looking card to its discard spot.
+        CardPlayed?.Invoke(card, ownerIndex == 0);
     }
 
     // ----------------------------------
@@ -800,6 +825,8 @@ public class GameManager : MonoBehaviour
             mixedRealityUI.showGameOver(playerWon);
 
         UpdateVisuals();
+
+        GameEnded?.Invoke();
     }
 
     // ----------------------------------
@@ -923,6 +950,8 @@ public class GameManager : MonoBehaviour
             }
 
             UpdateVisuals();
+
+            GameEnded?.Invoke();
         }
 
         gameState.UpdateState();

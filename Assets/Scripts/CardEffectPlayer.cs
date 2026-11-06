@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -71,6 +70,19 @@ public class CardEffectPlayer : MonoBehaviour
         effectQueueCoroutine != null;
 
     public int TotalEffectsPlayed => totalEffectsPlayed;
+
+    // ----------------------------------
+    // EFFECT POINTS (supplied by the board at runtime)
+    // ----------------------------------
+
+    public void SetEffectPoints(Transform player, Transform opponent)
+    {
+        // Old shields are parented to the old points; remove them first.
+        ClearAllShields();
+
+        playerEffectPoint = player;
+        opponentEffectPoint = opponent;
+    }
 
     // ----------------------------------
     // ATTACK EFFECT
@@ -326,7 +338,6 @@ public class CardEffectPlayer : MonoBehaviour
             $"Created {(playerHasShield ? "PLAYER" : "AI")} shield."
         );
     }
-
 
     private void PlayPersistentShieldParticles(GameObject instance)
     {
