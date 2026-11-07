@@ -120,6 +120,7 @@ public class TablePlacer : MonoBehaviour
         foreach (ARPlane p in c.added)   Refresh(p);
         foreach (ARPlane p in c.updated) Refresh(p);
     }
+    
 
     private void Refresh(ARPlane p)
     {

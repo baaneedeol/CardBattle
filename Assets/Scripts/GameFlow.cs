@@ -9,7 +9,7 @@ public class GameFlow : MonoBehaviour
     [SerializeField] private Mixed_Reality_UI ui;
     [SerializeField] private GameObject startPanel;
 
-    private GameBoard board;
+    public GameBoard board;
 
     private void OnEnable()
     {
