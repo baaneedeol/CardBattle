@@ -117,6 +117,9 @@ public class GameBoard : MonoBehaviour
 
         if (go.TryGetComponent(out CardView view))
             view.ShowFace();
+            Debug.Log($"[Board] PlayCard {cardData} byPlayer={byPlayer} -> {discard.name} " +
+          $"euler={discard.eulerAngles} scale={discard.lossyScale} " +
+          $"cardUpDotWorldUp={Vector3.Dot(go.transform.up, Vector3.up):F2}", go);
     }
 
     // ---------- Cleanup ----------
