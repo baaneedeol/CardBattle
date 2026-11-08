@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public Mixed_Reality_UI mixedRealityUI;
     public GameObject startPanel;
     public GameObject battleUIRoot;
-    [SerializeField] public GameBoard board;
 
     [Header("Game Settings")]
     public int startingHealth = 20;
@@ -272,7 +271,6 @@ public class GameManager : MonoBehaviour
         }
 
         Player player = gameState.players[0];
-        board.PlayCard(card,true);
         if (card == null ||
             !card.IsValid() ||
             player.hand == null ||
@@ -468,7 +466,7 @@ public class GameManager : MonoBehaviour
                 Debug.Log($"AI played {aiCard}");
 
                 ApplyAbility(aiCard, ai, player);
-                 board.PlayCard(aiCard,false);
+
                 
 
                 DiscardCard(aiCard, ai);

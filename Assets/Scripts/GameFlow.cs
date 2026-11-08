@@ -10,6 +10,8 @@ public class GameFlow : MonoBehaviour
     [SerializeField] private GameObject startPanel;
 
     public GameBoard board;
+    public event System.Action MatchReady;
+    public bool IsMatchReady { get; private set; }
 
     private void OnEnable()
     {
@@ -39,27 +41,19 @@ public class GameFlow : MonoBehaviour
     private void OnPlaced(GameObject boardObj)
     {
         board = boardObj.GetComponent<GameBoard>();
-        if (board == null)
-        {
-            Debug.LogError("Board prefab has no GameBoard component on its root.");
-            return;
-        }
+        if (board == null) { Debug.LogError("Board prefab has no GameBoard component."); return; }
 
-        // Effects must point at the board BEFORE the game starts.
         effects.SetEffectPoints(board.PlayerEffectPoint, board.OpponentEffectPoint);
-
-        gameManager.StartGame();   // creates hands, resets UI
+        gameManager.StartGame();
         board.DealHands(gameState.players[0], gameState.players[1]);
-    }
 
-    private void OnCardPlayed(Card card, bool byPlayer)
-    {
-        if (board != null) board.PlayCard(card, byPlayer);
+        IsMatchReady = true;
+        MatchReady?.Invoke();
     }
 
     private void OnCleared()
     {
-        // B pressed, or Begin() called again: the board is being destroyed.
+        IsMatchReady = false;
         gameManager.EndMatch();
         board = null;
         ui?.showMessage("Aim at a table and pull the trigger.", 0f);
@@ -67,6 +61,13 @@ public class GameFlow : MonoBehaviour
 
     private void OnGameEnded()
     {
+        IsMatchReady = false;
         if (startPanel != null) startPanel.SetActive(true);
     }
+
+    private void OnCardPlayed(Card card, bool byPlayer)
+    {
+        if (board != null) board.PlayCard(card, byPlayer);
+    }
+
 }

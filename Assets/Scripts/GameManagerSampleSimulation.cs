@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Text;
 using UnityEngine;
@@ -8,6 +7,7 @@ public class FullGameSimulationTestRunner : MonoBehaviour
     [Header("Existing Game References")]
     [SerializeField] private GameManager gameManager;
     [SerializeField] private GameState gameState;
+    [SerializeField] private GameFlow gameFlow;
 
     [Header("Simulation Settings")]
     [SerializeField] private float delayBetweenRounds = 1f;
@@ -32,6 +32,18 @@ public class FullGameSimulationTestRunner : MonoBehaviour
 
         if (gameState == null)
             gameState = FindFirstObjectByType<GameState>();
+
+        if (gameFlow == null)
+            gameFlow = FindFirstObjectByType<GameFlow>();
+    }
+
+    // True when the board was removed or reset (B pressed) mid-simulation.
+    // A normal game over also clears IsMatchReady, so it is excluded here.
+    private bool BoardWasCleared()
+    {
+        return gameFlow != null &&
+               !gameFlow.IsMatchReady &&
+               !gameState.gameOver;
     }
 
     [ContextMenu("Run Full Game Simulation")]
@@ -51,7 +63,7 @@ public class FullGameSimulationTestRunner : MonoBehaviour
 
         FindReferences();
 
-        if (gameManager == null || gameState == null)
+        if (gameManager == null || gameState == null || gameFlow == null)
         {
             Debug.LogError("Simulation references are missing.");
             return;
@@ -79,8 +91,25 @@ public class FullGameSimulationTestRunner : MonoBehaviour
 
         Debug.Log("========== FULL GAME SIMULATION START ==========");
 
-        gameManager.StartGame();
+        // ----------------------------------
+        // TABLE PLACEMENT
+        // ----------------------------------
+        // GameFlow owns setup: placement -> StartGame -> DealHands.
+        // Wait for the wearer to aim, rotate and pull the trigger.
+        // (If the Start button or TablePlacer.beginOnStart already
+        // began placement, BeginPlacement is harmless to call again.)
+        if (!gameFlow.IsMatchReady)
+        {
+            Debug.Log("Waiting for table placement...");
+            gameFlow.BeginPlacement();
 
+            while (!gameFlow.IsMatchReady)
+                yield return null;
+
+            Debug.Log("Board placed. Starting simulation.");
+        }
+
+        // Let DealHands run its first frame.
         yield return null;
 
         if (gameState.players == null || gameState.players.Count < 2)
@@ -104,10 +133,18 @@ public class FullGameSimulationTestRunner : MonoBehaviour
         matchLog.AppendLine("========== FULL MATCH SUMMARY ==========");
 
         int completedRounds = 0;
+        bool boardCleared = false;
 
         while (!gameState.gameOver &&
                completedRounds < maximumRounds)
         {
+            if (BoardWasCleared())
+            {
+                Debug.Log("Board was cleared. Stopping simulation.");
+                boardCleared = true;
+                break;
+            }
+
             bool playerHasCards =
                 player.hand != null && player.hand.Count > 0;
 
@@ -149,10 +186,18 @@ public class FullGameSimulationTestRunner : MonoBehaviour
                 float aiElapsed = 0f;
 
                 while (gameManager.IsProcessingTurn &&
-                    aiElapsed < turnProcessingTimeout)
+                       aiElapsed < turnProcessingTimeout &&
+                       !BoardWasCleared())
                 {
                     aiElapsed += Time.deltaTime;
                     yield return null;
+                }
+
+                if (BoardWasCleared())
+                {
+                    Debug.Log("Board was cleared. Stopping simulation.");
+                    boardCleared = true;
+                    break;
                 }
 
                 if (gameManager.IsProcessingTurn)
@@ -226,15 +271,25 @@ public class FullGameSimulationTestRunner : MonoBehaviour
 
             Debug.Log($"Player plays: {chosenCard}");
 
+            // GameManager fires CardPlayed -> GameFlow -> board.PlayCard,
+            // so the card is shown in MR without any extra call here.
             gameManager.ProcessPlayerCard(chosenCard);
 
             float elapsed = 0f;
 
             while (gameManager.IsProcessingTurn &&
-                   elapsed < turnProcessingTimeout)
+                   elapsed < turnProcessingTimeout &&
+                   !BoardWasCleared())
             {
                 elapsed += Time.deltaTime;
                 yield return null;
+            }
+
+            if (BoardWasCleared())
+            {
+                Debug.Log("Board was cleared. Stopping simulation.");
+                boardCleared = true;
+                break;
             }
 
             if (gameManager.IsProcessingTurn)
@@ -261,6 +316,7 @@ public class FullGameSimulationTestRunner : MonoBehaviour
 
         // Final end-of-deck check.
         if (!gameState.gameOver &&
+            !boardCleared &&
             player.hand.Count == 0 &&
             ai.hand.Count == 0)
         {
@@ -296,6 +352,11 @@ public class FullGameSimulationTestRunner : MonoBehaviour
             Debug.Log(
                 $"<color=green>SIMULATION FINISHED: {result}</color>"
             );
+        }
+        else if (boardCleared)
+        {
+            matchLog.AppendLine("Result: Board was cleared before the game ended.");
+            Debug.LogWarning("Simulation stopped because the board was cleared.");
         }
         else if (completedRounds >= maximumRounds)
         {
