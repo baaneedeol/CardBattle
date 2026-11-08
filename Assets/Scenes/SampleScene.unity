@@ -1049,7 +1049,7 @@ MonoBehaviour:
   anchorManager: {fileID: 1230845668}
   rayOrigin: {fileID: 1644200587}
   head: {fileID: 0}
-  boardPrefab: {fileID: 1031061614}
+  boardPrefab: {fileID: 4794815518274494507, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
   planeMask:
     serializedVersion: 2
     m_Bits: 8
@@ -2811,6 +2811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FullGameSimulationTestRunner
   gameManager: {fileID: 1485130753}
   gameState: {fileID: 2137981967}
+  gameFlow: {fileID: 1338500395}
   delayBetweenRounds: 1
   maximumRounds: 200
   useAutomaticPlayerStrategy: 1
@@ -3607,79 +3608,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003691539}
   m_CullTransparentMesh: 1
---- !u!1001 &1031061613
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.13736
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.05736
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825801503075655997, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4794815518274494507, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-      propertyPath: m_Name
-      value: TableBoard
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
---- !u!1 &1031061614 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4794815518274494507, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-  m_PrefabInstance: {fileID: 1031061613}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1031061615 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -6343799612883687182, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
-  m_PrefabInstance: {fileID: 1031061613}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031061614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81586a1f0274f20408e12824f849a42a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameBoard
 --- !u!1 &1046954662
 GameObject:
   m_ObjectHideFlags: 0
@@ -4476,7 +4404,7 @@ MonoBehaviour:
   effects: {fileID: 434292343}
   ui: {fileID: 548269799}
   startPanel: {fileID: 1783593050}
-  board: {fileID: 0}
+  board: {fileID: -6343799612883687182, guid: c4af5b236f191dd4bb2b3262085e5a94, type: 3}
 --- !u!1 &1374410190
 GameObject:
   m_ObjectHideFlags: 0
@@ -4729,7 +4657,6 @@ MonoBehaviour:
   mixedRealityUI: {fileID: 548269799}
   startPanel: {fileID: 1783593050}
   battleUIRoot: {fileID: 928646153}
-  board: {fileID: 1031061615}
   startingHealth: 20
   startingHandSize: 8
   maxShield: 8
@@ -6890,4 +6817,3 @@ SceneRoots:
   - {fileID: 1230845671}
   - {fileID: 165608140}
   - {fileID: 178454791}
-  - {fileID: 1031061613}
