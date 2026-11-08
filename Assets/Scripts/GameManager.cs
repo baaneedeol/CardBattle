@@ -800,18 +800,21 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (cardEffectPlayer != null)
-        {
-            cardEffectPlayer.SetShield(true, false);
-            cardEffectPlayer.SetShield(false, false);
-        }
+        // if (cardEffectPlayer != null)
+        // {
+        //     cardEffectPlayer.SetShield(true, false);
+        //     cardEffectPlayer.SetShield(false, false);
+        // }
     }
 
     // ----------------------------------
     // GAME OVER
     // ----------------------------------
 
-    private void EndGame(string message, bool playerWon)
+    private void EndGame(
+        string message,
+        bool playerWon,
+        string result = null)
     {
         if (gameState == null || gameState.gameOver)
             return;
@@ -820,14 +823,77 @@ public class GameManager : MonoBehaviour
 
         ClearAllShieldState();
 
+        string finalResult = result ??
+            (playerWon ? "VICTORY!" : "DEFEAT!");
+
         Debug.Log(message);
 
-        if (mixedRealityUI != null)
-            mixedRealityUI.showGameOver(playerWon);
-
+        // Update health, shield and turn indicator information.
         UpdateVisuals();
 
+        // Display the final messages without hiding the battle UI.
+        if (mixedRealityUI != null)
+        {
+            mixedRealityUI.showGameOver(
+                finalResult,
+                message
+            );
+        }
+
+        // Wait before clearing the battle visuals.
+        StartCoroutine(FinishGameOverSequence(finalResult));
+
+        Debug.Log("Game over sequence started.");
+    }
+    private IEnumerator FinishGameOverSequence(string result)
+    {
+        // Allow the final messages to remain visible.
+        yield return new WaitForSeconds(actionMessageDuration);
+
+        // Wait for any remaining temporary visual effects.
+        float elapsed = 0f;
+
+        while (
+            cardEffectPlayer != null &&
+            (
+                cardEffectPlayer.IsPlayingQueuedEffect ||
+                cardEffectPlayer.QueuedEffectCount > 0 ||
+                cardEffectPlayer.ActiveTemporaryEffectCount > 0
+            ) &&
+            elapsed < effectWaitTimeout
+        )
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Display the final screen and clear battle visuals.
+        if (mixedRealityUI != null)
+        {
+            mixedRealityUI.ShowFinalGameOverPanel(result);
+        }
+        else if (cardEffectPlayer != null)
+        {
+            cardEffectPlayer.ClearEffect();
+            cardEffectPlayer.ClearAllShields();
+        }
+
+        Debug.Log("========== GAME OVER SEQUENCE COMPLETE ==========");
+
         GameEnded?.Invoke();
+    }
+
+    public void RestartGame()
+    {
+        if (isProcessingTurn)
+        {
+            Debug.LogWarning("Cannot restart while a turn is processing.");
+            return;
+        }
+
+        Debug.Log("Restarting match...");
+
+        StartGame();
     }
 
     // ----------------------------------
@@ -936,23 +1002,13 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            gameState.gameOver = true;
-
-            ClearAllShieldState();
-
             Debug.Log("DRAW! Both players have equal health.");
 
-            if (mixedRealityUI != null)
-            {
-                mixedRealityUI.showAbilityMessage(
-                    "DRAW! Both players have equal health.",
-                    actionMessageDuration
-                );
-            }
-
-            UpdateVisuals();
-
-            GameEnded?.Invoke();
+            EndGame(
+                "DRAW! Both players have equal health.",
+                false,
+                "DRAW!"
+            );
         }
 
         gameState.UpdateState();

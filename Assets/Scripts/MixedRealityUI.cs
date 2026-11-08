@@ -46,6 +46,9 @@ public class Mixed_Reality_UI : MonoBehaviour
     [Header("Game Settings")]
     [SerializeField] private int maxHealth = 20;
 
+    [Header("Battle UI Cleanup")]
+    [SerializeField] private GameObject battleUIRoot;
+
     private bool cardIsPresent = false;
     private Coroutine messageCoroutine;
 
@@ -96,14 +99,16 @@ public class Mixed_Reality_UI : MonoBehaviour
             messageCoroutine = null;
         }
 
+        clearMessage();
+
+        if (battleUIRoot != null)
+            battleUIRoot.SetActive(true);
+
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
 
         if (gameOverText != null)
             gameOverText.text = "";
-
-        if (turnText != null)
-            showTurnIndicator(true);
 
         if (cardEffectPlayer != null)
         {
@@ -117,7 +122,6 @@ public class Mixed_Reality_UI : MonoBehaviour
             true, false
         );
 
-        clearMessage();
         showWelcomeMessage();
         keepMessagePanelVisible();
 
@@ -143,20 +147,15 @@ public class Mixed_Reality_UI : MonoBehaviour
         {
             if (turnText != null)
                 turnText.text = "GAME OVER";
-
-            if (gameOverPanel != null)
-                gameOverPanel.SetActive(true);
         }
         else
         {
             showTurnIndicator(playerTurn);
-
-            if (gameOverPanel != null)
-                gameOverPanel.SetActive(false);
         }
 
         keepMessagePanelVisible();
     }
+
 
     public void updateHealth(
         bool isPlayer,
@@ -576,34 +575,82 @@ public class Mixed_Reality_UI : MonoBehaviour
     // GAME OVER
     // ----------------------------------
 
+// ----------------------------------
+// GAME OVER
+// ----------------------------------
+
+    public void showGameOver(
+        string result,
+        string finalMessage)
+    {
+        // Keep the battle UI visible while the final
+        // messages are being displayed.
+
+        if (turnText != null)
+        {
+            turnText.text = "GAME OVER";
+            turnText.color = Color.white;
+        }
+
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
+
+        if (gameOverText != null)
+            gameOverText.text = "";
+
+        showMessage(finalMessage, 0f);
+
+        Debug.Log("Game over messages displayed.");
+    }
+
+    // Compatibility with existing callers.
     public void showGameOver(bool playerWon)
     {
+        showGameOver(
+            playerWon ? "VICTORY!" : "DEFEAT!",
+            playerWon
+                ? "Victory! You won the battle!"
+                : "Defeat! Better luck next time!"
+        );
+    }
+    public void ShowFinalGameOverPanel(string result)
+    {
+        // Stop any remaining message timer.
+        clearMessage();
+
+        // Clear temporary card effects.
+        if (cardEffectPlayer != null)
+        {
+            cardEffectPlayer.ClearEffect();
+            cardEffectPlayer.ClearAllShields();
+        }
+
+        // Clear the old battle UI.
+        if (battleUIRoot != null)
+            battleUIRoot.SetActive(false);
+
+        // Display the final screen.
         if (gameOverPanel != null)
             gameOverPanel.SetActive(true);
 
         if (gameOverText != null)
         {
-            gameOverText.text = playerWon
-                ? "VICTORY!"
-                : "DEFEAT!";
+            gameOverText.text =
+                "GAME OVER\n\n" + result;
 
-            gameOverText.color = playerWon
-                ? new Color(0.25f, 1f, 0.65f)
-                : new Color(1f, 0.25f, 0.25f);
+            if (result.Contains("VICTORY"))
+                gameOverText.color = new Color(0.25f, 1f, 0.65f);
+            else if (result.Contains("DEFEAT"))
+                gameOverText.color = new Color(1f, 0.25f, 0.25f);
+            else
+                gameOverText.color = Color.white;
         }
 
-        if (turnText != null)
-            turnText.text = "GAME OVER";
-
-        showMessage(
-            playerWon
-                ? "Victory! You won the battle!"
-                : "Defeat! Better luck next time!",
-            0f
-        );
-
-        keepMessagePanelVisible();
+        Debug.Log("Final Game Over Panel displayed.");
     }
+
+
+
 
     // ----------------------------------
     // START BUTTON COMPATIBILITY
@@ -632,4 +679,28 @@ public class Mixed_Reality_UI : MonoBehaviour
 
         return message;
     }
+
+    // ----------------------------------
+    // GAME OVER BUTTONS
+    // ----------------------------------
+
+    public void RestartGame()
+    {
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager reference is missing.");
+            return;
+        }
+
+        gameManager.RestartGame();
+    }
+
+    public void ExitGame()
+    {
+        Debug.Log("Exiting game.");
+
+        Application.Quit();
+    }
 }
+
+
