@@ -615,40 +615,44 @@ public class Mixed_Reality_UI : MonoBehaviour
     }
     public void ShowFinalGameOverPanel(string result)
     {
-        // Stop any remaining message timer.
         clearMessage();
 
-        // Clear temporary card effects.
         if (cardEffectPlayer != null)
         {
             cardEffectPlayer.ClearEffect();
             cardEffectPlayer.ClearAllShields();
         }
 
-        // Clear the old battle UI.
         if (battleUIRoot != null)
             battleUIRoot.SetActive(false);
 
-        // Display the final screen.
         if (gameOverPanel != null)
             gameOverPanel.SetActive(true);
 
         if (gameOverText != null)
         {
-            gameOverText.text =
-                "GAME OVER\n\n" + result;
+            gameOverText.text = "GAME OVER\n\n" + result;
 
             if (result.Contains("VICTORY"))
+            {
                 gameOverText.color = new Color(0.25f, 1f, 0.65f);
+            }
             else if (result.Contains("DEFEAT"))
+            {
                 gameOverText.color = new Color(1f, 0.25f, 0.25f);
+            }
+            else if (result.Contains("DRAW"))
+            {
+                gameOverText.color = new Color(1f, 0.85f, 0.25f);
+            }
             else
+            {
                 gameOverText.color = Color.white;
+            }
         }
 
         Debug.Log("Final Game Over Panel displayed.");
     }
-
 
 
 
