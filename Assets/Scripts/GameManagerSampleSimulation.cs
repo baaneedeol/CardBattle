@@ -221,12 +221,14 @@ public class FullGameSimulationTestRunner : MonoBehaviour
                 {
                     Debug.LogWarning(
                         "AI has no legal actions remaining. " +
-                        "No game state changed, so the simulation is ending."
+                        "Ending match based on remaining health."
                     );
+
+                    gameManager.EndGameByRemainingHealth();
 
                     break;
                 }
-
+                
                 completedRounds++;
 
                 LogRoundSummary(

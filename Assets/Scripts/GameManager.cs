@@ -346,8 +346,14 @@ public class GameManager : MonoBehaviour
                 ai.hand == null ||
                 !ai.hand.Contains(aiCard))
             {
-                Debug.Log("AI has no legal card and passes.");
+                Debug.LogWarning(
+                    "AI has no legal card remaining. " +
+                    "Ending match based on remaining health."
+                );
+
+                EndGameByRemainingHealth();
             }
+
             else
             {
                 ai.hand.Remove(aiCard);
@@ -477,7 +483,12 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("AI has no legal card and passes.");
+                Debug.LogWarning(
+                    "AI has no legal card remaining. " +
+                    "Ending match based on remaining health."
+                );
+
+                EndGameByRemainingHealth();
             }
 
             if (!gameState.gameOver)
@@ -757,6 +768,54 @@ public class GameManager : MonoBehaviour
             EndGame("AI wins!", false);
         else if (aiPlayer.health <= 0)
             EndGame("You win!", true);
+    }
+
+
+
+    // ----------------------------------
+    // HEALTH-BASED WINNER
+    // ----------------------------------
+
+    public void EndGameByRemainingHealth()
+    {
+        if (gameState == null ||
+            gameState.gameOver ||
+            gameState.players == null ||
+            gameState.players.Count < 2)
+        {
+            return;
+        }
+
+        Player player = gameState.players[0];
+        Player ai = gameState.players[1];
+
+        Debug.Log($"Final Player Health: {player.health}");
+        Debug.Log($"Final AI Health: {ai.health}");
+
+        if (player.health > ai.health)
+        {
+            EndGame(
+                "PLAYER WINS! Higher remaining health.",
+                true,
+                "VICTORY!"
+            );
+        }
+        else if (ai.health > player.health)
+        {
+            EndGame(
+                "OPPONENT WINS! Higher remaining health.",
+                false,
+                "DEFEAT!"
+            );
+        }
+        else
+        {
+            EndGame(
+                "DRAW! Both players have equal health.",
+                false,
+                "DRAW!"
+            );
+        }
     }
 
     // ----------------------------------
