@@ -85,10 +85,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         showWelcomeMessage();
     }
 
-    // ----------------------------------
     // NEW GAME RESET
-    // ----------------------------------
-
     public void PrepareForNewGame()
     {
         cardIsPresent = false;
@@ -128,10 +125,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         Debug.Log("New game UI reset.");
     }
 
-    // ----------------------------------
     // HEALTH AND TURN UI
-    // ----------------------------------
-
     public void updateUI(
         int playerHealth,
         int playerShield,
@@ -204,10 +198,7 @@ public class Mixed_Reality_UI : MonoBehaviour
             shieldText.text = $"Shield: {shield}";
     }
 
-    // ----------------------------------
     // GAME MESSAGE PANEL
-    // ----------------------------------
-
     private void keepMessagePanelVisible()
     {
         if (gameMessagePanel != null &&
@@ -360,10 +351,7 @@ public class Mixed_Reality_UI : MonoBehaviour
             gameMessageText.text = "";
     }
 
-    // ----------------------------------
     // WELCOME AND CARD RECOGNITION
-    // ----------------------------------
-
     public void showWelcomeMessage()
     {
         showMessage("Welcome! Place a card to begin!", 0f);
@@ -376,7 +364,7 @@ public class Mixed_Reality_UI : MonoBehaviour
 
     public void showCardDetectedMessage()
     {
-        showMessage("Card detected! Preparing ability!", -1f);
+        showMessage("Card detected!", -1f);
     }
 
     public void showCardRemovedMessage()
@@ -386,54 +374,36 @@ public class Mixed_Reality_UI : MonoBehaviour
 
     public void showInvalidCardMessage()
     {
-        showMessage(
-            "Card not in your hand. Try another card!",
-            -1f
-        );
+        showMessage("Invalid card! Try again.", -1f);
     }
 
-    // ----------------------------------
     // BATTLE MESSAGES
-    // ----------------------------------
-
     public void showAttackMessage(int damage)
     {
         if (damage > 0)
         {
-            showMessage(
-                $"Attack successful! {damage} HP damage dealt!",
-                -1f
-            );
+            showMessage($"Attack! -{damage} HP", -1f);
         }
         else
         {
-            showMessage(
-                "Attack blocked! No HP damage dealt.",
-                -1f
-            );
+            showMessage("Attack blocked!", -1f);
         }
     }
 
     public void showHealMessage(int amount)
     {
-        showMessage(
-            $"Healing activated! +{amount} HP!",
-            -1f
-        );
+        showMessage($"Healed +{amount} HP!", -1f);
     }
 
     public void showShieldMessage(int amount)
     {
-        showMessage(
-            $"Shield activated! +{amount} shield!",
-            -1f
-        );
+        showMessage($"+{amount} Shield!", -1f);
     }
 
     public void showDrainMessage(int damage, int healed)
     {
         showMessage(
-            $"Drain: {damage} HP damage dealt, {healed} HP restored.",
+            $"Drain! -{damage} HP, +{healed} HP",
             -1f
         );
     }
@@ -445,7 +415,7 @@ public class Mixed_Reality_UI : MonoBehaviour
 
     public void showBlockedAttackMessage()
     {
-        showMessage("Attack blocked by shield!", -1f);
+        showMessage("Blocked by shield!", -1f);
     }
 
     // New overload allows GameManager to control message duration.
@@ -462,9 +432,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         showMessage(message, -1f);
     }
 
-    // ----------------------------------
     // CARD EFFECT TEXT COMPATIBILITY
-    // ----------------------------------
 
     // Kept for existing scripts and tests.
     // GameManager no longer calls this after showing an ability message.
@@ -493,7 +461,7 @@ public class Mixed_Reality_UI : MonoBehaviour
 
             case "drain":
                 showMessage(
-                    $"DRAIN: -{amount} HP / +{secondaryAmount} HP",
+                    $"Drain: -{amount} HP / +{secondaryAmount} HP",
                     -1f
                 );
                 break;
@@ -508,10 +476,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // CARD RECOGNITION STATE
-    // ----------------------------------
-
     public void onCardRecognized(string ability, int amount)
     {
         cardIsPresent = true;
@@ -543,10 +508,7 @@ public class Mixed_Reality_UI : MonoBehaviour
             cardEffectPlayer.ClearEffect();
     }
 
-    // ----------------------------------
     // TURN INDICATOR
-    // ----------------------------------
-
     public void showTurnIndicator(bool playerTurn)
     {
         if (turnText == null)
@@ -571,14 +533,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         showTurnIndicator(false);
     }
 
-    // ----------------------------------
     // GAME OVER
-    // ----------------------------------
-
-// ----------------------------------
-// GAME OVER
-// ----------------------------------
-
     public void showGameOver(
         string result,
         string finalMessage)
@@ -656,10 +611,7 @@ public class Mixed_Reality_UI : MonoBehaviour
 
 
 
-    // ----------------------------------
     // START BUTTON COMPATIBILITY
-    // ----------------------------------
-
     public void startGame()
     {
 
@@ -677,17 +629,14 @@ public class Mixed_Reality_UI : MonoBehaviour
         {
             message = message.Replace(
                 " and restored ",
-                "\nand restored "
+                " | +"
             );
         }
 
         return message;
     }
 
-    // ----------------------------------
     // GAME OVER BUTTONS
-    // ----------------------------------
-
     public void RestartGame()
     {
         if (gameManager == null)

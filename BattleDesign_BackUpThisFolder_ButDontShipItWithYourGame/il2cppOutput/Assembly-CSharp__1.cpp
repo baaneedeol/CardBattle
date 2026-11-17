@@ -200,13 +200,14 @@ struct U3CRunTestWithPauseU3Ed__15_tEC4FE8EED4EC55E52EB3E213300AF6FD7EE5FFEB;
 struct U3CRunTestsU3Ed__13_tEA0F9A928A08A8433D6825A3FD609BB57658666C;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB;
-struct U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692;
+struct U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3;
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401;
 struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
 struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
 
 IL2CPP_EXTERN_C RuntimeClass* Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
@@ -220,7 +221,7 @@ IL2CPP_EXTERN_C RuntimeClass* Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_1_t42E653C34BCDF8AEA079C210293FEC8A1BAC3BC1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
@@ -233,10 +234,12 @@ IL2CPP_EXTERN_C String_t* _stringLiteral1168E92C164109D6220480DEDA987085B2A21155
 IL2CPP_EXTERN_C String_t* _stringLiteral1387CA5E3672B0B088B1C7438E3CB9614FEF2011;
 IL2CPP_EXTERN_C String_t* _stringLiteral17158A081324DDA544D6F1CA483ED08E6EE157E1;
 IL2CPP_EXTERN_C String_t* _stringLiteral1910401DEC613EB2A3FA30561625EB75ACF03F3D;
+IL2CPP_EXTERN_C String_t* _stringLiteral19C77D46DA179D98D3C811BE3D5FAEA43641CFF1;
 IL2CPP_EXTERN_C String_t* _stringLiteral19E30120BF148B4BD74A0C6CE7F85A461E68A628;
 IL2CPP_EXTERN_C String_t* _stringLiteral1DF92C4B9ED6853FBB200642FE7723285D257374;
 IL2CPP_EXTERN_C String_t* _stringLiteral1EE6EA08D7C9C4D55261B5A21822ABDC04958C6E;
 IL2CPP_EXTERN_C String_t* _stringLiteral20E6D01A803D5D0641D45EE03946670ECF8A5A74;
+IL2CPP_EXTERN_C String_t* _stringLiteral28D3CC92A835AA7EB76F7729C9E943A1B375A493;
 IL2CPP_EXTERN_C String_t* _stringLiteral29F9AE2B27F3011D9D79E59978A4F70B3C24A5EA;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C239EF257905D3C94A5C7632939970238001B91;
 IL2CPP_EXTERN_C String_t* _stringLiteral2F2C682D4F5668E2467FE8AB585AF6D845E2FBE6;
@@ -276,6 +279,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral81295A782D53B677467CA7527BA99D5DF1FF77A8
 IL2CPP_EXTERN_C String_t* _stringLiteral846421526F97EBA87440CB9BF16CA372B37BD622;
 IL2CPP_EXTERN_C String_t* _stringLiteral8507BA45AA16D10AFB9460FB67FAA5BFA0C148FF;
 IL2CPP_EXTERN_C String_t* _stringLiteral89899C8BCC9A3EB7AD4A5B1D6CA66807545181EA;
+IL2CPP_EXTERN_C String_t* _stringLiteral8A08A1B4B8CE0606CC99DC22A5AFA8A8B5A84F71;
 IL2CPP_EXTERN_C String_t* _stringLiteral8DC72DF971BC816B02EAAB8907598FA407DD3AF4;
 IL2CPP_EXTERN_C String_t* _stringLiteral90E8D8B782F5A8406AA111ADB639E57806DFC3D6;
 IL2CPP_EXTERN_C String_t* _stringLiteral91A67305F361D628AE3B1442B3C175575648AA10;
@@ -285,6 +289,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral9D7BCD20571C9C9C845E91260702F29842752846
 IL2CPP_EXTERN_C String_t* _stringLiteral9DB45C70EC7D092C15F6DDF367CA12B8FE7C97AD;
 IL2CPP_EXTERN_C String_t* _stringLiteral9EBAFFAC37C8B97C67BF52C0F2BB839E247B8EA9;
 IL2CPP_EXTERN_C String_t* _stringLiteralA8378FD07D3F52C3EBF601254762FEA3DB8E6C7C;
+IL2CPP_EXTERN_C String_t* _stringLiteralB1021D06E013458CC417EBC48011339CFD27B87C;
 IL2CPP_EXTERN_C String_t* _stringLiteralB11FC56F195456329ADDC0A2DE8C2AC5033EBDC1;
 IL2CPP_EXTERN_C String_t* _stringLiteralB1FD4B15A2E49572089DB84944E183504B7AA70B;
 IL2CPP_EXTERN_C String_t* _stringLiteralB2C025DF4F6F67D431CDE357D397126CFA2BFC0B;
@@ -295,9 +300,12 @@ IL2CPP_EXTERN_C String_t* _stringLiteralBBE47C4CFE32A35113631D981C97DCB345BF2FC0
 IL2CPP_EXTERN_C String_t* _stringLiteralBCB764B7453F9DFB4A6A2C0E580CBF835A131501;
 IL2CPP_EXTERN_C String_t* _stringLiteralBD2155E54D0A0EF69D6B035ACE4FB0D1E5C8A136;
 IL2CPP_EXTERN_C String_t* _stringLiteralC0DF57BAB6892A7B147C9BBD8AB62996ED58A6DB;
+IL2CPP_EXTERN_C String_t* _stringLiteralC30114E9F9CFB652FFA3B802E534E603B0B0D2E1;
 IL2CPP_EXTERN_C String_t* _stringLiteralC38AB2CC799BCEA5698ECA6A88E19C936F4A45FF;
 IL2CPP_EXTERN_C String_t* _stringLiteralC5E24A60BA10CEE26ED64943F77A732968231B22;
+IL2CPP_EXTERN_C String_t* _stringLiteralCDADED2618059867023E35F5C846BB7416079F1A;
 IL2CPP_EXTERN_C String_t* _stringLiteralD0E52FE4164BDD9E3DA2FB04B29DD52DB28428A7;
+IL2CPP_EXTERN_C String_t* _stringLiteralD2355F9176F36012A473D04B1DA959D6177F6595;
 IL2CPP_EXTERN_C String_t* _stringLiteralD238DA55207F08C4017B3A0BCF2DF8422B80BCFD;
 IL2CPP_EXTERN_C String_t* _stringLiteralD3858DB9D4314835791E375DBF04A6E17ED2B171;
 IL2CPP_EXTERN_C String_t* _stringLiteralD8C3864D26B511C05ED35E0535E1D145AD934539;
@@ -307,6 +315,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralDCF6D3228A9A34642909B611AE7016A56002EA3E
 IL2CPP_EXTERN_C String_t* _stringLiteralDF174F5A85AD393FD50C2190C373D7F26CFC6E01;
 IL2CPP_EXTERN_C String_t* _stringLiteralE145E8F7DBB6AC3DBD15B9CA23F534F4B85E2955;
 IL2CPP_EXTERN_C String_t* _stringLiteralE91DE2160C0A977412E4743232FE40E7989CF157;
+IL2CPP_EXTERN_C String_t* _stringLiteralECE56BF941B3ADD3FDEE26F2555AA8C96618083F;
 IL2CPP_EXTERN_C String_t* _stringLiteralED252A52339FDDCF50C622181529F13EA6AA5577;
 IL2CPP_EXTERN_C String_t* _stringLiteralF110BCF50189DC6916D1EECF5023AB15DFED3AF5;
 IL2CPP_EXTERN_C String_t* _stringLiteralF373053F0BE5C8DAF55A94BA50F814C733B2B413;
@@ -376,7 +385,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* TrackableCollection_1_GetEnumerator_m97880E
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRunAllTestsU3Ed__3_System_Collections_IEnumerator_Reset_m4FAAEB12D9FA3B4B0E2B56851C560F58B1A75602_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRunTestWithPauseU3Ed__15_System_Collections_IEnumerator_Reset_m716E5406721505772F8EB2208A4AEBB77EABBD75_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRunTestsU3Ed__13_System_Collections_IEnumerator_Reset_m9BCB22F82FD36AC70655A3632E540B9FCDB056BC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CclearMessageAfterDelayU3Ed__36_System_Collections_IEnumerator_Reset_mF9137E865BD08E37A6000FB1B137368EC5256538_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CclearMessageAfterDelayU3Ed__37_System_Collections_IEnumerator_Reset_m7EE7CF136F7D693DA81E0B35BF8FF1DE6D55C173_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_AddListener_m0E7576A2A31A1FF338177623DF253203C943A44C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_RemoveListener_m154FBBE6692205398C8FD29CFE58076BE2FE29E2_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
@@ -486,7 +495,7 @@ struct U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB  : public
 	RuntimeObject* ___U3CU3E2__current;
 	MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* ___U3CU3E4__this;
 };
-struct U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692  : public RuntimeObject
+struct U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -2000,6 +2009,7 @@ struct Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F  : public Mono
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameOverPanel;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___gameOverText;
 	int32_t ___maxHealth;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___battleUIRoot;
 	bool ___cardIsPresent;
 	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___messageCoroutine;
 };
@@ -2722,11 +2732,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_keepMessagePanelVisible
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_playerHealth, int32_t ___1_playerShield, int32_t ___2_opponentHealth, int32_t ___3_opponentShield, bool ___4_playerTurn, bool ___5_gameOver, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___0_routine, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_playerTurn, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_clearMessage_m1066BFC7FC5984302B26E3B3B966B353335F448B (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CardEffectPlayer_ClearEffect_m5E92F8B59BD3B5D1D0852CD3074005F7BC9426D5 (CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CardEffectPlayer_ClearAllShields_m0B829579E1FCF9B59153E8C14B9544EFA1FB67CF (CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_clearMessage_m1066BFC7FC5984302B26E3B3B966B353335F448B (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateHealth_m244307DE5198A854D074B812D6706171A0C18D61 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_isPlayer, int32_t ___1_health, int32_t ___2_shield, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_playerTurn, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___0_value, int32_t ___1_min, int32_t ___2_max, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline (int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
@@ -2761,7 +2771,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_SetSizeWithCurrentAnchors_m53A04549B7687A1DEA2C7484E56D89809390CE44 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, int32_t ___0_axis, float ___1_size, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__36__ctor_m64D434AE27BED013B88850BC3F7A12C979462939 (U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__37__ctor_m8D88C27D9FC0F1E263CA212FC441F4C5B5D878A0 (U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, float ___1_duration, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showDrainMessage_m8CAB5A85D396A4AD9FCDF18975ED0A7EB66BE4C2 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_damage, int32_t ___1_healed, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardEffect_mC7721CCFEBF2882C334B045275A91F9BAC7F5FB6 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_ability, int32_t ___1_amount, int32_t ___2_secondaryAmount, const RuntimeMethod* method) ;
@@ -2771,10 +2781,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardDetectedMessage_m004A110F4987117626170B0B356CAF5BE1345CB3 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardRemovedMessage_mE54FA7E050ECD9FCB3B4963A39890BB846F78E2C (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showGameOver_m751637B7A501C3496122992AB37A72B52067A278 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_result, String_t* ___1_finalMessage, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3 (String_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0 (String_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166 (String_t* __this, String_t* ___0_oldValue, String_t* ___1_newValue, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_RestartGame_m03813C863F1F1ABB9DC30BC371E2F088D7B01F75 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_mE304382DB9A6455C2A474C8F364C7387F37E9281 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MixedRealityUITest_RunAllTests_mBB6D3033F02800D94C51C16366132A5C210590B6 (MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3__ctor_m6818970EDFC5EF7041CE87D05CF5721101F08A0D (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
@@ -2986,6 +3001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_TryGetFeatureValue_m24EC3B6C
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_mD0C4C0EFE1D70EC0EA4A92B11F1A4D5B0A134E49 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_euler, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_m9B5EBE36643126708DB3F444C59C11FA30803DBB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_rhs, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_LookRotation_m489E6A5E916949FFE91C0B11A60C6016D996C1E0 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_forward, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_upwards, const RuntimeMethod* method) ;
@@ -2994,7 +3010,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137549
+// Method Definition Index: 135632
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestWithPauseU3Ed__15__ctor_m3BB4260527563BC8626A6B0082617A0A49AFBFEF (U3CRunTestWithPauseU3Ed__15_tEC4FE8EED4EC55E52EB3E213300AF6FD7EE5FFEB* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3005,7 +3021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestWithPauseU3Ed__15__ctor_m3BB42
 		return;
 	}
 }
-// Method Definition Index: 137550
+// Method Definition Index: 135633
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestWithPauseU3Ed__15_System_IDisposable_Dispose_m86BEB8271CE68BFF7BFA3F88906CFCA68C036E99 (U3CRunTestWithPauseU3Ed__15_tEC4FE8EED4EC55E52EB3E213300AF6FD7EE5FFEB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3013,7 +3029,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestWithPauseU3Ed__15_System_IDisp
 		return;
 	}
 }
-// Method Definition Index: 137551
+// Method Definition Index: 135634
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRunTestWithPauseU3Ed__15_MoveNext_m88FC6E71298DCB5B0E1E9683EDC38B3438E56796 (U3CRunTestWithPauseU3Ed__15_tEC4FE8EED4EC55E52EB3E213300AF6FD7EE5FFEB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3267,7 +3283,7 @@ IL_017f:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 137552
+// Method Definition Index: 135635
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunTestWithPauseU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8785B31BD118499BF2D1A35CC570C5E6D948E07C (U3CRunTestWithPauseU3Ed__15_tEC4FE8EED4EC55E52EB3E213300AF6FD7EE5FFEB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3276,7 +3292,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunTestWithPauseU3Ed__15_Sy
 		return L_0;
 	}
 }
-// Method Definition Index: 137553
+// Method Definition Index: 135636
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestWithPauseU3Ed__15_System_Collections_IEnumerator_Reset_m716E5406721505772F8EB2208A4AEBB77EABBD75 (U3CRunTestWithPauseU3Ed__15_tEC4FE8EED4EC55E52EB3E213300AF6FD7EE5FFEB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3286,7 +3302,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestWithPauseU3Ed__15_System_Colle
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRunTestWithPauseU3Ed__15_System_Collections_IEnumerator_Reset_m716E5406721505772F8EB2208A4AEBB77EABBD75_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 137554
+// Method Definition Index: 135637
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunTestWithPauseU3Ed__15_System_Collections_IEnumerator_get_Current_mCBE8DD9031895E6CCABE92AAE2103F5C5D40A555 (U3CRunTestWithPauseU3Ed__15_tEC4FE8EED4EC55E52EB3E213300AF6FD7EE5FFEB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3303,7 +3319,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunTestWithPauseU3Ed__15_Sy
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137555
+// Method Definition Index: 135638
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestsU3Ed__13__ctor_mA46C0F763931BD123ABA94691D96BC5DF90382FE (U3CRunTestsU3Ed__13_tEA0F9A928A08A8433D6825A3FD609BB57658666C* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3314,7 +3330,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestsU3Ed__13__ctor_mA46C0F763931B
 		return;
 	}
 }
-// Method Definition Index: 137556
+// Method Definition Index: 135639
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestsU3Ed__13_System_IDisposable_Dispose_m45C7E2055C4C9E1F3E96EB81D5A8AD7BEF7E5918 (U3CRunTestsU3Ed__13_tEA0F9A928A08A8433D6825A3FD609BB57658666C* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3322,7 +3338,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestsU3Ed__13_System_IDisposable_D
 		return;
 	}
 }
-// Method Definition Index: 137557
+// Method Definition Index: 135640
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRunTestsU3Ed__13_MoveNext_m9B873596E514E7C30F6A2488E4D657FCF7DD8FA9 (U3CRunTestsU3Ed__13_tEA0F9A928A08A8433D6825A3FD609BB57658666C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4216,7 +4232,7 @@ IL_0654:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 137558
+// Method Definition Index: 135641
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunTestsU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCA37195542A8DA28A61CA0F7D04B5CC4F670DFBE (U3CRunTestsU3Ed__13_tEA0F9A928A08A8433D6825A3FD609BB57658666C* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4225,7 +4241,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunTestsU3Ed__13_System_Col
 		return L_0;
 	}
 }
-// Method Definition Index: 137559
+// Method Definition Index: 135642
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestsU3Ed__13_System_Collections_IEnumerator_Reset_m9BCB22F82FD36AC70655A3632E540B9FCDB056BC (U3CRunTestsU3Ed__13_tEA0F9A928A08A8433D6825A3FD609BB57658666C* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4235,7 +4251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunTestsU3Ed__13_System_Collections_I
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRunTestsU3Ed__13_System_Collections_IEnumerator_Reset_m9BCB22F82FD36AC70655A3632E540B9FCDB056BC_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 137560
+// Method Definition Index: 135643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunTestsU3Ed__13_System_Collections_IEnumerator_get_Current_m032425388A49E300BFECD4E6319D08E929C79AFA (U3CRunTestsU3Ed__13_tEA0F9A928A08A8433D6825A3FD609BB57658666C* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4252,25 +4268,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunTestsU3Ed__13_System_Col
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137561
+// Method Definition Index: 135644
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mixed_Reality_UI_get_IsMessageDisplaying_mA8EBE8BD99D90C867BFC98E08B182CC479BD0227 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:53>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:56>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_0 = __this->___messageCoroutine;
 		return (bool)((!(((RuntimeObject*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)L_0) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
 	}
 }
-// Method Definition Index: 137562
+// Method Definition Index: 135645
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mixed_Reality_UI_get_DefaultMessageDuration_m70AF8C951DA9D67928277942A3DCCF8E58061EC9 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:56>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:59>
 		float L_0 = __this->___defaultMessageDuration;
 		return L_0;
 	}
 }
-// Method Definition Index: 137563
+// Method Definition Index: 135646
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_Awake_m5BF58B0D807463B451116547146AC70177E0D4B6 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4282,7 +4298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_Awake_m5BF58B0D807463B4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:60>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:63>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_0 = __this->___gameManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -4293,7 +4309,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_Awake_m5BF58B0D807463B4
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:61>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:64>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_2;
 		L_2 = Object_FindFirstObjectByType_TisGameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_mF766559530B489C0F2CD36609162D1A663352C63(Object_FindFirstObjectByType_TisGameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_mF766559530B489C0F2CD36609162D1A663352C63_RuntimeMethod_var);
@@ -4303,7 +4319,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_Awake_m5BF58B0D807463B4
 
 IL_0019:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:63>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:66>
 		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_3 = __this->___cardEffectPlayer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -4314,7 +4330,7 @@ IL_0019:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:64>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:67>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_5;
 		L_5 = Object_FindFirstObjectByType_TisCardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB_m75CF8575D5523C4930CB0C6D02BB6D23D496825E(Object_FindFirstObjectByType_TisCardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB_m75CF8575D5523C4930CB0C6D02BB6D23D496825E_RuntimeMethod_var);
@@ -4324,11 +4340,11 @@ IL_0019:
 
 IL_0032:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:65>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:68>
 		return;
 	}
 }
-// Method Definition Index: 137564
+// Method Definition Index: 135647
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_Start_m007451080766D548346CE65A8EF6371E39F441A8 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4338,9 +4354,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_Start_m007451080766D548
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:69>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:72>
 		__this->___cardIsPresent = (bool)0;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:71>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:74>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___gameOverPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -4351,7 +4367,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_Start_m007451080766D548
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:72>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:75>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___gameOverPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
@@ -4359,23 +4375,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_Start_m007451080766D548
 
 IL_0021:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:74>
-		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:76>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:77>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:78>
+		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:79>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:80>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:81>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:82>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:83>
 		int32_t L_3 = __this->___maxHealth;
 		int32_t L_4 = __this->___maxHealth;
 		Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249(__this, L_3, 0, L_4, 0, (bool)1, (bool)0, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:82>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:85>
 		Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779(__this, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:83>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:86>
 		return;
 	}
 }
-// Method Definition Index: 137565
+// Method Definition Index: 135648
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_PrepareForNewGame_m141253ABFD00375755222EFBD7258223CA3C3BDF (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4388,9 +4404,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_PrepareForNewGame_m1412
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:91>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:94>
 		__this->___cardIsPresent = (bool)0;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:93>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:96>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_0 = __this->___messageCoroutine;
 		if (!L_0)
 		{
@@ -4398,116 +4414,118 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_PrepareForNewGame_m1412
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:95>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:98>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1 = __this->___messageCoroutine;
 		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_1, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:96>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:99>
 		__this->___messageCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___messageCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
 	}
 
 IL_0022:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:99>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___gameOverPanel;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:102>
+		Mixed_Reality_UI_clearMessage_m1066BFC7FC5984302B26E3B3B966B353335F448B(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:104>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___battleUIRoot;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_3)
 		{
-			goto IL_003c;
+			goto IL_0042;
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:100>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___gameOverPanel;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:105>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___battleUIRoot;
 		NullCheck(L_4);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
 	}
 
-IL_003c:
+IL_0042:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:102>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___gameOverText;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:107>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___gameOverPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
 		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_6)
 		{
-			goto IL_005a;
+			goto IL_005c;
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:103>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = __this->___gameOverText;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:108>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___gameOverPanel;
 		NullCheck(L_7);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_7, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
 	}
 
-IL_005a:
+IL_005c:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:105>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = __this->___turnText;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:110>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = __this->___gameOverText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_9;
 		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_9)
 		{
-			goto IL_006f;
+			goto IL_007a;
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:106>
-		Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D(__this, (bool)1, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:111>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_10 = __this->___gameOverText;
+		NullCheck(L_10);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_10, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 	}
 
-IL_006f:
+IL_007a:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:108>
-		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_10 = __this->___cardEffectPlayer;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:113>
+		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_11 = __this->___cardEffectPlayer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_11;
-		L_11 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_11)
+		bool L_12;
+		L_12 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_11, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_12)
 		{
-			goto IL_0093;
+			goto IL_009e;
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:110>
-		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_12 = __this->___cardEffectPlayer;
-		NullCheck(L_12);
-		CardEffectPlayer_ClearEffect_m5E92F8B59BD3B5D1D0852CD3074005F7BC9426D5(L_12, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:111>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:115>
 		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_13 = __this->___cardEffectPlayer;
 		NullCheck(L_13);
-		CardEffectPlayer_ClearAllShields_m0B829579E1FCF9B59153E8C14B9544EFA1FB67CF(L_13, NULL);
+		CardEffectPlayer_ClearEffect_m5E92F8B59BD3B5D1D0852CD3074005F7BC9426D5(L_13, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:116>
+		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_14 = __this->___cardEffectPlayer;
+		NullCheck(L_14);
+		CardEffectPlayer_ClearAllShields_m0B829579E1FCF9B59153E8C14B9544EFA1FB67CF(L_14, NULL);
 	}
 
-IL_0093:
+IL_009e:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:114>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:115>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:116>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:117>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:118>
-		int32_t L_14 = __this->___maxHealth;
-		int32_t L_15 = __this->___maxHealth;
-		Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249(__this, L_14, 0, L_15, 0, (bool)1, (bool)0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:119>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:120>
-		Mixed_Reality_UI_clearMessage_m1066BFC7FC5984302B26E3B3B966B353335F448B(__this, NULL);
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:121>
-		Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779(__this, NULL);
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:122>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:123>
+		int32_t L_15 = __this->___maxHealth;
+		int32_t L_16 = __this->___maxHealth;
+		Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249(__this, L_15, 0, L_16, 0, (bool)1, (bool)0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:125>
+		Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:126>
 		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:124>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:128>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralE91DE2160C0A977412E4743232FE40E7989CF157, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:125>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:129>
 		return;
 	}
 }
-// Method Definition Index: 137566
+// Method Definition Index: 135649
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateUI_mFF10FF7B7B713FF1B8603C8AF245B178F2702249 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_playerHealth, int32_t ___1_playerShield, int32_t ___2_opponentHealth, int32_t ___3_opponentShield, bool ___4_playerTurn, bool ___5_gameOver, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4518,90 +4536,56 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateUI_mFF10FF7B7B713
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:139>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:143>
 		int32_t L_0 = ___0_playerHealth;
 		int32_t L_1 = ___1_playerShield;
 		Mixed_Reality_UI_updateHealth_m244307DE5198A854D074B812D6706171A0C18D61(__this, (bool)1, L_0, L_1, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:140>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:144>
 		int32_t L_2 = ___2_opponentHealth;
 		int32_t L_3 = ___3_opponentShield;
 		Mixed_Reality_UI_updateHealth_m244307DE5198A854D074B812D6706171A0C18D61(__this, (bool)0, L_2, L_3, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:142>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:146>
 		bool L_4 = ___5_gameOver;
 		if (!L_4)
 		{
-			goto IL_0051;
+			goto IL_0037;
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:144>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:148>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___turnText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
 		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_6)
 		{
-			goto IL_0035;
+			goto IL_003f;
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:145>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:149>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = __this->___turnText;
 		NullCheck(L_7);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_7, _stringLiteral19E30120BF148B4BD74A0C6CE7F85A461E68A628);
+		goto IL_003f;
 	}
 
-IL_0035:
+IL_0037:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:147>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___gameOverPanel;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_9;
-		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_9)
-		{
-			goto IL_0073;
-		}
-	}
-	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:148>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___gameOverPanel;
-		NullCheck(L_10);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
-		goto IL_0073;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:153>
+		bool L_8 = ___4_playerTurn;
+		Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D(__this, L_8, NULL);
 	}
 
-IL_0051:
+IL_003f:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:152>
-		bool L_11 = ___4_playerTurn;
-		Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D(__this, L_11, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:154>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___gameOverPanel;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_13;
-		L_13 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_12, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_13)
-		{
-			goto IL_0073;
-		}
-	}
-	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:155>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___gameOverPanel;
-		NullCheck(L_14);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_14, (bool)0, NULL);
-	}
-
-IL_0073:
-	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:158>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:156>
 		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:159>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:157>
 		return;
 	}
 }
-// Method Definition Index: 137567
+// Method Definition Index: 135650
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateHealth_m244307DE5198A854D074B812D6706171A0C18D61 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_isPlayer, int32_t ___1_health, int32_t ___2_shield, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4623,20 +4607,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_updateHealth_m244307DE5
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* G_B12_0 = NULL;
 	float G_B15_0 = 0.0f;
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:166>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:165>
 		int32_t L_0 = ___1_health;
 		int32_t L_1 = __this->___maxHealth;
 		int32_t L_2;
 		L_2 = Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline(L_0, 0, L_1, NULL);
 		___1_health = L_2;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:167>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:166>
 		int32_t L_3 = ___2_shield;
 		int32_t L_4;
 		L_4 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(0, L_3, NULL);
 		___2_shield = L_4;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:168>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:169>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:170>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:171>
 		bool L_5 = ___0_isPlayer;
 		if (L_5)
 		{
@@ -4658,9 +4642,9 @@ IL_0023:
 IL_0029:
 	{
 		V_0 = G_B3_0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:172>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:173>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:174>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:175>
 		bool L_8 = ___0_isPlayer;
 		if (L_8)
 		{
@@ -4682,9 +4666,9 @@ IL_0035:
 IL_003b:
 	{
 		V_1 = G_B6_0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:176>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:177>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:178>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:179>
 		bool L_11 = ___0_isPlayer;
 		if (L_11)
 		{
@@ -4706,9 +4690,9 @@ IL_0047:
 IL_004d:
 	{
 		V_2 = G_B9_0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:180>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:181>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:182>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:183>
 		bool L_14 = ___0_isPlayer;
 		if (L_14)
 		{
@@ -4730,9 +4714,9 @@ IL_0059:
 IL_005f:
 	{
 		V_3 = G_B12_0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:184>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:185>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:186>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:187>
 		int32_t L_17 = __this->___maxHealth;
 		if ((((int32_t)L_17) > ((int32_t)0)))
 		{
@@ -4754,7 +4738,7 @@ IL_0070:
 IL_007a:
 	{
 		V_4 = G_B15_0;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:189>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:188>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_20 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_21;
@@ -4765,14 +4749,14 @@ IL_007a:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:191>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:190>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_22 = V_3;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_23;
 		memset((&L_23), 0, sizeof(L_23));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_23), (0.0f), (0.0f), NULL);
 		NullCheck(L_22);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_22, L_23, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:192>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:191>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_24 = V_3;
 		float L_25 = V_4;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_26;
@@ -4780,13 +4764,13 @@ IL_007a:
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_26), L_25, (1.0f), NULL);
 		NullCheck(L_24);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_24, L_26, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:193>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:192>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_27 = V_3;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_28;
 		L_28 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		NullCheck(L_27);
 		RectTransform_set_offsetMin_m07F38B4105C7CA9CC9FBDC9ED0DB008602880AB9(L_27, L_28, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:194>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:193>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_29 = V_3;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_30;
 		L_30 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
@@ -4797,7 +4781,7 @@ IL_007a:
 
 IL_00c4:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:196>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:195>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_31 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_32;
@@ -4808,7 +4792,7 @@ IL_00c4:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:198>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:197>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_33 = V_2;
 		float L_34 = V_4;
 		NullCheck(L_33);
@@ -4817,7 +4801,7 @@ IL_00c4:
 
 IL_00d5:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:201>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:200>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_35 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_36;
@@ -4828,7 +4812,7 @@ IL_00d5:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:202>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:201>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_37 = V_0;
 		int32_t L_38 = ___1_health;
 		int32_t L_39 = L_38;
@@ -4844,7 +4828,7 @@ IL_00d5:
 
 IL_00ff:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:204>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:203>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_45 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_46;
@@ -4855,7 +4839,7 @@ IL_00ff:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:205>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:204>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_47 = V_1;
 		int32_t L_48 = ___2_shield;
 		int32_t L_49 = L_48;
@@ -4868,11 +4852,11 @@ IL_00ff:
 
 IL_011e:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:206>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:205>
 		return;
 	}
 }
-// Method Definition Index: 137568
+// Method Definition Index: 135651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4882,8 +4866,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_keepMessagePanelVisible
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:213>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:214>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:215>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___gameMessagePanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -4904,7 +4888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_keepMessagePanelVisible
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:217>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:216>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___gameMessagePanel;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
@@ -4912,8 +4896,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_keepMessagePanelVisible
 
 IL_0027:
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:219>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:220>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:221>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___gameMessageText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -4937,7 +4921,7 @@ IL_0027:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:223>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:222>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_10 = __this->___gameMessageText;
 		NullCheck(L_10);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11;
@@ -4948,15 +4932,15 @@ IL_0027:
 
 IL_0058:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:225>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:224>
 		return;
 	}
 }
-// Method Definition Index: 137569
+// Method Definition Index: 135652
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, float ___1_duration, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:231>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:230>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_0 = __this->___messageCoroutine;
 		if (!L_0)
 		{
@@ -4964,22 +4948,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showMessage_m72ADDBE0AA
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:233>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:232>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1 = __this->___messageCoroutine;
 		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_1, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:234>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:233>
 		__this->___messageCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___messageCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
 	}
 
 IL_001b:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:237>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:236>
 		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:239>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:238>
 		String_t* L_2 = ___0_message;
 		Mixed_Reality_UI_ResizeGameMessagePanel_m2E2783F07473A29D156F032E214D673477E1F389(__this, L_2, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:241>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:240>
 		float L_3 = ___1_duration;
 		if ((!(((float)L_3) < ((float)(0.0f)))))
 		{
@@ -4987,14 +4971,14 @@ IL_001b:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:242>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:241>
 		float L_4 = __this->___defaultMessageDuration;
 		___1_duration = L_4;
 	}
 
 IL_0038:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:244>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:243>
 		float L_5 = ___1_duration;
 		if ((!(((float)L_5) > ((float)(0.0f)))))
 		{
@@ -5002,9 +4986,9 @@ IL_0038:
 		}
 	}
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:245>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:246>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:247>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:248>
 		float L_6 = ___1_duration;
 		RuntimeObject* L_7;
 		L_7 = Mixed_Reality_UI_clearMessageAfterDelay_m8AB209CE73B8A8636D919C46BEBD02434822A319(__this, L_6, NULL);
@@ -5016,11 +5000,11 @@ IL_0038:
 
 IL_0053:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:250>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:249>
 		return;
 	}
 }
-// Method Definition Index: 137570
+// Method Definition Index: 135653
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_ResizeGameMessagePanel_m2E2783F07473A29D156F032E214D673477E1F389 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5047,7 +5031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_ResizeGameMessagePanel_
 	memset((&V_5), 0, sizeof(V_5));
 	float V_6 = 0.0f;
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:255>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:254>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___gameMessagePanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5070,27 +5054,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_ResizeGameMessagePanel_
 
 IL_001c:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:256>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:255>
 		return;
 	}
 
 IL_001d:
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:257>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:258>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:259>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___gameMessagePanel;
 		NullCheck(L_4);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_5;
 		L_5 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_4, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
 		V_0 = L_5;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:260>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:261>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:262>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___gameMessageText;
 		NullCheck(L_6);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_7;
 		L_7 = Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4(L_6, Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
 		V_1 = L_7;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:264>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:263>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_8 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_9;
@@ -5113,60 +5097,60 @@ IL_001d:
 
 IL_0047:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:265>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:264>
 		return;
 	}
 
 IL_0048:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:267>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:266>
 		String_t* L_12 = ___0_message;
 		String_t* L_13;
 		L_13 = Mixed_Reality_UI_FormatGameMessage_mD6CE5A95463C9FEA76899A78EA95E2E0840D1101(__this, L_12, NULL);
 		___0_message = L_13;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:268>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:267>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_14 = __this->___gameMessageText;
 		String_t* L_15 = ___0_message;
 		NullCheck(L_14);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_14, L_15);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:269>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:268>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_16 = __this->___gameMessageText;
 		NullCheck(L_16);
 		TMP_Text_set_enableAutoSizing_mDD34BC7AA735EEBEB916FF5C9791B1502F65FBCA(L_16, (bool)0, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:270>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:269>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_17 = __this->___gameMessageText;
 		NullCheck(L_17);
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_17, (30.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:271>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:270>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_18 = __this->___gameMessageText;
 		NullCheck(L_18);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_18, ((int32_t)514), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:272>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:271>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_19 = __this->___gameMessageText;
 		NullCheck(L_19);
 		TMP_Text_set_textWrappingMode_mBD3A313CC85C9BB85F924D589A33A500E21DCA3D(L_19, 1, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:273>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:272>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_20 = __this->___gameMessageText;
 		NullCheck(L_20);
 		TMP_Text_set_overflowMode_mB8911BA07CEE0AC1E4E108B5EB79B230F90E96A1(L_20, 0, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:275>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:274>
 		Canvas_ForceUpdateCanvases_m6ECDBC5E85ADA3301BB20611753C45769F15EB51(NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:277>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:278>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:279>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:280>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:281>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:282>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_21 = __this->___gameMessageText;
 		String_t* L_22 = ___0_message;
 		NullCheck(L_21);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_23;
 		L_23 = TMP_Text_GetPreferredValues_m3FAA12BB95111827B71EBDE6B3B3F59EE4EA0C2C(L_21, L_22, (std::numeric_limits<float>::infinity()), (std::numeric_limits<float>::infinity()), NULL);
 		V_2 = L_23;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:285>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:286>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:287>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:288>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:289>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:290>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_24 = V_2;
 		float L_25 = L_24.___x;
 		float L_26 = __this->___messageHorizontalPadding;
@@ -5175,53 +5159,53 @@ IL_0048:
 		float L_29;
 		L_29 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)il2cpp_codegen_add(L_25, L_26)), L_27, L_28, NULL);
 		V_3 = L_29;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:291>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:292>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:293>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:294>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:295>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_30 = V_0;
 		float L_31 = V_3;
 		NullCheck(L_30);
 		RectTransform_SetSizeWithCurrentAnchors_m53A04549B7687A1DEA2C7484E56D89809390CE44(L_30, 0, L_31, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:298>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:299>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:300>
 		float L_32 = V_3;
 		float L_33 = __this->___messageHorizontalPadding;
 		V_4 = ((float)il2cpp_codegen_subtract(L_32, L_33));
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:302>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:301>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_34 = V_1;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_35;
 		memset((&L_35), 0, sizeof(L_35));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_35), (0.5f), (0.5f), NULL);
 		NullCheck(L_34);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_34, L_35, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:303>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:302>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_36 = V_1;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_37;
 		memset((&L_37), 0, sizeof(L_37));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_37), (0.5f), (0.5f), NULL);
 		NullCheck(L_36);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_36, L_37, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:304>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:303>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_38 = V_1;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_39;
 		memset((&L_39), 0, sizeof(L_39));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_39), (0.5f), (0.5f), NULL);
 		NullCheck(L_38);
 		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_38, L_39, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:305>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:306>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:307>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:308>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:309>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_40 = V_1;
 		float L_41 = V_4;
 		NullCheck(L_40);
 		RectTransform_SetSizeWithCurrentAnchors_m53A04549B7687A1DEA2C7484E56D89809390CE44(L_40, 0, L_41, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:310>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:311>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:312>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:313>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:314>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:315>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_42 = __this->___gameMessageText;
 		String_t* L_43 = ___0_message;
 		float L_44 = V_4;
@@ -5229,10 +5213,10 @@ IL_0048:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_45;
 		L_45 = TMP_Text_GetPreferredValues_m3FAA12BB95111827B71EBDE6B3B3F59EE4EA0C2C(L_42, L_43, L_44, (std::numeric_limits<float>::infinity()), NULL);
 		V_5 = L_45;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:316>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:317>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:318>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:319>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:320>
 		float L_46 = __this->___messageMinHeight;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_47 = V_5;
 		float L_48 = L_47.___y;
@@ -5240,34 +5224,34 @@ IL_0048:
 		float L_50;
 		L_50 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_46, ((float)il2cpp_codegen_add(L_48, L_49)), NULL);
 		V_6 = L_50;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:321>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:322>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:323>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:324>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:325>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_51 = V_0;
 		float L_52 = V_6;
 		NullCheck(L_51);
 		RectTransform_SetSizeWithCurrentAnchors_m53A04549B7687A1DEA2C7484E56D89809390CE44(L_51, 1, L_52, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:326>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:327>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:328>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:329>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:330>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_53 = V_1;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_54 = V_5;
 		float L_55 = L_54.___y;
 		NullCheck(L_53);
 		RectTransform_SetSizeWithCurrentAnchors_m53A04549B7687A1DEA2C7484E56D89809390CE44(L_53, 1, L_55, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:332>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:331>
 		Canvas_ForceUpdateCanvases_m6ECDBC5E85ADA3301BB20611753C45769F15EB51(NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:333>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:332>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_56 = __this->___gameMessageText;
 		NullCheck(L_56);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_56, (bool)0, (bool)0);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:334>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:335>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:336>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:337>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:338>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:339>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_57 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_58 = L_57;
 		NullCheck(L_58);
@@ -5303,35 +5287,35 @@ IL_0048:
 		L_76 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_70, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_76, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:340>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:339>
 		return;
 	}
 }
-// Method Definition Index: 137571
+// Method Definition Index: 135654
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Mixed_Reality_UI_clearMessageAfterDelay_m8AB209CE73B8A8636D919C46BEBD02434822A319 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, float ___0_duration, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	//<source_info:<no-source>:1>
 	{
-		U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* L_0 = (U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692*)il2cpp_codegen_object_new(U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692_il2cpp_TypeInfo_var);
-		U3CclearMessageAfterDelayU3Ed__36__ctor_m64D434AE27BED013B88850BC3F7A12C979462939(L_0, 0, NULL);
-		U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* L_1 = L_0;
+		U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* L_0 = (U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3*)il2cpp_codegen_object_new(U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3_il2cpp_TypeInfo_var);
+		U3CclearMessageAfterDelayU3Ed__37__ctor_m8D88C27D9FC0F1E263CA212FC441F4C5B5D878A0(L_0, 0, NULL);
+		U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* L_2 = L_1;
+		U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* L_2 = L_1;
 		float L_3 = ___0_duration;
 		NullCheck(L_2);
 		L_2->___duration = L_3;
 		return L_2;
 	}
 }
-// Method Definition Index: 137572
+// Method Definition Index: 135655
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_clearMessage_m1066BFC7FC5984302B26E3B3B966B353335F448B (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5342,7 +5326,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_clearMessage_m1066BFC7F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:354>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:353>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_0 = __this->___messageCoroutine;
 		if (!L_0)
 		{
@@ -5350,17 +5334,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_clearMessage_m1066BFC7F
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:356>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:355>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1 = __this->___messageCoroutine;
 		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_1, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:357>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:356>
 		__this->___messageCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___messageCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
 	}
 
 IL_001b:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:360>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:359>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___gameMessageText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -5371,7 +5355,7 @@ IL_001b:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:361>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:360>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___gameMessageText;
 		NullCheck(L_4);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
@@ -5379,11 +5363,11 @@ IL_001b:
 
 IL_0039:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:362>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:361>
 		return;
 	}
 }
-// Method Definition Index: 137573
+// Method Definition Index: 135656
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showWelcomeMessage_m20080536B595BA9E78774C421FCC41949DE4C779 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5393,13 +5377,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showWelcomeMessage_m200
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:370>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:369>
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral314D52457C3C0CA19602AAE0C7ED325EE0B41772, (0.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:371>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:370>
 		return;
 	}
 }
-// Method Definition Index: 137574
+// Method Definition Index: 135657
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showWaitingForCardMessage_m6AB0FAA1587FBEEDB319DB6C508FBDA9BC5FC670 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5409,13 +5393,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showWaitingForCardMessa
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:375>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:374>
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral9DB45C70EC7D092C15F6DDF367CA12B8FE7C97AD, (0.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:376>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:375>
 		return;
 	}
 }
-// Method Definition Index: 137575
+// Method Definition Index: 135658
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardDetectedMessage_m004A110F4987117626170B0B356CAF5BE1345CB3 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5425,13 +5409,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardDetectedMessage
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:380>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:379>
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral846421526F97EBA87440CB9BF16CA372B37BD622, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:381>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:380>
 		return;
 	}
 }
-// Method Definition Index: 137576
+// Method Definition Index: 135659
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardRemovedMessage_mE54FA7E050ECD9FCB3B4963A39890BB846F78E2C (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5441,13 +5425,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardRemovedMessage_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:385>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:384>
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral61E1154E851B3D7E7884D2CA7861C01E3E55A020, (0.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:386>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:385>
 		return;
 	}
 }
-// Method Definition Index: 137577
+// Method Definition Index: 135660
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showInvalidCardMessage_m720AB090D70AC37763C83DAD5BD413DD62CC7FA6 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5457,16 +5441,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showInvalidCardMessage_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:389>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:390>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:391>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:392>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:393>
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral80439BD0620CD00D2249E43D1E9123EA02397D48, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:394>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:393>
 		return;
 	}
 }
-// Method Definition Index: 137578
+// Method Definition Index: 135661
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showAttackMessage_m676ACE11F7E64500BBF66A369C7594BF1E0AB95E (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_damage, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5477,7 +5461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showAttackMessage_m676A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:402>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:401>
 		int32_t L_0 = ___0_damage;
 		if ((((int32_t)L_0) <= ((int32_t)0)))
 		{
@@ -5485,10 +5469,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showAttackMessage_m676A
 		}
 	}
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:403>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:404>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:405>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:406>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:407>
 		int32_t L_1 = ___0_damage;
 		int32_t L_2 = L_1;
 		RuntimeObject* L_3 = Box(il2cpp_defaults.int32_class, &L_2);
@@ -5500,16 +5484,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showAttackMessage_m676A
 
 IL_0020:
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:410>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:411>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:412>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:413>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:414>
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteralC0DF57BAB6892A7B147C9BBD8AB62996ED58A6DB, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:416>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:415>
 		return;
 	}
 }
-// Method Definition Index: 137579
+// Method Definition Index: 135662
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showHealMessage_m9436D7DCEF7FEC33584CAD9FDF2B5F4526A10D81 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_amount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5519,21 +5503,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showHealMessage_m9436D7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:419>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:420>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:421>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:422>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:423>
 		int32_t L_0 = ___0_amount;
 		int32_t L_1 = L_0;
 		RuntimeObject* L_2 = Box(il2cpp_defaults.int32_class, &L_1);
 		String_t* L_3;
 		L_3 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral3B67560386869E07BB29519D6800C1235D51A498, L_2, NULL);
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_3, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:424>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:423>
 		return;
 	}
 }
-// Method Definition Index: 137580
+// Method Definition Index: 135663
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showShieldMessage_m7E6A0F97B617CEF0BE90376A6417620282614FAF (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_amount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5543,21 +5527,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showShieldMessage_m7E6A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:427>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:428>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:429>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:430>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:431>
 		int32_t L_0 = ___0_amount;
 		int32_t L_1 = L_0;
 		RuntimeObject* L_2 = Box(il2cpp_defaults.int32_class, &L_1);
 		String_t* L_3;
 		L_3 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral489E779C097E758FFDACA571F7141B1E8799A179, L_2, NULL);
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_3, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:432>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:431>
 		return;
 	}
 }
-// Method Definition Index: 137581
+// Method Definition Index: 135664
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showDrainMessage_m8CAB5A85D396A4AD9FCDF18975ED0A7EB66BE4C2 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_damage, int32_t ___1_healed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5567,10 +5551,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showDrainMessage_m8CAB5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:435>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:436>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:437>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:438>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:439>
 		int32_t L_0 = ___0_damage;
 		int32_t L_1 = L_0;
 		RuntimeObject* L_2 = Box(il2cpp_defaults.int32_class, &L_1);
@@ -5580,23 +5564,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showDrainMessage_m8CAB5
 		String_t* L_6;
 		L_6 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral4F815E7828B8663765ECCB1D4A8D53CAFC446F90, L_2, L_5, NULL);
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_6, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:440>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:439>
 		return;
 	}
 }
-// Method Definition Index: 137582
+// Method Definition Index: 135665
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showDrainMessage_mA0F8B4E232B0A8B75E36580AEAEBA00FEEFE8B24 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, int32_t ___0_amount, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:444>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:443>
 		int32_t L_0 = ___0_amount;
 		int32_t L_1 = ___0_amount;
 		Mixed_Reality_UI_showDrainMessage_m8CAB5A85D396A4AD9FCDF18975ED0A7EB66BE4C2(__this, L_0, L_1, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:445>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:444>
 		return;
 	}
 }
-// Method Definition Index: 137583
+// Method Definition Index: 135666
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showBlockedAttackMessage_mB3A648A934D0FD64A44553D497D55FF5D0833381 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5606,49 +5590,49 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showBlockedAttackMessag
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:449>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:448>
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, _stringLiteral7AEDF8B4EF025E6AED4521BE910E73BA6B5605CF, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:450>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:449>
 		return;
 	}
 }
-// Method Definition Index: 137584
+// Method Definition Index: 135667
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showAbilityMessage_mCE91476972C41AF7F3925DD335FEF116AECA0B87 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, float ___1_duration, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:457>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:456>
 		String_t* L_0 = ___0_message;
 		float L_1 = ___1_duration;
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_0, L_1, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:458>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:457>
 		return;
 	}
 }
-// Method Definition Index: 137585
+// Method Definition Index: 135668
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showAbilityMessage_mCD97C43FEC40E06121FCB99BDA4FB884AD27F9E4 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:463>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:462>
 		String_t* L_0 = ___0_message;
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_0, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:464>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:463>
 		return;
 	}
 }
-// Method Definition Index: 137586
+// Method Definition Index: 135669
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardEffect_m6D12A45251C88F3AB3E7D5A4776F6769F343FD11 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_ability, int32_t ___1_amount, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:474>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:473>
 		String_t* L_0 = ___0_ability;
 		int32_t L_1 = ___1_amount;
 		int32_t L_2 = ___1_amount;
 		Mixed_Reality_UI_showCardEffect_mC7721CCFEBF2882C334B045275A91F9BAC7F5FB6(__this, L_0, L_1, L_2, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:475>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:474>
 		return;
 	}
 }
-// Method Definition Index: 137587
+// Method Definition Index: 135670
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardEffect_mC7721CCFEBF2882C334B045275A91F9BAC7F5FB6 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_ability, int32_t ___1_amount, int32_t ___2_secondaryAmount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5666,7 +5650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardEffect_mC7721CC
 	}
 	String_t* V_0 = NULL;
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:482>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:481>
 		String_t* L_0 = ___0_ability;
 		bool L_1;
 		L_1 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_0, NULL);
@@ -5676,13 +5660,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showCardEffect_mC7721CC
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:483>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:482>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:485>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:484>
 		String_t* L_2 = ___0_ability;
 		NullCheck(L_2);
 		String_t* L_3;
@@ -5729,36 +5713,36 @@ IL_0009:
 
 IL_0046:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:488>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:487>
 		int32_t L_12 = ___1_amount;
 		int32_t L_13 = L_12;
 		RuntimeObject* L_14 = Box(il2cpp_defaults.int32_class, &L_13);
 		String_t* L_15;
 		L_15 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral7D39F66E2C8263F0F84B183F780C1AD952433074, L_14, NULL);
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_15, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:489>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:488>
 		return;
 	}
 
 IL_0062:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:492>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:491>
 		int32_t L_16 = ___1_amount;
 		int32_t L_17 = L_16;
 		RuntimeObject* L_18 = Box(il2cpp_defaults.int32_class, &L_17);
 		String_t* L_19;
 		L_19 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral3918F96660B072F1D7AA40B453DAD3047A92B904, L_18, NULL);
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_19, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:493>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:492>
 		return;
 	}
 
 IL_007e:
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:495>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:496>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:497>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:498>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:499>
 		int32_t L_20 = ___1_amount;
 		int32_t L_21 = L_20;
 		RuntimeObject* L_22 = Box(il2cpp_defaults.int32_class, &L_21);
@@ -5768,45 +5752,45 @@ IL_007e:
 		String_t* L_26;
 		L_26 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral20E6D01A803D5D0641D45EE03946670ECF8A5A74, L_22, L_25, NULL);
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_26, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:500>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:499>
 		return;
 	}
 
 IL_00a0:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:503>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:502>
 		int32_t L_27 = ___1_amount;
 		int32_t L_28 = L_27;
 		RuntimeObject* L_29 = Box(il2cpp_defaults.int32_class, &L_28);
 		String_t* L_30;
 		L_30 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral34F9C4E487C7115322A707393D8DC17483DFBC4F, L_29, NULL);
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_30, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:504>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:503>
 		return;
 	}
 
 IL_00bc:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:507>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:506>
 		String_t* L_31 = ___0_ability;
 		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_31, (-1.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:510>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:509>
 		return;
 	}
 }
-// Method Definition Index: 137588
+// Method Definition Index: 135671
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_onCardRecognized_mC6AD9FD2284A14E1573372A754E8404B16E7E247 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_ability, int32_t ___1_amount, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:518>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:517>
 		__this->___cardIsPresent = (bool)1;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:519>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:518>
 		Mixed_Reality_UI_showCardDetectedMessage_m004A110F4987117626170B0B356CAF5BE1345CB3(__this, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:520>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:519>
 		return;
 	}
 }
-// Method Definition Index: 137589
+// Method Definition Index: 135672
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_setCardPresent_m6FC1C5C06587614BC88376100D108BB6890EAF22 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_present, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5817,13 +5801,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_setCardPresent_m6FC1C5C
 	}
 	bool V_0 = false;
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:524>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:523>
 		bool L_0 = __this->___cardIsPresent;
 		V_0 = L_0;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:525>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:524>
 		bool L_1 = ___0_present;
 		__this->___cardIsPresent = L_1;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:527>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:526>
 		bool L_2 = ___0_present;
 		if (L_2)
 		{
@@ -5831,7 +5815,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_setCardPresent_m6FC1C5C
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:529>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:528>
 		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_3 = __this->___cardEffectPlayer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -5842,7 +5826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_setCardPresent_m6FC1C5C
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:530>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:529>
 		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_5 = __this->___cardEffectPlayer;
 		NullCheck(L_5);
 		CardEffectPlayer_ClearEffect_m5E92F8B59BD3B5D1D0852CD3074005F7BC9426D5(L_5, NULL);
@@ -5850,7 +5834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_setCardPresent_m6FC1C5C
 
 IL_002a:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:532>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:531>
 		bool L_6 = V_0;
 		if (!L_6)
 		{
@@ -5858,14 +5842,14 @@ IL_002a:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:533>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:532>
 		Mixed_Reality_UI_showCardRemovedMessage_mE54FA7E050ECD9FCB3B4963A39890BB846F78E2C(__this, NULL);
 		return;
 	}
 
 IL_0034:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:535>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:534>
 		bool L_7 = V_0;
 		if (L_7)
 		{
@@ -5873,17 +5857,17 @@ IL_0034:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:537>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:536>
 		Mixed_Reality_UI_showCardDetectedMessage_m004A110F4987117626170B0B356CAF5BE1345CB3(__this, NULL);
 	}
 
 IL_003d:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:539>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:538>
 		return;
 	}
 }
-// Method Definition Index: 137590
+// Method Definition Index: 135673
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_hideCardEffect_m5291ADD0F74631974643B79E54FCDDC6E08C0770 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5893,7 +5877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_hideCardEffect_m5291ADD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:543>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:542>
 		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_0 = __this->___cardEffectPlayer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5904,7 +5888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_hideCardEffect_m5291ADD
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:544>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:543>
 		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_2 = __this->___cardEffectPlayer;
 		NullCheck(L_2);
 		CardEffectPlayer_ClearEffect_m5E92F8B59BD3B5D1D0852CD3074005F7BC9426D5(L_2, NULL);
@@ -5912,11 +5896,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_hideCardEffect_m5291ADD
 
 IL_0019:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:545>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:544>
 		return;
 	}
 }
-// Method Definition Index: 137591
+// Method Definition Index: 135674
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_playerTurn, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5937,7 +5921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showTurnIndicator_mA7DA
 	memset((&G_B8_0), 0, sizeof(G_B8_0));
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B8_1 = NULL;
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:553>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:552>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___turnText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5948,15 +5932,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showTurnIndicator_mA7DA
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:554>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:553>
 		return;
 	}
 
 IL_000f:
 	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:555>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:556>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:557>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:558>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___turnText;
 		bool L_3 = ___0_playerTurn;
 		if (L_3)
@@ -5982,9 +5966,9 @@ IL_0024:
 	{
 		NullCheck(G_B5_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, G_B5_1, G_B5_0);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:559>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:560>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:561>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:562>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___turnText;
 		bool L_5 = ___0_playerTurn;
 		if (L_5)
@@ -6016,228 +6000,403 @@ IL_005c:
 	{
 		NullCheck(G_B8_1);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, G_B8_1, G_B8_0);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:563>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:562>
 		return;
 	}
 }
-// Method Definition Index: 137592
+// Method Definition Index: 135675
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showPlayerTurnMessage_m4C77CBBACBF030632A26327317C651962C9E43D1 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:567>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:566>
 		Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D(__this, (bool)1, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:568>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:567>
 		return;
 	}
 }
-// Method Definition Index: 137593
+// Method Definition Index: 135676
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showOpponentTurnMessage_m953451D85950A08CB9C3773C96FAFFB4767A788A (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:572>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:571>
 		Mixed_Reality_UI_showTurnIndicator_mA7DAE6BAD5E6DB2BF265187DC7D3527B99133F1D(__this, (bool)0, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:573>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:572>
 		return;
 	}
 }
-// Method Definition Index: 137594
+// Method Definition Index: 135677
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showGameOver_m751637B7A501C3496122992AB37A72B52067A278 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_result, String_t* ___1_finalMessage, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral19E30120BF148B4BD74A0C6CE7F85A461E68A628);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC30114E9F9CFB652FFA3B802E534E603B0B0D2E1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:589>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___turnText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:591>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___turnText;
+		NullCheck(L_2);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_2, _stringLiteral19E30120BF148B4BD74A0C6CE7F85A461E68A628);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:592>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->___turnText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4;
+		L_4 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
+		NullCheck(L_3);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_3, L_4);
+	}
+
+IL_002e:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:595>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___gameOverPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:596>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___gameOverPanel;
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
+	}
+
+IL_0048:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:598>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = __this->___gameOverText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_9)
+		{
+			goto IL_0066;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:599>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_10 = __this->___gameOverText;
+		NullCheck(L_10);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_10, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+	}
+
+IL_0066:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:601>
+		String_t* L_11 = ___1_finalMessage;
+		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(__this, L_11, (0.0f), NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:603>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralC30114E9F9CFB652FFA3B802E534E603B0B0D2E1, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:604>
+		return;
+	}
+}
+// Method Definition Index: 135678
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_showGameOver_mA00667A99066CEF1A64D519C24A638EDC6D603AF (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, bool ___0_playerWon, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral19E30120BF148B4BD74A0C6CE7F85A461E68A628);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3BB87012F8797FC89D68AFE95B3873B470CBC2B2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5641CCE11402BB44F1742D45487C086FC155EAD7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBBE47C4CFE32A35113631D981C97DCB345BF2FC0);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC5E24A60BA10CEE26ED64943F77A732968231B22);
 		s_Il2CppMethodInitialized = true;
 	}
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B5_0 = NULL;
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B4_0 = NULL;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B2_0 = NULL;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B1_0 = NULL;
+	String_t* G_B3_0 = NULL;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B3_1 = NULL;
+	String_t* G_B5_0 = NULL;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B5_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B4_1 = NULL;
 	String_t* G_B6_0 = NULL;
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B6_1 = NULL;
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B8_0 = NULL;
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B7_0 = NULL;
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G_B9_0;
-	memset((&G_B9_0), 0, sizeof(G_B9_0));
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B9_1 = NULL;
-	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B14_0 = NULL;
-	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B13_0 = NULL;
-	String_t* G_B15_0 = NULL;
-	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B15_1 = NULL;
+	String_t* G_B6_1 = NULL;
+	Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* G_B6_2 = NULL;
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:581>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___gameOverPanel;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:609>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:610>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:611>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:612>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:613>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:614>
+		bool L_0 = ___0_playerWon;
+		if (L_0)
+		{
+			G_B2_0 = __this;
+			goto IL_000b;
+		}
+		G_B1_0 = __this;
+	}
+	{
+		G_B3_0 = _stringLiteralBBE47C4CFE32A35113631D981C97DCB345BF2FC0;
+		G_B3_1 = G_B1_0;
+		goto IL_0010;
+	}
+
+IL_000b:
+	{
+		G_B3_0 = _stringLiteralC5E24A60BA10CEE26ED64943F77A732968231B22;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0010:
+	{
+		bool L_1 = ___0_playerWon;
+		if (L_1)
+		{
+			G_B5_0 = G_B3_0;
+			G_B5_1 = G_B3_1;
+			goto IL_001a;
+		}
+		G_B4_0 = G_B3_0;
+		G_B4_1 = G_B3_1;
+	}
+	{
+		G_B6_0 = _stringLiteral3BB87012F8797FC89D68AFE95B3873B470CBC2B2;
+		G_B6_1 = G_B4_0;
+		G_B6_2 = G_B4_1;
+		goto IL_001f;
+	}
+
+IL_001a:
+	{
+		G_B6_0 = _stringLiteral5641CCE11402BB44F1742D45487C086FC155EAD7;
+		G_B6_1 = G_B5_0;
+		G_B6_2 = G_B5_1;
+	}
+
+IL_001f:
+	{
+		NullCheck(G_B6_2);
+		Mixed_Reality_UI_showGameOver_m751637B7A501C3496122992AB37A72B52067A278(G_B6_2, G_B6_1, G_B6_0, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:615>
+		return;
+	}
+}
+// Method Definition Index: 135679
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_ShowFinalGameOverPanel_m74DA827F5A4E5155BB9123563F49F68B3BD5439A (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_result, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral28D3CC92A835AA7EB76F7729C9E943A1B375A493);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB1021D06E013458CC417EBC48011339CFD27B87C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCDADED2618059867023E35F5C846BB7416079F1A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD2355F9176F36012A473D04B1DA959D6177F6595);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralECE56BF941B3ADD3FDEE26F2555AA8C96618083F);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:618>
+		Mixed_Reality_UI_clearMessage_m1066BFC7FC5984302B26E3B3B966B353335F448B(__this, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:620>
+		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_0 = __this->___cardEffectPlayer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_1)
 		{
-			goto IL_001a;
+			goto IL_002a;
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:582>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___gameOverPanel;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:622>
+		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_2 = __this->___cardEffectPlayer;
 		NullCheck(L_2);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
+		CardEffectPlayer_ClearEffect_m5E92F8B59BD3B5D1D0852CD3074005F7BC9426D5(L_2, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:623>
+		CardEffectPlayer_tB76BA21BB0265973FB84D4DBBD637281E50209AB* L_3 = __this->___cardEffectPlayer;
+		NullCheck(L_3);
+		CardEffectPlayer_ClearAllShields_m0B829579E1FCF9B59153E8C14B9544EFA1FB67CF(L_3, NULL);
 	}
 
-IL_001a:
+IL_002a:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:584>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->___gameOverText;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:626>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___battleUIRoot;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_4;
-		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_4)
+		bool L_5;
+		L_5 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_5)
 		{
-			goto IL_007a;
+			goto IL_0044;
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:586>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:587>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:588>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___gameOverText;
-		bool L_6 = ___0_playerWon;
-		if (L_6)
-		{
-			G_B5_0 = L_5;
-			goto IL_0038;
-		}
-		G_B4_0 = L_5;
-	}
-	{
-		G_B6_0 = _stringLiteralBBE47C4CFE32A35113631D981C97DCB345BF2FC0;
-		G_B6_1 = G_B4_0;
-		goto IL_003d;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:627>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___battleUIRoot;
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
 	}
 
-IL_0038:
+IL_0044:
 	{
-		G_B6_0 = _stringLiteralC5E24A60BA10CEE26ED64943F77A732968231B22;
-		G_B6_1 = G_B5_0;
-	}
-
-IL_003d:
-	{
-		NullCheck(G_B6_1);
-		VirtualActionInvoker1< String_t* >::Invoke(66, G_B6_1, G_B6_0);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:590>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:591>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:592>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = __this->___gameOverText;
-		bool L_8 = ___0_playerWon;
-		if (L_8)
-		{
-			G_B8_0 = L_7;
-			goto IL_0061;
-		}
-		G_B7_0 = L_7;
-	}
-	{
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9;
-		memset((&L_9), 0, sizeof(L_9));
-		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_9), (1.0f), (0.25f), (0.25f), NULL);
-		G_B9_0 = L_9;
-		G_B9_1 = G_B7_0;
-		goto IL_0075;
-	}
-
-IL_0061:
-	{
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10;
-		memset((&L_10), 0, sizeof(L_10));
-		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_10), (0.25f), (1.0f), (0.649999976f), NULL);
-		G_B9_0 = L_10;
-		G_B9_1 = G_B8_0;
-	}
-
-IL_0075:
-	{
-		NullCheck(G_B9_1);
-		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, G_B9_1, G_B9_0);
-	}
-
-IL_007a:
-	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:595>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_11 = __this->___turnText;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:629>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___gameOverPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_12;
-		L_12 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_11, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_12)
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_8)
 		{
-			goto IL_0098;
+			goto IL_005e;
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:596>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_13 = __this->___turnText;
-		NullCheck(L_13);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_13, _stringLiteral19E30120BF148B4BD74A0C6CE7F85A461E68A628);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:630>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___gameOverPanel;
+		NullCheck(L_9);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)1, NULL);
 	}
 
-IL_0098:
+IL_005e:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:598>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:599>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:600>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:601>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:602>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:603>
-		bool L_14 = ___0_playerWon;
-		if (L_14)
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:632>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_10 = __this->___gameOverText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_11;
+		L_11 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_11)
 		{
-			G_B14_0 = __this;
-			goto IL_00a3;
+			goto IL_011f;
 		}
-		G_B13_0 = __this;
 	}
 	{
-		G_B15_0 = _stringLiteral3BB87012F8797FC89D68AFE95B3873B470CBC2B2;
-		G_B15_1 = G_B13_0;
-		goto IL_00a8;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:634>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_12 = __this->___gameOverText;
+		String_t* L_13 = ___0_result;
+		String_t* L_14;
+		L_14 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralECE56BF941B3ADD3FDEE26F2555AA8C96618083F, L_13, NULL);
+		NullCheck(L_12);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_12, L_14);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:636>
+		String_t* L_15 = ___0_result;
+		NullCheck(L_15);
+		bool L_16;
+		L_16 = String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3(L_15, _stringLiteralB1021D06E013458CC417EBC48011339CFD27B87C, NULL);
+		if (!L_16)
+		{
+			goto IL_00b3;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:638>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_17 = __this->___gameOverText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_18;
+		memset((&L_18), 0, sizeof(L_18));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_18), (0.25f), (1.0f), (0.649999976f), NULL);
+		NullCheck(L_17);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_17, L_18);
+		goto IL_011f;
 	}
 
-IL_00a3:
+IL_00b3:
 	{
-		G_B15_0 = _stringLiteral5641CCE11402BB44F1742D45487C086FC155EAD7;
-		G_B15_1 = G_B14_0;
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:640>
+		String_t* L_19 = ___0_result;
+		NullCheck(L_19);
+		bool L_20;
+		L_20 = String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3(L_19, _stringLiteralD2355F9176F36012A473D04B1DA959D6177F6595, NULL);
+		if (!L_20)
+		{
+			goto IL_00e1;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:642>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_21 = __this->___gameOverText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_22;
+		memset((&L_22), 0, sizeof(L_22));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_22), (1.0f), (0.25f), (0.25f), NULL);
+		NullCheck(L_21);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_21, L_22);
+		goto IL_011f;
 	}
 
-IL_00a8:
+IL_00e1:
 	{
-		NullCheck(G_B15_1);
-		Mixed_Reality_UI_showMessage_m72ADDBE0AAC5B3EF100C618D886CFF2F50F8B030(G_B15_1, G_B15_0, (0.0f), NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:605>
-		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:606>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:644>
+		String_t* L_23 = ___0_result;
+		NullCheck(L_23);
+		bool L_24;
+		L_24 = String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3(L_23, _stringLiteral28D3CC92A835AA7EB76F7729C9E943A1B375A493, NULL);
+		if (!L_24)
+		{
+			goto IL_010f;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:646>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_25 = __this->___gameOverText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_26;
+		memset((&L_26), 0, sizeof(L_26));
+		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_26), (1.0f), (0.850000024f), (0.25f), NULL);
+		NullCheck(L_25);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_25, L_26);
+		goto IL_011f;
+	}
+
+IL_010f:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:650>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_27 = __this->___gameOverText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_28;
+		L_28 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
+		NullCheck(L_27);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_27, L_28);
+	}
+
+IL_011f:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:654>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralCDADED2618059867023E35F5C846BB7416079F1A, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:655>
 		return;
 	}
 }
-// Method Definition Index: 137595
+// Method Definition Index: 135680
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_startGame_m975FD125DBAE7CE9493DBAE2E145F4C41EDB629C (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:615>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:666>
 		return;
 	}
 }
-// Method Definition Index: 137596
+// Method Definition Index: 135681
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_LateUpdate_m172B7F2437FB34D8A672161307BE5A0016EA4DBA (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:619>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:670>
 		Mixed_Reality_UI_keepMessagePanelVisible_mDD9D37559498649B35C42BD582BAE97CA5F01350(__this, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:620>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:671>
 		return;
 	}
 }
-// Method Definition Index: 137597
+// Method Definition Index: 135682
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Mixed_Reality_UI_FormatGameMessage_mD6CE5A95463C9FEA76899A78EA95E2E0840D1101 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, String_t* ___0_message, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6250,8 +6409,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Mixed_Reality_UI_FormatGameMessage_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:624>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:625>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:675>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:676>
 		String_t* L_0 = ___0_message;
 		NullCheck(L_0);
 		bool L_1;
@@ -6274,10 +6433,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Mixed_Reality_UI_FormatGameMessage_
 
 IL_001a:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:627>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:628>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:629>
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:630>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:678>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:679>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:680>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:681>
 		String_t* L_4 = ___0_message;
 		NullCheck(L_4);
 		String_t* L_5;
@@ -6287,12 +6446,74 @@ IL_001a:
 
 IL_002c:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:633>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:684>
 		String_t* L_6 = ___0_message;
 		return L_6;
 	}
 }
-// Method Definition Index: 137598
+// Method Definition Index: 135683
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_RestartGame_mCD1124055FA2B037EAD54AC7F42E2DCF68341BEC (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8A08A1B4B8CE0606CC99DC22A5AFA8A8B5A84F71);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:693>
+		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_0 = __this->___gameManager;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:695>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral8A08A1B4B8CE0606CC99DC22A5AFA8A8B5A84F71, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:696>
+		return;
+	}
+
+IL_0019:
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:699>
+		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_2 = __this->___gameManager;
+		NullCheck(L_2);
+		GameManager_RestartGame_m03813C863F1F1ABB9DC30BC371E2F088D7B01F75(L_2, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:700>
+		return;
+	}
+}
+// Method Definition Index: 135684
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI_ExitGame_mBEA2F8E22F17D500ED29675FBA2140BAE433844D (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral19C77D46DA179D98D3C811BE3D5FAEA43641CFF1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:704>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral19C77D46DA179D98D3C811BE3D5FAEA43641CFF1, NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:706>
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		Application_Quit_mE304382DB9A6455C2A474C8F364C7387F37E9281(NULL);
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:707>
+		return;
+	}
+}
+// Method Definition Index: 135685
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI__ctor_m1EE2544272E74B3BF702AE6A73341895F60B05F5 (Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6322,8 +6543,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mixed_Reality_UI__ctor_m1EE2544272E74B3B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137599
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__36__ctor_m64D434AE27BED013B88850BC3F7A12C979462939 (U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// Method Definition Index: 135686
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__37__ctor_m8D88C27D9FC0F1E263CA212FC441F4C5B5D878A0 (U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	{
@@ -6333,16 +6554,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__36__ctor_
 		return;
 	}
 }
-// Method Definition Index: 137600
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__36_System_IDisposable_Dispose_m136042368BFD9372783FD4D0D31D64A27E9D9E0A (U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* __this, const RuntimeMethod* method) 
+// Method Definition Index: 135687
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__37_System_IDisposable_Dispose_m388D7DB69ED271283122CE460F180249906015E1 (U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	{
 		return;
 	}
 }
-// Method Definition Index: 137601
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CclearMessageAfterDelayU3Ed__36_MoveNext_m9672D8DCF76B910953F37ABE8C1DDE71DEC40625 (U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* __this, const RuntimeMethod* method) 
+// Method Definition Index: 135688
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CclearMessageAfterDelayU3Ed__37_MoveNext_m6BF09A6502AC6C34694DA48D5F9EE23DB914EA72 (U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6379,7 +6600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CclearMessageAfterDelayU3Ed__36_MoveNe
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:344>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:343>
 		float L_4 = __this->___duration;
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, L_4, NULL);
@@ -6392,7 +6613,7 @@ IL_0017:
 IL_0038:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:346>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:345>
 		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_6 = V_1;
 		NullCheck(L_6);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = L_6->___gameMessageText;
@@ -6405,7 +6626,7 @@ IL_0038:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:347>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:346>
 		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_9 = V_1;
 		NullCheck(L_9);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_10 = L_9->___gameMessageText;
@@ -6415,17 +6636,17 @@ IL_0038:
 
 IL_005d:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:349>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:348>
 		Mixed_Reality_UI_tC23BFB971C5E9750197767389B60EEB65FFE0F8F* L_11 = V_1;
 		NullCheck(L_11);
 		L_11->___messageCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_11->___messageCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:350>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/MixedRealityUI.cs:349>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 137602
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CclearMessageAfterDelayU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3620A903C61E622CC12FF47CC4F45D41C9DD81E6 (U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* __this, const RuntimeMethod* method) 
+// Method Definition Index: 135689
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CclearMessageAfterDelayU3Ed__37_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF882BBCB410504CAE6ABEFF24D2256CAF011EB30 (U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	{
@@ -6433,18 +6654,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CclearMessageAfterDelayU3Ed_
 		return L_0;
 	}
 }
-// Method Definition Index: 137603
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__36_System_Collections_IEnumerator_Reset_mF9137E865BD08E37A6000FB1B137368EC5256538 (U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* __this, const RuntimeMethod* method) 
+// Method Definition Index: 135690
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CclearMessageAfterDelayU3Ed__37_System_Collections_IEnumerator_Reset_m7EE7CF136F7D693DA81E0B35BF8FF1DE6D55C173 (U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CclearMessageAfterDelayU3Ed__36_System_Collections_IEnumerator_Reset_mF9137E865BD08E37A6000FB1B137368EC5256538_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CclearMessageAfterDelayU3Ed__37_System_Collections_IEnumerator_Reset_m7EE7CF136F7D693DA81E0B35BF8FF1DE6D55C173_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 137604
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CclearMessageAfterDelayU3Ed__36_System_Collections_IEnumerator_get_Current_m6C383A8F597BA5DD0D9AFB6320251B367D900D55 (U3CclearMessageAfterDelayU3Ed__36_t6EA1F6271FBC5FEA3413A7A8BF8F6EA1E55E0692* __this, const RuntimeMethod* method) 
+// Method Definition Index: 135691
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CclearMessageAfterDelayU3Ed__37_System_Collections_IEnumerator_get_Current_m433DF9212F8FEDB12176C311830797EE4FDE68BC (U3CclearMessageAfterDelayU3Ed__37_tA86AEF5AC208DE17232B427D6238DD00C5C18CF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	{
@@ -6460,7 +6681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CclearMessageAfterDelayU3Ed_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137605
+// Method Definition Index: 135692
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityUITest_Start_mE4C217207AC1F674FDFFA813C91649229A87ECAA (MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6505,7 +6726,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 137606
+// Method Definition Index: 135693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MixedRealityUITest_RunAllTests_mBB6D3033F02800D94C51C16366132A5C210590B6 (MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6525,7 +6746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MixedRealityUITest_RunAllTests
 		return L_1;
 	}
 }
-// Method Definition Index: 137607
+// Method Definition Index: 135694
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityUITest__ctor_m8E3B7646CB8EAF14D6891F8CF4DF0C87FE708CB5 (MixedRealityUITest_t6B7DCFE5F0B2459D5B6595B8F237ADF4764BD119* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6543,7 +6764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityUITest__ctor_m8E3B7646CB8EAF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137608
+// Method Definition Index: 135695
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3__ctor_m6818970EDFC5EF7041CE87D05CF5721101F08A0D (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6554,7 +6775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3__ctor_m6818970EDFC
 		return;
 	}
 }
-// Method Definition Index: 137609
+// Method Definition Index: 135696
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3_System_IDisposable_Dispose_m1B92FD45FF911A397AE4CE76F00C287E4789E792 (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6562,7 +6783,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3_System_IDisposable
 		return;
 	}
 }
-// Method Definition Index: 137610
+// Method Definition Index: 135697
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRunAllTestsU3Ed__3_MoveNext_m67AC2F4BD83AE2F217C3564CEB0D1AEFDA0024EB (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6952,7 +7173,7 @@ IL_02cd:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 137611
+// Method Definition Index: 135698
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunAllTestsU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0A8B1C63889D16001119318B045778E4EDA0C6F3 (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6961,7 +7182,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunAllTestsU3Ed__3_System_C
 		return L_0;
 	}
 }
-// Method Definition Index: 137612
+// Method Definition Index: 135699
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3_System_Collections_IEnumerator_Reset_m4FAAEB12D9FA3B4B0E2B56851C560F58B1A75602 (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6971,7 +7192,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunAllTestsU3Ed__3_System_Collections
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRunAllTestsU3Ed__3_System_Collections_IEnumerator_Reset_m4FAAEB12D9FA3B4B0E2B56851C560F58B1A75602_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 137613
+// Method Definition Index: 135700
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunAllTestsU3Ed__3_System_Collections_IEnumerator_get_Current_m18BEE68394E324C880478C052530CE0B1AF2E62E (U3CRunAllTestsU3Ed__3_tA808BACBDFA1211C47B1C730953F34ED65E919AB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6988,7 +7209,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRunAllTestsU3Ed__3_System_C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137614
+// Method Definition Index: 135701
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PanelToggle_Start_m6D7B8A93275BDA13097919AD654C7ADCE2EA52CC (PanelToggle_t67E933E77903D32E59C819B86A7DC8952079885C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7069,7 +7290,7 @@ IL_004c:
 		return;
 	}
 }
-// Method Definition Index: 137615
+// Method Definition Index: 135702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PanelToggle_TogglePanel_m13E1A25438A887F220D1EB9CB9A3450DA4B4C150 (PanelToggle_t67E933E77903D32E59C819B86A7DC8952079885C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7138,7 +7359,7 @@ IL_004d:
 		return;
 	}
 }
-// Method Definition Index: 137616
+// Method Definition Index: 135703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PanelToggle__ctor_m205F83998D72FCD3E0488AA5F3336469258D97A8 (PanelToggle_t67E933E77903D32E59C819B86A7DC8952079885C* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7155,7 +7376,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PanelToggle__ctor_m205F83998D72FCD3E0488
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137617
+// Method Definition Index: 135704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_playCard_m7CBE2496DE38B0725290388EC6822D1FB3A24F69 (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, Card_tD9ACBC81F2B9DB3C989D8CED3893B4EF3891967A* ___0_card, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7194,7 +7415,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 137618
+// Method Definition Index: 135705
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Player_takeDamage_m72C21C32BFD08A1F2B2AD60E6730B96580C84E24 (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, int32_t ___0_amount, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -7243,7 +7464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Player_takeDamage_m72C21C32BFD08A1F2B
 		return L_17;
 	}
 }
-// Method Definition Index: 137619
+// Method Definition Index: 135706
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Player_heal_m2C5F7D2E12890397132B006A2F96181690876FC3 (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, int32_t ___0_amount, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -7273,7 +7494,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Player_heal_m2C5F7D2E12890397132B006A
 		return ((int32_t)il2cpp_codegen_subtract(L_7, L_8));
 	}
 }
-// Method Definition Index: 137620
+// Method Definition Index: 135707
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_addShield_mEE67A9BF4879A31A6C305B8B8AC63AC39DD560E5 (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, int32_t ___0_amount, const RuntimeMethod* method) 
 {
 	{
@@ -7289,7 +7510,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_addShield_mEE67A9BF4879A31A6C305B
 		return;
 	}
 }
-// Method Definition Index: 137621
+// Method Definition Index: 135708
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_clearShield_m11AB9E8F6544FFCBFE8FCF1A3253837B787AEA80 (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, const RuntimeMethod* method) 
 {
 	{
@@ -7299,7 +7520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_clearShield_m11AB9E8F6544FFCBFE8F
 		return;
 	}
 }
-// Method Definition Index: 137622
+// Method Definition Index: 135709
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Player_HasCard_m078AE4A05C80AF867B1A78E6A3F7261FFD0F75B4 (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, int32_t ___0_suit, int32_t ___1_rank, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7427,7 +7648,7 @@ IL_0054:
 		return L_12;
 	}
 }
-// Method Definition Index: 137623
+// Method Definition Index: 135710
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player__ctor_m0A83E0706592FC871B0CF188B37AFC6649F3D85D (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7459,7 +7680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player__ctor_m0A83E0706592FC871B0CF188B3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137624
+// Method Definition Index: 135711
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_add_Placed_mAF14E78F535BA33B30891BBD0880EA34C5DF65AE (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7503,7 +7724,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 137625
+// Method Definition Index: 135712
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_remove_Placed_m3C2FA7D8A3C6C0BD6F499CA7A2B0724358BF7F42 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, Action_1_tFF0F3D982F6CEB68CBA322555CBBEE6AE1D2519C* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7547,7 +7768,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 137626
+// Method Definition Index: 135713
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_add_Cleared_m9755238CC1AFC4C7BAB60C5F0FAA231E9C047215 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7591,7 +7812,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 137627
+// Method Definition Index: 135714
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_remove_Cleared_mAABAFB592F02E9C810329F7DDE9593A21F50F9EB (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7635,7 +7856,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 137628
+// Method Definition Index: 135715
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_Awake_mEF1C8259AEB73788F3F37A76527F91CB9D8760B4 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7683,7 +7904,7 @@ IL_002b:
 		return;
 	}
 }
-// Method Definition Index: 137629
+// Method Definition Index: 135716
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_Start_mD440B4703AE6B1466412A0E5F0E9FBD4161E728C (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -7709,7 +7930,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 137630
+// Method Definition Index: 135717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_OnEnable_mA9587A87A02A46C18117897D3356DD3FBFBF9B76 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7734,7 +7955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_OnEnable_mA9587A87A02A46C181
 		return;
 	}
 }
-// Method Definition Index: 137631
+// Method Definition Index: 135718
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_OnDisable_m107E6455222D95D37086A81883B2CCC9F458CF0A (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7759,7 +7980,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_OnDisable_m107E6455222D95D37
 		return;
 	}
 }
-// Method Definition Index: 137632
+// Method Definition Index: 135719
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_Begin_m00F6F4C0324D121358BD81B4C25D83883FDACDF1 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7838,7 +8059,7 @@ IL_0066:
 		return;
 	}
 }
-// Method Definition Index: 137633
+// Method Definition Index: 135720
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_Update_m8CF86961556F2ACB9B52802F17120894905BC1A8 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7967,7 +8188,7 @@ IL_00bd:
 		return;
 	}
 }
-// Method Definition Index: 137634
+// Method Definition Index: 135721
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_Place_m8A872E2BBA2E253ADD6507E26882F55C0AF4C88C (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8001,7 +8222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_Place_m8A872E2BBA2E253ADD650
 		return;
 	}
 }
-// Method Definition Index: 137635
+// Method Definition Index: 135722
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_Clear_m102A97E8F7D0F38FA37BC949A9441FE930E00086 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8096,7 +8317,7 @@ IL_0051:
 		return;
 	}
 }
-// Method Definition Index: 137636
+// Method Definition Index: 135723
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TablePlacer_IsTable_m6BEF279AAAC765AEAC56D09827BB66A446A6266D (ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* ___0_p, const RuntimeMethod* method) 
 {
 	{
@@ -8108,7 +8329,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TablePlacer_IsTable_m6BEF279AAAC765AEAC5
 		return (bool)((!(((uint32_t)((int32_t)((int32_t)L_1&((int32_t)256)))) <= ((uint32_t)0)))? 1 : 0);
 	}
 }
-// Method Definition Index: 137637
+// Method Definition Index: 135724
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_OnPlanesChanged_m0A11ACA732BD31677C83E3C1E81EBF8016239427 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, ARTrackablesChangedEventArgs_1_tEB03975F0BB8E8FF1B5EDAE64BB7F40F4C194FEC ___0_c, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8245,7 +8466,7 @@ IL_006e:
 		return;
 	}
 }
-// Method Definition Index: 137638
+// Method Definition Index: 135725
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_Refresh_mFDB8B4094358B8C20D5113E58494FDC7BB8876D5 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* ___0_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8260,7 +8481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer_Refresh_mFDB8B4094358B8C20D5
 	MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* V_2 = NULL;
 	int32_t G_B3_0 = 0;
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:126>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:127>
 		int32_t L_0 = __this->___state;
 		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
 		{
@@ -8283,7 +8504,7 @@ IL_0011:
 IL_0012:
 	{
 		V_0 = (bool)G_B3_0;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:127>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:128>
 		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_3 = ___0_p;
 		NullCheck(L_3);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
@@ -8291,8 +8512,8 @@ IL_0012:
 		bool L_5 = V_0;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, L_5, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:130>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:131>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:132>
 		bool L_6 = V_0;
 		if (!L_6)
 		{
@@ -8320,11 +8541,11 @@ IL_0012:
 		}
 	}
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:133>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:134>
 		MeshCollider_tB525E4DDE383252364ED0BDD32CF2B53914EE455* L_11 = V_1;
 		NullCheck(L_11);
 		MeshCollider_set_sharedMesh_m05F87B9AC04139285EBBCC159F77B51C6940E79C(L_11, (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4*)NULL, NULL);
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:134>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:135>
 		MeshCollider_tB525E4DDE383252364ED0BDD32CF2B53914EE455* L_12 = V_1;
 		MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* L_13 = V_2;
 		NullCheck(L_13);
@@ -8336,11 +8557,11 @@ IL_0012:
 
 IL_0049:
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:136>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:137>
 		return;
 	}
 }
-// Method Definition Index: 137639
+// Method Definition Index: 135726
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TablePlacer_TryGetTableHit_m6231170E68C5B4C82387308E2C1477D984694C80 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* ___0_hit, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8352,10 +8573,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TablePlacer_TryGetTableHit_m6231170E68C5
 	}
 	ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* V_0 = NULL;
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:139>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:140>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:141>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:142>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:143>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___rayOrigin;
 		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
@@ -8403,13 +8624,13 @@ IL_0046:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 137640
+// Method Definition Index: 135727
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 TablePlacer_FacePlayer_m2F0CAC5D90087B139A59275DBC97DD54C478FE53 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_point, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:146>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:147>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_point;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___head;
 		NullCheck(L_1);
@@ -8422,9 +8643,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
 		L_5 = Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline(L_3, L_4, NULL);
 		V_0 = L_5;
-		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:147>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:148>
 		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:149>
+		//<source_info:/Users/baaneesingh/Documents/Fall2026/CSci5629/CardBattle/Assets/Scripts/TablePlacer.cs:150>
 		float L_6;
 		L_6 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_0), NULL);
 		if ((((float)L_6) > ((float)(9.99999975E-05f))))
@@ -8448,7 +8669,7 @@ IL_0030:
 		return L_10;
 	}
 }
-// Method Definition Index: 137641
+// Method Definition Index: 135728
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer__ctor_mDF58038C2F3E9383D4031AD9612B794664D25BF8 (TablePlacer_t2F92E0555DED7C56580A36F5C490BE279F8A91DB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8480,7 +8701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TablePlacer__ctor_mDF58038C2F3E9383D4031
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137642
+// Method Definition Index: 135729
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPlaceU3Ed__27_MoveNext_m76EEA233FF81205911D039F65FC607EBAC833C59 (U3CPlaceU3Ed__27_tD0D3573603EEA3DA7CBE621724BAAE426F11DF0F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8825,7 +9046,7 @@ IL2CPP_EXTERN_C  void U3CPlaceU3Ed__27_MoveNext_m76EEA233FF81205911D039F65FC607E
 	_thisAdjusted = reinterpret_cast<U3CPlaceU3Ed__27_tD0D3573603EEA3DA7CBE621724BAAE426F11DF0F*>(__this + _offset);
 	U3CPlaceU3Ed__27_MoveNext_m76EEA233FF81205911D039F65FC607EBAC833C59(_thisAdjusted, method);
 }
-// Method Definition Index: 137643
+// Method Definition Index: 135730
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPlaceU3Ed__27_SetStateMachine_m2F6EB38BD83FC10343FFDCA168839A61DE0868C7 (U3CPlaceU3Ed__27_tD0D3573603EEA3DA7CBE621724BAAE426F11DF0F* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8851,7 +9072,7 @@ IL2CPP_EXTERN_C  void U3CPlaceU3Ed__27_SetStateMachine_m2F6EB38BD83FC10343FFDCA1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137644
+// Method Definition Index: 135731
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRUIButtonClick_Update_mAAA7BBBB89C771C536E08606CE8EEABD21FC7DFE (VRUIButtonClick_tDAC0B7988AF02F9DF2B0806C16DF71156B1E4DBA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9029,7 +9250,7 @@ IL_00b9:
 		return;
 	}
 }
-// Method Definition Index: 137645
+// Method Definition Index: 135732
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRUIButtonClick__ctor_mE4BA018545C994EC5B19457455BD4F3BC7C71881 (VRUIButtonClick_tDAC0B7988AF02F9DF2B0806C16DF71156B1E4DBA* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9046,7 +9267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRUIButtonClick__ctor_mE4BA018545C994EC5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137646
+// Method Definition Index: 135733
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9063,7 +9284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 137647
+// Method Definition Index: 135734
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9336,6 +9557,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F187
 		__this->___a = (1.0f);
 		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:48>
 		return;
+	}
+}
+// Method Definition Index: 61187
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:1014>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (1.0f), (1.0f), (1.0f), (1.0f), NULL);
+		return L_0;
 	}
 }
 // Method Definition Index: 61448
@@ -9713,6 +9945,26 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m9C3EC7F
 	{
 		int32_t L_0 = __this->____size;
 		return L_0;
+	}
+}
+// Method Definition Index: 61152
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:38>
+		float L_0 = ___0_r;
+		__this->___r = L_0;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:38>
+		float L_1 = ___1_g;
+		__this->___g = L_1;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:38>
+		float L_2 = ___2_b;
+		__this->___b = L_2;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:38>
+		float L_3 = ___3_a;
+		__this->___a = L_3;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:39>
+		return;
 	}
 }
 // Method Definition Index: 61331
