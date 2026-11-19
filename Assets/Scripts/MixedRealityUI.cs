@@ -87,10 +87,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         showWelcomeMessage();
     }
 
-    // ----------------------------------
     // NEW GAME RESET
-    // ----------------------------------
-
     public void PrepareForNewGame()
     {
         cardIsPresent = false;
@@ -122,10 +119,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         keepMessagePanelVisible();
     }
 
-    // ----------------------------------
     // RETURN TO START MENU
-    // ----------------------------------
-
     public void PrepareForStartMenu()
     {
         cardIsPresent = false;
@@ -151,10 +145,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // HEALTH AND TURN UI
-    // ----------------------------------
-
     public void updateUI(
         int playerHealth,
         int playerShield,
@@ -226,10 +217,7 @@ public class Mixed_Reality_UI : MonoBehaviour
             shieldText.text = $"Shield: {shield}";
     }
 
-    // ----------------------------------
     // GAME MESSAGE PANEL
-    // ----------------------------------
-
     private void keepMessagePanelVisible()
     {
         if (gameMessagePanel != null &&
@@ -270,10 +258,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // AUTOMATIC MESSAGE PANEL RESIZING
-    // ----------------------------------
-
     private void ResizeGameMessagePanel(string message)
     {
         if (gameMessagePanel == null || gameMessageText == null)
@@ -373,61 +358,55 @@ public class Mixed_Reality_UI : MonoBehaviour
             gameMessageText.text = "";
     }
 
-    // ----------------------------------
     // WELCOME AND CARD RECOGNITION
-    // ----------------------------------
-
     public void showWelcomeMessage()
     {
-        showMessage("Welcome! Place a card to begin!", 0f);
+        showMessage("Place a card to start.", 0f);
     }
 
     public void showWaitingForCardMessage()
     {
-        showMessage("Waiting for a card...", 0f);
+        showMessage("Waiting for card...", 0f);
     }
 
     public void showCardDetectedMessage()
     {
-        showMessage("Card detected!", -1f);
+        showMessage("Card ready!", -1f);
     }
 
     public void showCardRemovedMessage()
     {
-        showMessage("Card removed. Place another card!", 0f);
+        showMessage("Card removed.", 0f);
     }
 
     public void showInvalidCardMessage()
     {
-        showMessage("Invalid card! Try again.", -1f);
+        showMessage("Invalid card. Try again.", -1f);
     }
 
-    // ----------------------------------
     // BATTLE MESSAGES
-    // ----------------------------------
-
     public void showAttackMessage(int damage)
     {
         if (damage > 0)
-            showMessage($"Attack! -{damage} HP", -1f);
+            showMessage($"-{damage} HP", -1f);
         else
             showMessage("Attack blocked!", -1f);
     }
 
     public void showHealMessage(int amount)
     {
-        showMessage($"Healed +{amount} HP!", -1f);
+        showMessage($"+{amount} HP", -1f);
     }
 
     public void showShieldMessage(int amount)
     {
-        showMessage($"+{amount} Shield!", -1f);
+        showMessage($"+{amount} Shield", -1f);
     }
 
     public void showDrainMessage(int damage, int healed)
     {
         showMessage(
-            $"Drain! -{damage} HP, +{healed} HP",
+            $"Drain: -{damage} HP, +{healed} HP",
             -1f
         );
     }
@@ -439,7 +418,7 @@ public class Mixed_Reality_UI : MonoBehaviour
 
     public void showBlockedAttackMessage()
     {
-        showMessage("Blocked by shield!", -1f);
+        showMessage("Attack blocked!", -1f);
     }
 
     public void showAbilityMessage(
@@ -454,10 +433,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         showMessage(message, -1f);
     }
 
-    // ----------------------------------
     // CARD EFFECT TEXT COMPATIBILITY
-    // ----------------------------------
-
     public void showCardEffect(string ability, int amount)
     {
         showCardEffect(ability, amount, amount);
@@ -472,10 +448,7 @@ public class Mixed_Reality_UI : MonoBehaviour
             return;
     }
 
-    // ----------------------------------
     // CARD RECOGNITION STATE
-    // ----------------------------------
-
     public void onCardRecognized(string ability, int amount)
     {
         if (!cardIsPresent)
@@ -510,10 +483,7 @@ public class Mixed_Reality_UI : MonoBehaviour
             cardEffectPlayer.ClearEffect();
     }
 
-    // ----------------------------------
     // TURN INDICATOR
-    // ----------------------------------
-
     public void showTurnIndicator(bool playerTurn)
     {
         if (turnText == null)
@@ -528,7 +498,7 @@ public class Mixed_Reality_UI : MonoBehaviour
             : new Color(1f, 0.65f, 0.3f);
     }
 
-    // Retained for compatibility with existing scripts.
+    // COMPATIBILITY
     public void showPlayerTurnMessage()
     {
         showTurnIndicator(true);
@@ -539,10 +509,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         showTurnIndicator(false);
     }
 
-    // ----------------------------------
     // GAME OVER
-    // ----------------------------------
-
     public void showGameOver(
         string result,
         string finalMessage)
@@ -562,14 +529,11 @@ public class Mixed_Reality_UI : MonoBehaviour
         showMessage(finalMessage, 0f);
     }
 
-    // Compatibility with existing callers.
     public void showGameOver(bool playerWon)
     {
         showGameOver(
             playerWon ? "VICTORY!" : "DEFEAT!",
-            playerWon
-                ? "Victory! You won the battle!"
-                : "Defeat! Better luck next time!"
+            playerWon ? "You won!" : "You lost!"
         );
     }
 
@@ -615,10 +579,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // START BUTTON
-    // ----------------------------------
-
     public void startGame()
     {
         if (gameFlow == null)
@@ -635,10 +596,7 @@ public class Mixed_Reality_UI : MonoBehaviour
         keepMessagePanelVisible();
     }
 
-    // ----------------------------------
     // GAME OVER BUTTONS
-    // ----------------------------------
-
     public void RestartGame()
     {
         if (gameFlow == null)
