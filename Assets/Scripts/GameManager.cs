@@ -27,6 +27,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float actionMessageDuration = 3f;
     [SerializeField] private float effectWaitTimeout = 60f;
 
+    [Header("Research Evaluation Logging")]
+    [Tooltip("Automatically assigned a new anonymous participant ID each time Start Game is pressed.")]
+    [SerializeField] private string participantId;
+
+    private GameEvaluationLogger evaluationLogger;
     private bool isProcessingTurn = false;
 
     public bool IsProcessingTurn => isProcessingTurn;
@@ -36,6 +41,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        evaluationLogger = new GameEvaluationLogger();
+
         if (gameState == null)
             gameState = FindFirstObjectByType<GameState>();
 
@@ -49,10 +56,7 @@ public class GameManager : MonoBehaviour
             cardEffectPlayer = FindFirstObjectByType<CardEffectPlayer>();
     }
 
-    // ----------------------------------
     // START GAME
-    // ----------------------------------
-
     public void StartGame()
     {
         if (gameState == null)
@@ -78,6 +82,10 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Maximum shield cannot be negative.");
             return;
         }
+
+        // If a previous game was started but never completed, preserve it as abandoned.
+        if (evaluationLogger != null && evaluationLogger.IsGameActive)
+            evaluationLogger.FinishGame("Abandoned", gameState, "Game restarted before completion");
 
         StopAllCoroutines();
         isProcessingTurn = false;
@@ -121,6 +129,15 @@ public class GameManager : MonoBehaviour
 
         gameState.UpdateState();
 
+        if (evaluationLogger == null)
+            evaluationLogger = new GameEvaluationLogger();
+
+        // Each press of Start Game assigns the next anonymous participant ID.
+        // Example: first press = P01, second press = P02, third press = P03.
+        participantId = GameEvaluationLogger.StartNewParticipant();
+        Debug.Log($"[Research Logging] New participant assigned: {participantId}");
+        evaluationLogger.BeginGame(participantId, startingHealth);
+
         if (startPanel != null)
             startPanel.SetActive(false);
 
@@ -139,6 +156,9 @@ public class GameManager : MonoBehaviour
     // Stops the current match without returning to the start panel.
     public void EndMatch()
     {
+        if (evaluationLogger != null && evaluationLogger.IsGameActive)
+            evaluationLogger.FinishGame("Abandoned", gameState, "Match ended manually");
+
         StopAllCoroutines();
         isProcessingTurn = false;
 
@@ -195,10 +215,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // CARD RECOGNITION
-    // ----------------------------------
-
     public bool HandleRecognizedCard(Suit suit, int rank)
     {
         if (gameState == null ||
@@ -246,10 +263,7 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    // ----------------------------------
     // PLAYER TURN ENTRY POINT
-    // ----------------------------------
-
     public void ProcessPlayerCard(Card card)
     {
         if (gameState == null ||
@@ -276,10 +290,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ProcessFullTurnSequence(card));
     }
 
-    // ----------------------------------
     // COMPLETE PLAYER + AI TURN SEQUENCE
-    // ----------------------------------
-
     private IEnumerator ProcessFullTurnSequence(Card playerCard)
     {
         isProcessingTurn = true;
@@ -366,10 +377,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // WAIT FOR MESSAGE AND EFFECT
-    // ----------------------------------
-
     private IEnumerator WaitForActionPresentation()
     {
         float elapsed = 0f;
@@ -409,10 +417,7 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
-    // ----------------------------------
     // AI TURN COMPATIBILITY
-    // ----------------------------------
-
     public void ProcessAITurn()
     {
         if (gameState == null ||
@@ -480,10 +485,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // APPLY CARD ABILITY
-    // ----------------------------------
-
     public void ApplyAbility(Card card, Player user, Player target)
     {
         if (card == null ||
@@ -610,10 +612,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // DAMAGE
-    // ----------------------------------
-
     private int DealDamage(
         Player target,
         int damage,
@@ -639,10 +638,7 @@ public class GameManager : MonoBehaviour
         return actualHealthDamage;
     }
 
-    // ----------------------------------
     // REPLACEMENT CARD METHOD
-    // ----------------------------------
-
     // Kept for compatibility, but not called during gameplay.
     private void DrawReplacement(Player player)
     {
@@ -663,10 +659,7 @@ public class GameManager : MonoBehaviour
         player.hand.Add(drawnCard);
     }
 
-    // ----------------------------------
     // DISCARD
-    // ----------------------------------
-
     private void DiscardCard(Card card, Player owner)
     {
         if (card == null || owner == null || gameState == null)
@@ -681,13 +674,25 @@ public class GameManager : MonoBehaviour
         else if (ownerIndex == 1)
             gameState.aiDiscardPile.Add(card);
 
+        // Log the action after its ability has been applied, so the HP values are post-action.
+        if (evaluationLogger != null && ownerIndex >= 0)
+        {
+            string actor = ownerIndex == 0 ? "Player" : "AI";
+            int playerHp = gameState.players.Count > 0 ? gameState.players[0].health : 0;
+            int aiHp = gameState.players.Count > 1 ? gameState.players[1].health : 0;
+
+            evaluationLogger.RecordCardAction(
+                actor,
+                card,
+                playerHp,
+                aiHp
+            );
+        }
+
         CardPlayed?.Invoke(card, ownerIndex == 0);
     }
 
-    // ----------------------------------
     // WINNER CHECK
-    // ----------------------------------
-
     public void CheckWinner()
     {
         if (gameState == null ||
@@ -707,10 +712,7 @@ public class GameManager : MonoBehaviour
             EndGame("You win!", true);
     }
 
-    // ----------------------------------
     // HEALTH-BASED WINNER
-    // ----------------------------------
-
     public void EndGameByRemainingHealth()
     {
         if (gameState == null ||
@@ -750,10 +752,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // END TURN
-    // ----------------------------------
-
     public void EndTurn()
     {
         if (gameState == null || gameState.gameOver)
@@ -767,10 +766,7 @@ public class GameManager : MonoBehaviour
         SyncShieldEffects();
     }
 
-    // ----------------------------------
     // CLEAR SHIELDS
-    // ----------------------------------
-
     private void ClearAllShieldState()
     {
         if (gameState != null && gameState.players != null)
@@ -783,10 +779,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ----------------------------------
     // GAME OVER
-    // ----------------------------------
-
     private void EndGame(
         string message,
         bool playerWon,
@@ -796,6 +789,14 @@ public class GameManager : MonoBehaviour
             return;
 
         gameState.gameOver = true;
+
+        string evaluationOutcome =
+            (result == "DRAW!" || message.StartsWith("DRAW", StringComparison.OrdinalIgnoreCase))
+                ? "Draw"
+                : (playerWon ? "Player Win" : "AI Win");
+
+        if (evaluationLogger != null)
+            evaluationLogger.FinishGame(evaluationOutcome, gameState, message);
 
         ClearAllShieldState();
 
@@ -848,10 +849,7 @@ public class GameManager : MonoBehaviour
         GameEnded?.Invoke();
     }
 
-    // ----------------------------------
     // RESTART GAME
-    // ----------------------------------
-
     // public void RestartGame()
     // {
     //     if (isProcessingTurn)
@@ -865,10 +863,7 @@ public class GameManager : MonoBehaviour
     //     StartGame();
     // }
 
-    // ----------------------------------
     // UI UPDATE
-    // ----------------------------------
-
     private void UpdateVisuals()
     {
         if (mixedRealityUI == null ||
@@ -892,10 +887,7 @@ public class GameManager : MonoBehaviour
         );
     }
 
-    // ----------------------------------
     // SHIELD VISUAL SYNCHRONIZATION
-    // ----------------------------------
-
     private void SyncShieldEffects()
     {
         if (cardEffectPlayer == null ||
@@ -930,10 +922,7 @@ public class GameManager : MonoBehaviour
         );
     }
 
-    // ----------------------------------
     // END OF DECK CHECK
-    // ----------------------------------
-
     private void CheckEndOfDeck()
     {
         if (gameState == null ||
