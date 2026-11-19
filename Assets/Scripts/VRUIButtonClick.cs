@@ -1,61 +1,3 @@
-// using UnityEngine;
-// using UnityEngine.UI; // For UI Button
-// using UnityEngine.XR; // For XR input
-
-// public class VRUIButtonClick : MonoBehaviour
-// {
-//     [Header("Assign your UI Button here")]
-//     public Button targetButton;
-
-    
-
-//     // XR input device reference
-//     private InputDevice rightController;
-
-//     void Start()
-//     {
-//         // Get the right-hand controller
-//         var devices = new System.Collections.Generic.List<InputDevice>();
-//         InputDevices.GetDevicesAtXRNode(XRNode.RightHand, devices);
-
-//         if (devices.Count > 0)
-//         {
-//             rightController = devices[0];
-//         }
-//         else
-//         {
-//             Debug.LogWarning("Right-hand controller not found.");
-//         }
-//     }
-
-//     void Update()
-//     {
-//         if (!rightController.isValid)
-//         {
-//             // Try to reacquire controller if lost
-//             var devices = new System.Collections.Generic.List<InputDevice>();
-//             InputDevices.GetDevicesAtXRNode(XRNode.RightHand, devices);
-//             if (devices.Count > 0) rightController = devices[0];
-//             return;
-//         }
-
-//         // Check if primary button (A on Quest 3 right controller) is pressed
-//         bool primaryButtonPressed;
-//         if (rightController.TryGetFeatureValue(CommonUsages.primaryButton, out primaryButtonPressed) && primaryButtonPressed)
-//         {
-//             Debug.Log("Button Pressed");
-//             // Trigger the UI button click
-//             if (targetButton != null)
-//             {
-//                 targetButton.onClick.Invoke();
-//                 Debug.Log("VR controller button clicked UI button.");
-                
-//             }
-//         }
-//     }
-// }
-
-
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -64,16 +6,64 @@ using System.Collections.Generic;
 
 public class VRUIButtonClick : MonoBehaviour
 {
-    [Header("UI Buttons")]
-    public Button startButton;
-    public Button simulationButton;
+    [Header("Right Controller - Face Buttons")]
+    public Button startButton;             // A
+    public Button simulationButton;        // B
+
+    [Header("Left Controller - Face Buttons")]
+    public Button cardAbilityLegendButton; // X
+    public Button buttonMappingLegendButton; // Y
+
+    [Header("Additional Right Controller Buttons")]
+    public Button restartButton;           // Right stick click
+    public Button exitButton;              // Right trigger
+
+    [Header("Additional Left Controller Buttons")]
+    public Button leftAdditionalButton;    // Left stick click
+    public Button leftTriggerButton;       // Left trigger
 
     private InputDevice rightController;
+    private InputDevice leftController;
 
-    private bool wasAPressed;
-    private bool wasBPressed;
+    private readonly Dictionary<string, bool> previousStates =
+        new Dictionary<string, bool>();
 
-    void Update()
+    private void Update()
+    {
+        FindControllers();
+
+        if (rightController.isValid)
+        {
+            CheckButton(rightController, CommonUsages.primaryButton,
+                "Right A", startButton);
+
+            CheckButton(rightController, CommonUsages.secondaryButton,
+                "Right B", simulationButton);
+
+            CheckButton(rightController, CommonUsages.primary2DAxisClick,
+                "Right Stick", restartButton);
+
+            CheckButton(rightController, CommonUsages.triggerButton,
+                "Right Trigger", exitButton);
+        }
+
+        if (leftController.isValid)
+        {
+            CheckButton(leftController, CommonUsages.primaryButton,
+                "Left X", cardAbilityLegendButton);
+
+            CheckButton(leftController, CommonUsages.secondaryButton,
+                "Left Y", buttonMappingLegendButton);
+
+            CheckButton(leftController, CommonUsages.primary2DAxisClick,
+                "Left Stick", leftAdditionalButton);
+
+            CheckButton(leftController, CommonUsages.triggerButton,
+                "Left Trigger", leftTriggerButton);
+        }
+    }
+
+    private void FindControllers()
     {
         if (!rightController.isValid)
         {
@@ -82,28 +72,41 @@ public class VRUIButtonClick : MonoBehaviour
 
             if (devices.Count > 0)
                 rightController = devices[0];
+        }
 
+        if (!leftController.isValid)
+        {
+            List<InputDevice> devices = new List<InputDevice>();
+            InputDevices.GetDevicesAtXRNode(XRNode.LeftHand, devices);
+
+            if (devices.Count > 0)
+                leftController = devices[0];
+        }
+    }
+
+    private void CheckButton(
+        InputDevice controller,
+        InputFeatureUsage<bool> input,
+        string inputName,
+        Button targetButton)
+    {
+        bool pressed;
+
+        if (!controller.TryGetFeatureValue(input, out pressed))
             return;
-        }
 
-        bool aPressed;
-        if (rightController.TryGetFeatureValue(
-            CommonUsages.primaryButton, out aPressed))
+        bool wasPressed = previousStates.ContainsKey(inputName)
+            && previousStates[inputName];
+
+        // Only trigger once when the button is initially pressed.
+        if (pressed && !wasPressed && targetButton != null)
         {
-            if (aPressed && !wasAPressed && startButton != null)
-                startButton.onClick.Invoke();
+            Debug.Log(inputName + " pressed - clicking " +
+                      targetButton.name);
 
-            wasAPressed = aPressed;
+            targetButton.onClick.Invoke();
         }
 
-        bool bPressed;
-        if (rightController.TryGetFeatureValue(
-            CommonUsages.secondaryButton, out bPressed))
-        {
-            if (bPressed && !wasBPressed && simulationButton != null)
-                simulationButton.onClick.Invoke();
-
-            wasBPressed = bPressed;
-        }
+        previousStates[inputName] = pressed;
     }
 }

@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -30,7 +31,6 @@ public class GameManager : MonoBehaviour
 
     public bool IsProcessingTurn => isProcessingTurn;
 
-    // bool = card was played by the human player
     public event Action<Card, bool> CardPlayed;
     public event Action GameEnded;
 
@@ -117,7 +117,6 @@ public class GameManager : MonoBehaviour
             deck.RemoveAt(0);
         }
 
-        // Any undealt cards remain in the draw pile.
         gameState.drawPile.AddRange(deck);
 
         gameState.UpdateState();
@@ -133,17 +132,11 @@ public class GameManager : MonoBehaviour
 
         UpdateVisuals();
 
-        Debug.Log("Game started.");
-        Debug.Log($"Player HP: {humanPlayer.health}");
-        Debug.Log($"AI HP: {aiPlayer.health}");
-        Debug.Log($"Player cards: {humanPlayer.hand.Count}");
-        Debug.Log($"AI cards: {aiPlayer.hand.Count}");
-        Debug.Log($"Cards remaining in draw pile: {gameState.drawPile.Count}");
-        Debug.Log($"Maximum shield: {maxShield}");
+        SyncShieldEffects();
     }
 
-    // Stops the current match without starting a new one.
-    // Used when the board is reset or removed.
+
+    // Stops the current match without returning to the start panel.
     public void EndMatch()
     {
         StopAllCoroutines();
@@ -218,7 +211,6 @@ public class GameManager : MonoBehaviour
 
         if (gameState.currentTurn != 0 || isProcessingTurn)
         {
-            Debug.LogWarning("It is not currently the player's turn.");
             return false;
         }
 
@@ -271,6 +263,7 @@ public class GameManager : MonoBehaviour
         }
 
         Player player = gameState.players[0];
+
         if (card == null ||
             !card.IsValid() ||
             player.hand == null ||
@@ -298,17 +291,10 @@ public class GameManager : MonoBehaviour
         {
             // PLAYER ACTION
 
-            Debug.Log("========== PLAYER TURN ==========");
-
-            if (mixedRealityUI != null)
-                mixedRealityUI.showPlayerTurnMessage();
-
             if (!player.hand.Remove(playerCard))
                 yield break;
 
             gameState.RecordPlayerAction(playerCard.ability);
-
-            Debug.Log($"Player played {playerCard}");
 
             ApplyAbility(playerCard, player, ai);
 
@@ -330,17 +316,16 @@ public class GameManager : MonoBehaviour
 
             // AI ACTION
 
-            Debug.Log("========== OPPONENT TURN ==========");
-
-            if (mixedRealityUI != null)
-                mixedRealityUI.showOpponentTurnMessage();
-
             yield return new WaitForSeconds(0.25f);
 
             Card aiCard = null;
 
-            if (aiController != null && ai.hand.Count > 0)
+            if (aiController != null &&
+                ai.hand != null &&
+                ai.hand.Count > 0)
+            {
                 aiCard = aiController.SelectCard(gameState);
+            }
 
             if (aiCard == null ||
                 ai.hand == null ||
@@ -353,12 +338,9 @@ public class GameManager : MonoBehaviour
 
                 EndGameByRemainingHealth();
             }
-
             else
             {
                 ai.hand.Remove(aiCard);
-
-                Debug.Log($"AI played {aiCard}");
 
                 ApplyAbility(aiCard, ai, player);
 
@@ -375,8 +357,6 @@ public class GameManager : MonoBehaviour
             // RETURN TO PLAYER TURN
 
             EndTurn();
-
-            Debug.Log("========== PLAYER TURN READY ==========");
 
             CheckEndOfDeck();
         }
@@ -457,23 +437,20 @@ public class GameManager : MonoBehaviour
             Player ai = gameState.players[1];
             Player player = gameState.players[0];
 
-            if (mixedRealityUI != null)
-                mixedRealityUI.showOpponentTurnMessage();
-
             Card aiCard = null;
 
-            if (aiController != null && ai.hand.Count > 0)
+            if (aiController != null &&
+                ai.hand != null &&
+                ai.hand.Count > 0)
+            {
                 aiCard = aiController.SelectCard(gameState);
+            }
 
             if (aiCard != null && ai.hand.Contains(aiCard))
             {
                 ai.hand.Remove(aiCard);
 
-                Debug.Log($"AI played {aiCard}");
-
                 ApplyAbility(aiCard, ai, player);
-
-                
 
                 DiscardCard(aiCard, ai);
 
@@ -530,12 +507,6 @@ public class GameManager : MonoBehaviour
 
         int strength = card.rank;
 
-        Debug.Log(
-            $"[ABILITY START] {actor} played {card.suit} {card.rank} " +
-            $"({card.ability}) | " +
-            $"User Shield: {user.shield} | Target Shield: {target.shield}"
-        );
-
         switch (card.ability)
         {
             case AbilityType.Attack:
@@ -577,17 +548,12 @@ public class GameManager : MonoBehaviour
 
             case AbilityType.Drain:
             {
-                // Damage opponent by the card's full rank.
-                // Opponent shield absorbs damage before health.
                 int damage = DealDamage(
                     target,
                     strength,
                     out int absorbed
                 );
 
-                // Heal user by the card's full rank,
-                // even if opponent shield absorbs all damage.
-                // Player.heal() prevents health exceeding maxHealth.
                 int healed = user.heal(strength);
 
                 if (cardEffectPlayer != null)
@@ -599,9 +565,7 @@ public class GameManager : MonoBehaviour
                     $"{healed} HP restored.";
 
                 if (absorbed > 0)
-                {
                     message += $" {absorbed} damage absorbed by shield.";
-                }
 
                 ShowAbilityMessage(message);
 
@@ -612,7 +576,6 @@ public class GameManager : MonoBehaviour
             {
                 int previousShield = user.shield;
 
-                // Add shield without exceeding the maximum.
                 int shieldToAdd = Mathf.Min(
                     strength,
                     Mathf.Max(0, maxShield - user.shield)
@@ -631,14 +594,6 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        Debug.Log(
-            $"[ABILITY END] {actor} used {card.ability} | " +
-            $"Player: {gameState.players[0].health} HP / " +
-            $"{gameState.players[0].shield} Shield | " +
-            $"AI: {gameState.players[1].health} HP / " +
-            $"{gameState.players[1].shield} Shield"
-        );
-
         gameState.UpdateState();
         UpdateVisuals();
         SyncShieldEffects();
@@ -653,8 +608,6 @@ public class GameManager : MonoBehaviour
                 actionMessageDuration
             );
         }
-
-        Debug.Log($"Ability message: {message}");
     }
 
     // ----------------------------------
@@ -676,22 +629,12 @@ public class GameManager : MonoBehaviour
         int previousShield = target.shield;
         int previousHealth = target.health;
 
-        // Player.takeDamage() applies damage to shield first,
-        // then applies any remaining damage to health.
         target.takeDamage(damage);
 
         absorbed = previousShield - target.shield;
 
         int actualHealthDamage =
             previousHealth - target.health;
-
-        Debug.Log(
-            $"[DAMAGE CALCULATION] Incoming: {damage} | " +
-            $"Shield absorbed: {absorbed} | " +
-            $"HP damage: {actualHealthDamage} | " +
-            $"Remaining Shield: {target.shield} | " +
-            $"Remaining HP: {target.health}"
-        );
 
         return actualHealthDamage;
     }
@@ -700,7 +643,7 @@ public class GameManager : MonoBehaviour
     // REPLACEMENT CARD METHOD
     // ----------------------------------
 
-    // Kept for compatibility, but NOT called during gameplay.
+    // Kept for compatibility, but not called during gameplay.
     private void DrawReplacement(Player player)
     {
         if (player == null || gameState == null)
@@ -712,17 +655,12 @@ public class GameManager : MonoBehaviour
             return;
 
         if (gameState.drawPile.Count == 0)
-        {
-            Debug.Log("No replacement cards available.");
             return;
-        }
 
         Card drawnCard = gameState.drawPile[0];
 
         gameState.drawPile.RemoveAt(0);
         player.hand.Add(drawnCard);
-
-        Debug.Log($"Replacement card drawn: {drawnCard}");
     }
 
     // ----------------------------------
@@ -743,7 +681,6 @@ public class GameManager : MonoBehaviour
         else if (ownerIndex == 1)
             gameState.aiDiscardPile.Add(card);
 
-        // Lets the board move the physical-looking card to its discard spot.
         CardPlayed?.Invoke(card, ownerIndex == 0);
     }
 
@@ -770,8 +707,6 @@ public class GameManager : MonoBehaviour
             EndGame("You win!", true);
     }
 
-
-
     // ----------------------------------
     // HEALTH-BASED WINNER
     // ----------------------------------
@@ -788,9 +723,6 @@ public class GameManager : MonoBehaviour
 
         Player player = gameState.players[0];
         Player ai = gameState.players[1];
-
-        Debug.Log($"Final Player Health: {player.health}");
-        Debug.Log($"Final AI Health: {ai.health}");
 
         if (player.health > ai.health)
         {
@@ -829,19 +761,10 @@ public class GameManager : MonoBehaviour
 
         gameState.currentTurn = 1 - gameState.currentTurn;
 
-        // Remaining shield carries over between turns.
         gameState.UpdateState();
 
         UpdateVisuals();
         SyncShieldEffects();
-
-        if (mixedRealityUI != null)
-        {
-            if (gameState.currentTurn == 0)
-                mixedRealityUI.showPlayerTurnMessage();
-            else
-                mixedRealityUI.showOpponentTurnMessage();
-        }
     }
 
     // ----------------------------------
@@ -858,12 +781,6 @@ public class GameManager : MonoBehaviour
                     player.clearShield();
             }
         }
-
-        // if (cardEffectPlayer != null)
-        // {
-        //     cardEffectPlayer.SetShield(true, false);
-        //     cardEffectPlayer.SetShield(false, false);
-        // }
     }
 
     // ----------------------------------
@@ -885,12 +802,8 @@ public class GameManager : MonoBehaviour
         string finalResult = result ??
             (playerWon ? "VICTORY!" : "DEFEAT!");
 
-        Debug.Log(message);
-
-        // Update health, shield and turn indicator information.
         UpdateVisuals();
 
-        // Display the final messages without hiding the battle UI.
         if (mixedRealityUI != null)
         {
             mixedRealityUI.showGameOver(
@@ -899,17 +812,13 @@ public class GameManager : MonoBehaviour
             );
         }
 
-        // Wait before clearing the battle visuals.
         StartCoroutine(FinishGameOverSequence(finalResult));
-
-        Debug.Log("Game over sequence started.");
     }
+
     private IEnumerator FinishGameOverSequence(string result)
     {
-        // Allow the final messages to remain visible.
         yield return new WaitForSeconds(actionMessageDuration);
 
-        // Wait for any remaining temporary visual effects.
         float elapsed = 0f;
 
         while (
@@ -926,7 +835,6 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        // Display the final screen and clear battle visuals.
         if (mixedRealityUI != null)
         {
             mixedRealityUI.ShowFinalGameOverPanel(result);
@@ -937,23 +845,25 @@ public class GameManager : MonoBehaviour
             cardEffectPlayer.ClearAllShields();
         }
 
-        Debug.Log("========== GAME OVER SEQUENCE COMPLETE ==========");
-
         GameEnded?.Invoke();
     }
 
-    public void RestartGame()
-    {
-        if (isProcessingTurn)
-        {
-            Debug.LogWarning("Cannot restart while a turn is processing.");
-            return;
-        }
+    // ----------------------------------
+    // RESTART GAME
+    // ----------------------------------
 
-        Debug.Log("Restarting match...");
+    // public void RestartGame()
+    // {
+    //     if (isProcessingTurn)
+    //     {
+    //         Debug.LogWarning(
+    //             "Cannot restart while a turn is processing."
+    //         );
+    //         return;
+    //     }
 
-        StartGame();
-    }
+    //     StartGame();
+    // }
 
     // ----------------------------------
     // UI UPDATE
@@ -1046,23 +956,22 @@ public class GameManager : MonoBehaviour
         if (!playerFinished || !aiFinished)
             return;
 
-        Debug.Log("========== ALL CARDS USED ==========");
-
-        Debug.Log($"Final player health: {player.health}");
-        Debug.Log($"Final AI health: {ai.health}");
-
         if (player.health > ai.health)
         {
-            EndGame("PLAYER WINS! Higher remaining health.", true);
+            EndGame(
+                "PLAYER WINS! Higher remaining health.",
+                true
+            );
         }
         else if (ai.health > player.health)
         {
-            EndGame("OPPONENT WINS! Higher remaining health.", false);
+            EndGame(
+                "OPPONENT WINS! Higher remaining health.",
+                false
+            );
         }
         else
         {
-            Debug.Log("DRAW! Both players have equal health.");
-
             EndGame(
                 "DRAW! Both players have equal health.",
                 false,
@@ -1071,7 +980,5 @@ public class GameManager : MonoBehaviour
         }
 
         gameState.UpdateState();
-
-        Debug.Log("========== MATCH FINISHED ==========");
     }
 }
