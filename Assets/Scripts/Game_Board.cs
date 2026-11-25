@@ -44,6 +44,36 @@ public class GameBoard : MonoBehaviour
             Place(ai.hand[i], AISlotStart + i, false);
     }
 
+    // ---------- Scan-driven dealing ----------
+
+    /// <summary>Clears the board and lays out slots before a hand scan begins.</summary>
+    public void PrepareForScan()
+    {
+        Clear();
+        ArrangeSlots();
+    }
+
+    /// <summary>
+    /// Places a recognized card face-up in the next player slot (0-7).
+    /// The same Card instance must end up in the player's hand so
+    /// PlayCard can find it later.
+    /// </summary>
+    public bool PlaceRecognizedCard(Card data, int playerSlot)
+    {
+        if (data == null || playerSlot < 0 || playerSlot >= AISlotStart)
+            return false;
+
+        Place(data, playerSlot, true);
+        return slotOfCard.ContainsKey(data);
+    }
+
+    /// <summary>Deals only the AI hand, leaving the scanned player cards in place.</summary>
+    public void DealAIHand(Player ai)
+    {
+        for (int i = 0; i < ai.hand.Count; i++)
+            Place(ai.hand[i], AISlotStart + i, false);
+    }
+
     private void Place(Card data, int slotIndex, bool faceUp)
     {
         GameObject go = PlaceCard(cardPrefab, slotIndex, data, faceUp);

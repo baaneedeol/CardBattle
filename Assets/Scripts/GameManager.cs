@@ -56,7 +56,10 @@ public class GameManager : MonoBehaviour
     }
 
     // START GAME
-    public void StartGame()
+    // scannedPlayerHand: Card instances created from the detected physical cards
+    // (already shown on the board). These exact instances become the player's hand.
+    // When null, the player's hand is dealt randomly (previous behaviour).
+    public void StartGame(IList<Card> scannedPlayerHand = null)
     {
         if (gameState == null)
         {
@@ -117,11 +120,42 @@ public class GameManager : MonoBehaviour
         List<Card> deck = CreateDeck();
         ShuffleDeck(deck);
 
-        for (int i = 0; i < startingHandSize; i++)
+        // Player hand: the scanned physical cards first.
+        if (scannedPlayerHand != null)
+        {
+            foreach (Card scanned in scannedPlayerHand)
+            {
+                if (scanned == null ||
+                    humanPlayer.hand.Count >= startingHandSize)
+                    break;
+
+                int index = deck.FindIndex(c =>
+                    c.suit == scanned.suit && c.rank == scanned.rank);
+
+                if (index < 0)
+                {
+                    Debug.LogWarning(
+                        $"Scanned card {scanned.suit} {scanned.rank} is not in the deck or was duplicated."
+                    );
+                    continue;
+                }
+
+                // Use the scanned instance (it is already on the board).
+                humanPlayer.hand.Add(scanned);
+                deck.RemoveAt(index);
+            }
+        }
+
+        // Top up the player's hand if fewer cards were scanned than needed.
+        while (humanPlayer.hand.Count < startingHandSize && deck.Count > 0)
         {
             humanPlayer.hand.Add(deck[0]);
             deck.RemoveAt(0);
+        }
 
+        // AI hand is always random from what remains.
+        while (aiPlayer.hand.Count < startingHandSize && deck.Count > 0)
+        {
             aiPlayer.hand.Add(deck[0]);
             deck.RemoveAt(0);
         }

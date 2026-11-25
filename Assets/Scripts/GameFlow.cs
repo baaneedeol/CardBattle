@@ -1,10 +1,12 @@
 
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameFlow : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private TablePlacer placer;
+    [SerializeField] private CardHandScanner scanner;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private GameState gameState;
     [SerializeField] private CardEffectPlayer effects;
@@ -12,6 +14,9 @@ public class GameFlow : MonoBehaviour
     [SerializeField] private GameObject startPanel;
 
     public GameBoard board;
+
+    // Card instances created from recognized cards, in scan (= slot) order.
+    private readonly List<Card> scannedCards = new List<Card>();
 
     public event System.Action MatchReady;
 
@@ -23,6 +28,13 @@ public class GameFlow : MonoBehaviour
         {
             placer.Placed += OnPlaced;
             placer.Cleared += OnCleared;
+        }
+
+        if (scanner != null)
+        {
+            scanner.ScanProgress += OnScanProgress;
+            scanner.CardLocked += OnCardLocked;
+            scanner.HandScanned += OnHandScanned;
         }
 
         if (gameManager != null)
@@ -38,6 +50,14 @@ public class GameFlow : MonoBehaviour
         {
             placer.Placed -= OnPlaced;
             placer.Cleared -= OnCleared;
+        }
+
+        if (scanner != null)
+        {
+            scanner.ScanProgress -= OnScanProgress;
+            scanner.CardLocked -= OnCardLocked;
+            scanner.HandScanned -= OnHandScanned;
+            scanner.CancelScan();
         }
 
         if (gameManager != null)
@@ -83,12 +103,83 @@ public class GameFlow : MonoBehaviour
             );
         }
 
-        gameManager.StartGame();
+        // Table is placed: scan the player's physical hand before dealing.
+        BeginHandScan();
+    }
 
-        board.DealHands(
-            gameState.players[0],
-            gameState.players[1]
+    // CARD SCAN STEP
+    private void BeginHandScan()
+    {
+        IsMatchReady = false;
+
+        if (scanner == null)
+        {
+            Debug.LogWarning(
+                "No CardHandScanner assigned; dealing a random hand."
+            );
+            StartMatch(null);
+            return;
+        }
+
+        int handSize = gameManager.startingHandSize;
+
+        // Fresh board and empty scan list; recognized cards appear as they lock in.
+        scannedCards.Clear();
+        board.PrepareForScan();
+
+        ui?.showMessage(
+            $"Hold up your {handSize} cards so they can be scanned.",
+            0f
         );
+
+        scanner.BeginScan(handSize);
+    }
+
+    private void OnScanProgress(int found, int required)
+    {
+        if (found == 0 || found >= required)
+            return;
+
+        ui?.showMessage($"Scanned {found} / {required} cards...", 0f);
+    }
+
+    // Each recognized card is placed on the board immediately.
+    private void OnCardLocked(Suit suit, int rank, int index)
+    {
+        if (board == null)
+            return;
+
+        Card card = new Card(suit, rank, Card.GetAbilityForSuit(suit));
+
+        if (board.PlaceRecognizedCard(card, index))
+            scannedCards.Add(card);
+    }
+
+    private void OnHandScanned(List<(Suit suit, int rank)> cards)
+    {
+        // Ignore a late result if the table was cleared mid-scan.
+        if (board == null)
+            return;
+
+        StartMatch(scannedCards);
+    }
+
+    private void StartMatch(IList<Card> scannedHand)
+    {
+        gameManager.StartGame(scannedHand);
+
+        if (scannedHand != null)
+        {
+            // Player cards are already on the board; add the AI hand only.
+            board.DealAIHand(gameState.players[1]);
+        }
+        else
+        {
+            board.DealHands(
+                gameState.players[0],
+                gameState.players[1]
+            );
+        }
 
         IsMatchReady = true;
 
@@ -98,6 +189,11 @@ public class GameFlow : MonoBehaviour
     private void OnCleared()
     {
         IsMatchReady = false;
+
+        if (scanner != null)
+            scanner.CancelScan();
+
+        scannedCards.Clear();
 
         gameManager.EndMatch();
 
@@ -135,23 +231,16 @@ public class GameFlow : MonoBehaviour
             return;
         }
 
-        IsMatchReady = false;
-
-        gameManager.StartGame();
-
-        board.DealHands(
-            gameState.players[0],
-            gameState.players[1]
-        );
-
-        IsMatchReady = true;
-
-        MatchReady?.Invoke();
+        // Rescan so the new virtual hand matches the physical cards held.
+        BeginHandScan();
     }
 
     public void ReturnToStartMenu()
     {
         IsMatchReady = false;
+
+        if (scanner != null)
+            scanner.CancelScan();
 
         // Stop the current match without deleting the placed board.
         if (gameManager != null)
